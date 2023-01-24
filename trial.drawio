@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-01-24T12:21:06.407Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="13C6i7UGMcioggby4oyv" version="20.8.10" type="github">
+<mxfile host="app.diagrams.net" modified="2023-01-24T12:22:22.578Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="Ee2j50yGV6f46kuVOP7H" version="20.8.10" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="718" dy="392" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -37,8 +37,8 @@
         <mxCell id="KEIJj6NctLZswVazRSVO-13" value="end" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="60" y="520" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="KEIJj6NctLZswVazRSVO-15" value="Getting the Average of two numbers" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="35" width="130" height="30" as="geometry" />
+        <mxCell id="KEIJj6NctLZswVazRSVO-15" value="Flowchart: Getting the Average of two numbers" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="17.5" width="165" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
