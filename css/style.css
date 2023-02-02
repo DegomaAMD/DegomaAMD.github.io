@@ -1,0 +1,220 @@
+/* 
+TABLE OF CONTENTS
+1. Utility Classes
+2. Universal Modification
+3. Animations
+4. Body Modification
+5. Header Modification
+6. 
+7. 
+8. 
+9. 
+10. 
+*/
+
+
+/* 1. Utility Classes */
+.fnt-outfit{
+    font-family: 'Outfit', sans-serif;
+}
+.fnt-roboto{
+    font-family: 'Roboto', sans-serif;
+}
+.fs-7{
+    font-size: 14px;
+}
+.ms-6 {
+    margin-left: 189px;
+}
+
+.me-6 {
+    margin-right: 189px;
+}
+
+.bg-gold {
+    background: #281D05;
+}
+
+.bg-lightbrown {
+    background-color: #D6A082;
+}
+.bg-lightgreen {
+    background-color: #B9C154;
+}
+.bg-cream {
+    background-color: #F2C9B1;
+}
+.bg-darkgreen {
+    background-color: #8E8948;
+}
+.animate{
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+/* 2. Universal Modification */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+.btn {
+    transition: transform 0.3s;
+    font-family: 'Outfit', sans-serif;
+
+}
+.btn:hover{
+    transform: translateY(-5px);
+    background-color: #B29F91;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* 3. Animations */
+@keyframes slideToBottom {
+    from{
+        transform:  translateY(-300px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+.slideToBottom {
+    animation: slideToBottom ease-in;
+}
+
+@keyframes slideInLeft {
+    from{
+        transform:  translateX(-300px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+.slideInLeft {
+    animation: slideInLeft ease-in;
+}
+
+@keyframes slideInRight {
+    from{
+        transform:  translateX(300px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+.slideInRight {
+    animation: slideInLeft ease;
+}
+
+/* 4. Body Modification */
+
+
+/* 5. Header Modification */
+#brand-logo {
+    width: 72.7px;
+    height: 66.73px;
+}
+
+nav {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+}
+
+.img-boncafe {
+    width: 50vw;
+    height: 50vh;
+}
+
+.img-boncafe1 {
+    width: 705px;
+    height: 356px;
+}
+
+/* Home page big-image */
+.img-big{
+    width: 100vw;
+}
+/* Home page big-paragraph */
+.p-big{
+    font-family: 'Outfit', sans-serif;
+    color: #F2C9B1;
+    font-size: 100px;
+}
+/* Grid menu images sizing */
+.menu-img{
+    width: 525px;
+    height: 323px;
+    padding: 0;
+}
+.menu-img1{
+    width: 1065px;
+    height: 356px;
+    padding: 0;
+}
+/* Feedback modification */
+.feedback{
+    margin: 50px 0 100px 0;
+}
+.fb-img{
+    width: 100px;
+    height: 100px;
+}
+
+figure blockquote{
+    padding: 0 5px 0 5px;
+}
+figure p {
+    margin-top: 10vh;
+    text-align: left;
+}
+
+@media (max-width:1200px) {
+    .ms-6 {
+        margin-left: 101px;
+
+    }
+    .me-6 {
+        margin-right: 101px;
+    }
+    .img-boncafe {
+        width: 436.27px;
+        height: 227.15px;
+    }
+        /* Grid menu images sizing */
+        .menu-img {
+            width: 436.27px;
+            height: 227.15px;
+        }
+    
+        .menu-img1 {
+            width: 585.85px;
+            height: 250.36px;
+        }
+}
+
+@media (max-width:576px){
+    .ms-6 {
+        margin-left: 60px;
+    
+    }
+    
+    .me-6 {
+        margin-right: 60px;
+    }
+
+    /* Grid menu images sizing */
+    .menu-img {
+        width: 343.91px;
+        height: 171.78px;
+    }
+        
+    .menu-img1 {
+        width: 284.65px;
+        height: 148px;
+    }
+}
+
