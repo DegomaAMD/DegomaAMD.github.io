@@ -34,7 +34,9 @@ TABLE OF CONTENTS
 .bg-gold {
     background: #281D05;
 }
-
+.text-brown{
+    color:#281D05;
+}
 .bg-lightbrown {
     background-color: #D6A082;
 }
@@ -152,7 +154,7 @@ nav {
 }
 .menu-img1{
     width: 1065px;
-    height: 356px;
+    height: 360px;
     padding: 0;
 }
 /* Feedback modification */
@@ -173,6 +175,9 @@ figure p {
 }
 
 @media (max-width:1200px) {
+    .img-big{
+        height: 709px;;
+    }
     .ms-6 {
         margin-left: 101px;
 
@@ -216,5 +221,37 @@ figure p {
         width: 284.65px;
         height: 148px;
     }
+}
+
+/* Login Page */
+.img-bg{
+    background-image: url(../assets/img/boncafe2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+.login-form{
+    vertical-align: middle;
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+    background: rgba(255, 255, 255, 0.37);
+    border-radius: 50px;
+    padding: 45px 62px 43px 62px;
+    
+}
+.form-control{
+        width: 50vh;
+        margin: auto;
+}
+.pass-info{
+    width: 10px;
+    height: 10px;
+}
+.pass-hidden{
+    position: absolute;
+    width: 18px;
+    height: 15px;
+    left: 847px;
+    top: 559px;
 }
 

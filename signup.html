@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bon Café</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;800&family=Roboto&family=Rubik+80s+Fade&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <!-- Font Awesome Code Kit -->
+    <script
+      src="https://kit.fontawesome.com/de1d73e5bb.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body class="img-bg position-relative">
+    <header>
+      <!-- Navigation start -->
+      <nav class="navbar navbar-expand-sm bg-white border-bottom">
+        <div class="container-fluid">
+          <a href="#" class="navbar-brand"
+            ><img
+              class="logo-img rounded-pill ms-6"
+              id="brand-logo"
+              src="./assets/img/boncage-logo.jpg"
+              alt=""
+          /></a>
+          <button
+            type="button"
+            class="navbar-toggle d-block d-sm-none me-6"
+            data-bs-toggle="collapse"
+            data-bs-target="#menu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            id="menu"
+            class="justify-content-between collapse navbar-collapse"
+          >
+            <ul class="navbar-nav align-items-425 m-3">
+              <li class="nav-item">
+                <a class="btn nav-link px-3" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="btn nav-link px-3" href="#">Order Online</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="btn nav-link px-3" href="#">About</a>
+              </li>
+            </ul>
+            <div class="d-flex justify-content-end">
+              <div class="mx-2">
+                <a
+                  class="animate slideInLeft btn btn-outline-success rounded-pill px-3"
+                  href=""
+                  >Login</a
+                >
+              </div>
+              <div>
+                <a class="btn btn-success rounded-pill px-3 me-6" href=""
+                  >Signup</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- Navigation end -->
+    </header>
+    <main>
+      <!-- Login start -->
+      <div class="login-form container">
+        <h1 class="fnt-outfit fw-bold text-white">Sign Up</h1>
+        <form>
+          <div>
+            <div>
+              <label class="fnt-outfit form-label text-brown">Username</label>
+            </div>
+            <div>
+              <input
+                type="text"
+                name="username"
+                class="username form-control"
+                id="username"
+                placeholder="Enter username"
+                required
+              />
+            </div>
+          </div>
+          <div>
+            <div>
+              <label class="fnt-outfit form-label text-brown">Email</label>
+            </div>
+            <div>
+              <input
+                type="text"
+                name="username-email"
+                class="username-email form-control"
+                id="username-email"
+                placeholder="Enter Email"
+                required
+              />
+            </div>
+          </div>
+          <div>
+            <div>
+              <label for="" class="fnt-outfit form-label text-brown"
+                >Password
+                <img
+                  class="pass-info"
+                  src="./assets/img/circle-question-solid.svg"
+                  alt=""
+              /></label>
+              <img
+                class="pass-hidden"
+                src="./assets/img/eye-slash-solid.svg"
+                alt=""
+              />
+            </div>
+            <div>
+              <input
+                type="password"
+                name="username-pass"
+                class="username-pass form-control"
+                id="username-pass"
+                placeholder="Enter password"
+                required
+              />
+            </div>
+            <div>
+              <button
+                type="button"
+                class="btn btn-secondary text-white fw-bold"
+              >
+                Sign Up
+              </button>
+            </div>
+            <div class="text-white">
+              Already have an account
+              <span><a href="#" class="btn text-brown fw-bold">Login</a></span>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- Login end -->
+    </main>
+    <footer></footer>
+    <!-- Bootstrap 5 -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
