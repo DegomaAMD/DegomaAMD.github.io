@@ -33,13 +33,16 @@ TABLE OF CONTENTS
 .mt-6 {
     margin-top: 189px;
 }
-
+.text-brown {
+    color: #281D05;
+}
 .bg-gold {
     background: #281D05;
 }
-.text-brown{
-    color:#281D05;
+.bg-brown {
+    background: #B29F91;
 }
+
 .bg-lightbrown {
     background-color: #D6A082;
 }
@@ -438,4 +441,22 @@ border-radius: 17px;
 
     }
 }
+
+/* Menu Page */
+.menu-bg{
+    width: 100vw;
+    height: 50vh;
+}
+.bg-menu{
+    background: linear-gradient(90.56deg, #DCB28A 19.7%, #F1CD93 72.04%);
+}
+.menu-name-bg{
+    padding: 22px 0px 22px 188px;
+    
+}
+.menuImg{
+    width: 127px;
+    height: 124px;
+}
+
 

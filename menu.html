@@ -62,7 +62,7 @@
                 <a class="btn nav-link px-3" href="./index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="btn nav-link px-3" href="#">Order Online</a>
+                <a class="btn nav-link px-3" href="./menu.html">Menu</a>
               </li>
 
               <li class="nav-item">
@@ -83,8 +83,366 @@
       </nav>
       <!-- Navigation end -->
     </header>
-    <main></main>
-    <footer class="container-fluid mt-5">
+    <main class="bg-brown">
+      <!-- Menu Image start -->
+      <div>
+        <img class="menu-bg img-fluid" src="./assets/img/boncafe3.jpg" alt="" />
+      </div>
+      <!-- Menu Image end -->
+
+      <!-- Menu Heading start -->
+      <div class="bg-menu text-brown">
+        <h2 class="menu-name-bg fnt-outfit text-start">MENU</h2>
+      </div>
+      <!-- Menu Heading end -->
+
+      <!-- Menu Desktopview start -->
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <nav
+              id="menu-items"
+              class="h-100 flex-column align-items-stretch pe-4 mt-3"
+            >
+              <nav class="nav nav-pills flex-column">
+                <a
+                  class="nav-link text-start fnt-outfit ms-5 mb-2 ps-3 text-brown"
+                  href="#drinks"
+                  >DRINKS</a
+                >
+                <nav class="nav nav-pills flex-column">
+                  <a
+                    class="nav-link my-1 text-start fnt-outfit ms-5 text-dark fw-light"
+                    href="#espresso"
+                    >Espresso</a
+                  >
+                  <a
+                    class="nav-link my-1 text-start fnt-outfit ms-5 text-dark fw-light"
+                    href="#non-coffee"
+                    >Non-coffee</a
+                  >
+                  <a
+                    class="nav-link my-1 text-start fnt-outfit ms-5 text-dark fw-light"
+                    href="#non-coffeeFrappe"
+                    >Non-coffee based Frappe</a
+                  >
+                  <a
+                    class="nav-link my-1 text-start fnt-outfit ms-5 text-dark fw-light"
+                    href="#coffeeFrappe"
+                    >Coffee based Frappe</a
+                  >
+                  <a
+                    class="nav-link my-1 text-start fnt-outfit ms-5 text-dark fw-light"
+                    href="#refresher"
+                    >Refresher</a
+                  >
+                </nav>
+                <a
+                  class="nav-link text-start fnt-outfit ms-5 mb-2 mt-5 ps-3 text-brown"
+                  href="#foods"
+                  >FOODS</a
+                >
+                <nav class="nav nav-pills flex-column">
+                  <a
+                    class="nav-link my-1 text-start fnt-outfit ms-5 text-dark fw-light"
+                    href="#silog"
+                    >Silog</a
+                  >
+                  <a
+                    class="nav-link my-1 text-start fnt-outfit ms-5 text-dark fw-light"
+                    href="#eggdrop"
+                    >Eggdrop</a
+                  >
+                  <a
+                    class="nav-link my-1 text-start fnt-outfit ms-5 text-dark fw-light"
+                    href="#pastries"
+                    >Pastries</a
+                  >
+                  <a
+                    class="nav-link my-1 text-start fnt-outfit ms-5 text-dark fw-light"
+                    href="#add-ons"
+                    >Add-ons</a
+                  >
+                </nav>
+              </nav>
+            </nav>
+          </div>
+          <div class="col-8 ms-3" id="mainMenu">
+            <div
+              data-bs-spy="scroll"
+              data-bs-target="#menu-items"
+              data-bs-smooth-scroll="true"
+              class="menu-item"
+              tabindex="0"
+            >
+              <div
+                class="my-4 text-start fs-4 fw-bold fnt-outfit text-brown"
+                id="drinks"
+              >
+                DRINKS
+              </div>
+              <div class="d-flex justify-content-between">
+                <div class="d-flex" id="espresso">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/espresso.png"
+                      alt="espresso logo"
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a class="nav-link text-brown" href="#" onclick="changeMainMenuToEspressoPage()">
+                      Espresso
+                    </a>
+                  </div>
+                </div>
+                <div class="d-flex" id="coffeeFrappe">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/coffeeFrappe.png"
+                      alt="coffeeFrappe logo "
+                    />
+                  </div>
+                  <div class="text-start align-self-center fnt-outfit ms-4">
+                    <a class="nav-link me-2" href="#">
+                      <div class="fs-4 text-start text-brown">Frappe</div>
+                      <div class="fs-6 text-start text-brown">Coffee based</div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between">
+                <div class="d-flex" id="non-coffee">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/nonCoffee.png"
+                      alt="non-coffee logo "
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a class="nav-link text-brown" href="#">Non-Coffee</a>
+                  </div>
+                </div>
+                <div class="d-flex" id="refresher">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/refresher.png"
+                      alt="refresher logo "
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a class="nav-link text-brown" href="#">Refresher</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex" id="non-coffeeFrappe">
+                <div class="text-start">
+                  <img
+                    class="menuImg mt-4"
+                    src="./assets/img/nonCoffeeFrappe.png"
+                    alt="non-coffeeFrappe logo "
+                  />
+                </div>
+                <div class="text-start align-self-center fnt-outfit ms-4">
+                  <a class="nav-link" href="#">
+                    <div class="fs-4 text-start text-brown">Frappe</div>
+                    <div class="fs-6 text-start text-brown">
+                      Non-Coffee based
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div
+                class="mt-5 mb-4 text-start fs-4 fw-bold fnt-outfit"
+                id="foods"
+              >
+                FOODS
+              </div>
+              <div class="d-flex justify-content-between">
+                <div class="d-flex" id="silog">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/silog.png"
+                      alt="silog logo"
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a class="nav-link text-brown" href="#">Silog</a>
+                  </div>
+                </div>
+                <div class="d-flex" id="add-ons">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/addOn.png"
+                      alt="add-ons logo"
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a class="nav-link text-brown" href="#">Add-ons</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex" id="eggdrop">
+                <div class="text-start">
+                  <img
+                    class="menuImg mt-4"
+                    src="./assets/img/eggdrop.png"
+                    alt="eggdrop logo"
+                  />
+                </div>
+                <div class="text-start align-self-center fs-4 fnt-outfit ms-4">
+                  <a class="nav-link text-brown" href="#">Eggdrop</a>
+                </div>
+              </div>
+              <div class="d-flex mb-5" id="pastries">
+                <div class="text-start">
+                  <img
+                    class="menuImg mt-4"
+                    src="./assets/img/pastries.png"
+                    alt="pastries logo"
+                  />
+                </div>
+                <div class="text-start align-self-center fs-4 fnt-outfit ms-4">
+                  <a class="nav-link text-brown" href="#">Pastries</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-8 ms-3" id="espressopage">
+            <div
+              data-bs-spy="scroll"
+              data-bs-target="#menu-items"
+              data-bs-smooth-scroll="true"
+              class="menu-item"
+              tabindex="0"
+            >
+              <div class="d-flex" >
+                <a
+                  class="nav-link my-4 text-start fw-bold fnt-outfit text-brown"
+                  href="#" onclick="changeEspressoPageToMainMenu()"
+                  >Menu
+                </a>
+                <span class="align-self-center"> | Drinks</span>
+              </div>
+
+              <div
+                class="mb-4 text-start fs-4 fw-bold fnt-outfit text-brown"
+                id="drinks"
+              >
+                DRINKS
+              </div>
+              <div class="d-flex justify-content-between">
+                <div class="d-flex" id="espresso">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/espresso.png"
+                      alt="espresso logo"
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a class="nav-link text-brown" href="#espressopage">
+                      Espresso
+                    </a>
+                  </div>
+                </div>
+                <div class="d-flex" id="coffeeFrappe">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/coffeeFrappe.png"
+                      alt="coffeeFrappe logo "
+                    />
+                  </div>
+                  <div class="text-start align-self-center fnt-outfit ms-4">
+                    <a class="nav-link me-2" href="#">
+                      <div class="fs-4 text-start text-brown">Frappe</div>
+                      <div class="fs-6 text-start text-brown">Coffee based</div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between">
+                <div class="d-flex" id="non-coffee">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/nonCoffee.png"
+                      alt="non-coffee logo "
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a class="nav-link text-brown" href="#">Non-Coffee</a>
+                  </div>
+                </div>
+                <div class="d-flex" id="refresher">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/refresher.png"
+                      alt="refresher logo "
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a class="nav-link text-brown" href="#">Refresher</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex" id="non-coffeeFrappe">
+                <div class="text-start">
+                  <img
+                    class="menuImg mt-4"
+                    src="./assets/img/nonCoffeeFrappe.png"
+                    alt="non-coffeeFrappe logo "
+                  />
+                </div>
+                <div class="text-start align-self-center fnt-outfit ms-4">
+                  <a class="nav-link" href="#">
+                    <div class="fs-4 text-start text-brown">Frappe</div>
+                    <div class="fs-6 text-start text-brown">
+                      Non-Coffee based
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div
+                class="mt-5 mb-4 text-start fs-4 fw-bold fnt-outfit"
+                id="foods"
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Menu Desktopview end -->
+
+      <!-- Menu Mobileview start -->
+      <!-- Menu Mobileview end -->
+    </main>
+    <footer class="container-fluid">
       <div class="footer-data d-flex justify-content-evenly">
         <div class="d-block d-md-flex">
           <div class="fw-bold fnt-outfit mx-3 px-5">About</div>
@@ -115,5 +473,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="./js/script.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
