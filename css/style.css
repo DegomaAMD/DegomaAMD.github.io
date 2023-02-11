@@ -74,6 +74,16 @@ p{
     font-family: 'Roboto', sans-serif;
 }
 
+footer{
+    background-color: #F2C9B1;
+}
+
+footer i{
+    width: 22px;
+    height: 22px;
+    color: #8E8948;
+}
+
 /* 3. Animations */
 @keyframes slideToBottom {
     from{
@@ -174,6 +184,14 @@ figure p {
     text-align: left;
 }
 
+/* Footer */
+
+.footer-data{
+    padding: 5vw 5vh;
+
+}
+/* Media Query for Landing Page */
+
 @media (max-width:1200px) {
     .img-big{
         height: 709px;;
@@ -230,6 +248,12 @@ figure p {
     background-attachment: fixed;
     
 }
+.welcome-greet, .accnt-description{
+    color: white;
+}
+.login-greet, .fgt-btn, .signup-btn{
+    color: #281D05;
+}
 .login-form{
     vertical-align: middle;
     margin-top: 20vh;
@@ -237,6 +261,8 @@ figure p {
     background: rgba(255, 255, 255, 0.37);
     border-radius: 50px;
     padding: 45px 62px 43px 62px;
+    height:595px ;
+    width: 448px;
     
 }
 .form-control{
@@ -253,5 +279,56 @@ figure p {
     height: 15px;
     left: 847px;
     top: 559px;
+}
+.username, .username-pass, .username-email{
+    width: 315px;
+    height: 60px;
+}
+.username::placeholder, .username-pass::placeholder, .username-email::placeholder{
+    text-align: start;
+}
+.btn-login, .btn-signup{
+    width: 315px;
+    height: 54px;
+    background: linear-gradient(101.87deg, #CB8A58 39.1%, #562B1A 114.65%);
+border-radius: 17px;
+
+}
+.login-btn:hover, .signup-btn:hover, .fgt-btn:hover{
+    background-color: transparent;
+    transform: translateY(0);
+}
+.show-hide{
+    top: 0;
+
+}
+
+@media (max-width:576px){
+    .login-form{
+        margin: 145px 42px 111px 43px;
+    }
+    .username, .username-pass, .username-email{
+        width: 340.62px;
+        height: 60px;
+    }
+    .img-bg{
+        background-image: none;
+    }
+    .welcome-greet{
+        color: black;
+    }
+    .login-greet{
+        color: #8F9698;
+    }
+    .fgt-btn, .signup-btn, .login-btn{
+        color: #8E8948;
+    }
+    .accnt-description{
+        color: black;
+    }
+    .btn-login, .btn-signup{
+        width: 345px;
+
+    }
 }
 
