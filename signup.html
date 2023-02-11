@@ -85,17 +85,17 @@
     <main>
       <!-- Login start -->
       <div class="login-form container">
-        <h1 class="fnt-outfit fw-bold text-white">Sign Up</h1>
+        <h1 class="welcome-greet fnt-outfit fw-bold mb-5 mb-sm-4">Sign Up</h1>
         <form>
           <div>
-            <div>
+            <div class="text-start">
               <label class="fnt-outfit form-label text-brown">Username</label>
             </div>
             <div>
               <input
                 type="text"
                 name="username"
-                class="username form-control"
+                class="username form-control mb-3 text-start"
                 id="username"
                 placeholder="Enter username"
                 required
@@ -103,14 +103,14 @@
             </div>
           </div>
           <div>
-            <div>
+            <div class="text-start">
               <label class="fnt-outfit form-label text-brown">Email</label>
             </div>
             <div>
               <input
                 type="text"
                 name="username-email"
-                class="username-email form-control"
+                class="username-email form-control mb-3 text-start"
                 id="username-email"
                 placeholder="Enter Email"
                 required
@@ -118,7 +118,7 @@
             </div>
           </div>
           <div>
-            <div>
+            <div class="text-start">
               <label for="" class="fnt-outfit form-label text-brown"
                 >Password
                 <img
@@ -126,38 +126,52 @@
                   src="./assets/img/circle-question-solid.svg"
                   alt=""
               /></label>
-              <img
-                class="pass-hidden"
-                src="./assets/img/eye-slash-solid.svg"
-                alt=""
-              />
             </div>
             <div>
               <input
                 type="password"
                 name="username-pass"
-                class="username-pass form-control"
+                class="username-pass form-control mb-4 position-relative text-start"
                 id="username-pass"
                 placeholder="Enter password"
                 required
               />
+              <div><img
+                class="show-hide pass-hidden position-absolute"
+                src="./assets/img/eye-slash-solid.svg"
+                alt=""
+              /></div>
             </div>
+            
             <div>
               <button
                 type="button"
-                class="btn btn-secondary text-white fw-bold"
+                class="btn-signup btn btn-secondary text-white fw-bold mb-4" data-bs-toggle="modal" data-bs-target="#signup-greetings" onclick="usernameValue()"
               >
                 Sign Up
               </button>
             </div>
-            <div class="text-white">
+            <div class="accnt-description">
               Already have an account
-              <span><a href="#" class="btn text-brown fw-bold">Login</a></span>
+              <span><a href="./login.html" class="login-btn btn text-brown fw-bold">Login</a></span>
             </div>
           </div>
         </form>
       </div>
       <!-- Login end -->
+      <!-- Email sent Modal start -->
+      <div class="modal fade" id="signup-greetings" tabindex="-1" aria-labelledby="signup-greetings" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+              <div class="modal-header"><h1>Account Created</h1></div>
+              <div class="modal-body"><h2 class="text-start">Welcome!</h2><p id="usernameInput" class="text-start"></p></div>
+              <div class="modal-footer">
+                <a href="./login.html" type="button" class="btn btn-outline-secondary" onclick="">Login</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Email sent Modal end -->
     </main>
     <footer></footer>
     <!-- Bootstrap 5 -->
@@ -167,5 +181,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="./js/script.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
