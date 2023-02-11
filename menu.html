@@ -4,7 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bon Café</title>
+    <title>Bon Café | Menu</title>
+    <link
+      rel="shortcut icon"
+      type="image/jpg"
+      href="./assets/img/boncage-logo.ico"
+      class="rounded-circle"
+    />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,12 +33,12 @@
     <!-- CSS Stylesheet -->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body class="bg-gold">
+  <body>
     <header>
       <!-- Navigation start -->
       <nav class="navbar navbar-expand-sm bg-white border-bottom">
         <div class="container-fluid">
-          <a href="#" class="navbar-brand"
+          <a href="./index.html" class="navbar-brand"
             ><img
               class="logo-img rounded-pill ms-6"
               id="brand-logo"
@@ -53,7 +59,7 @@
           >
             <ul class="navbar-nav align-items-center m-3">
               <li class="nav-item">
-                <a class="btn nav-link px-3" href="#">Home</a>
+                <a class="btn nav-link px-3" href="./index.html">Home</a>
               </li>
               <li class="nav-item">
                 <a class="btn nav-link px-3" href="#">Order Online</a>
@@ -66,14 +72,9 @@
             <div class="d-flex justify-content-end">
               <div class="mx-2">
                 <a
-                  class="animate slideInLeft btn btn-outline-success rounded-pill px-3"
-                  href=""
+                  class="animate slideInLeft btn btn-outline-darkgreen rounded-pill px-3 me-5"
+                  href="./login.html"
                   >Login</a
-                >
-              </div>
-              <div>
-                <a class="btn btn-success rounded-pill px-3 me-6" href=""
-                  >Signup</a
                 >
               </div>
             </div>
@@ -82,7 +83,31 @@
       </nav>
       <!-- Navigation end -->
     </header>
-    <footer></footer>
+    <main></main>
+    <footer class="container-fluid mt-5">
+      <div class="footer-data d-flex justify-content-evenly">
+        <div class="d-block d-md-flex">
+          <div class="fw-bold fnt-outfit mx-3 px-5">About</div>
+          <div class="fw-bold fnt-outfit mx-3 px-5">
+            <i class="fa-solid fa-location-dot"></i> Find our store
+          </div>
+          <div class="fw-bold fnt-outfit mx-3 px-5">Promotion</div>
+        </div>
+        <div class="fw-bold fnt-outfit">
+          Our Socials
+          <div class="fnt-roboto fw-light text-start mt-2">
+            <i class="fa-brands fa-facebook"></i> Facebook
+          </div>
+          <div class="fnt-roboto fw-light text-start mt-2">
+            <i class="fa-brands fa-instagram"></i> Instagram
+          </div>
+          <div class="fnt-roboto fw-light text-start mt-2">
+            <i class="fa-brands fa-tiktok"></i> Tiktok
+          </div>
+        </div>
+      </div>
+      <div class="align-bottom">© 2023 Bon Café. All rights reserved.</div>
+    </footer>
     <!-- Bootstrap 5 -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"

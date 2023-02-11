@@ -21,7 +21,7 @@ TABLE OF CONTENTS
     font-family: 'Roboto', sans-serif;
 }
 .fs-7{
-    font-size: 14px;
+    font-size: 13px;
 }
 .ms-6 {
     margin-left: 189px;
@@ -29,6 +29,9 @@ TABLE OF CONTENTS
 
 .me-6 {
     margin-right: 189px;
+}
+.mt-6 {
+    margin-top: 189px;
 }
 
 .bg-gold {
@@ -49,17 +52,39 @@ TABLE OF CONTENTS
 .bg-darkgreen {
     background-color: #8E8948;
 }
+.btn-outline-darkgreen{
+        --bs-btn-color: #8E8948;
+            --bs-btn-border-color: #8E8948;
+            --bs-btn-hover-color: #fff;
+            --bs-btn-hover-bg: #8E8948;
+            --bs-btn-hover-border-color: #8E8948;
+            --bs-btn-focus-shadow-rgb: 25, 135, 84;
+            --bs-btn-active-color: #fff;
+            --bs-btn-active-bg: #8E89484;
+            --bs-btn-active-border-color: #8E8948;
+            --bs-btn-active-shadow: inset 0 3px 5pxrgba(0, 0, 0, 0.125);
+            --bs-btn-disabled-color: #8E8948;
+            --bs-btn-disabled-bg: transparent;
+            --bs-btn-disabled-border-color: #8E8948;
+            --bs-gradient: none;
+    color: #8E8948;
+}
 .animate{
     animation-duration: 1s;
     animation-fill-mode: both;
 }
 
 /* 2. Universal Modification */
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-align: center;
+    
+}
+html{
+    scroll-behavior: smooth;
 }
 .btn {
     transition: transform 0.3s;
@@ -68,7 +93,7 @@ TABLE OF CONTENTS
 }
 .btn:hover{
     transform: translateY(-5px);
-    background-color: #B29F91;
+    /* background-color: #B29F91; */
 }
 p{
     font-family: 'Roboto', sans-serif;
@@ -157,8 +182,12 @@ nav {
     font-size: 100px;
 }
 /* Grid menu images sizing */
+.rows{
+    width: 656px;
+    height: 487px;
+}
 .menu-img{
-    width: 525px;
+    width: 656px;
     height: 323px;
     padding: 0;
 }
@@ -170,6 +199,10 @@ nav {
 /* Feedback modification */
 .feedback{
     margin: 50px 0 100px 0;
+}
+.feedback-rows{
+    background: rgba(214, 160, 130, 0.75);
+        border-radius: 15px;
 }
 .fb-img{
     width: 100px;
@@ -191,6 +224,29 @@ figure p {
 
 }
 /* Media Query for Landing Page */
+@media (min-width:1400px) {
+        .feedback-rows {
+                width: 322px;
+                height: 421px;
+            }
+}
+@media (max-width:1400px) {
+    /* Grid menu images sizing */
+        .rows {
+            width: 566px;
+            height: 487px;
+        }
+    
+        .menu-img {
+            width: 566px;
+            height: 323px;
+        }
+        .feedback-rows {
+            width: 277px;
+            height: 486px;
+        }
+
+}
 
 @media (max-width:1200px) {
     .img-big{
@@ -208,8 +264,12 @@ figure p {
         height: 227.15px;
     }
         /* Grid menu images sizing */
+        .rows {
+            width: 476px;
+            height: 382.48px;
+        }
         .menu-img {
-            width: 436.27px;
+            width: 476px;
             height: 227.15px;
         }
     
@@ -217,6 +277,41 @@ figure p {
             width: 585.85px;
             height: 250.36px;
         }
+        .feedback-rows {
+            width: 472px;
+            height: 381px;
+        }
+}
+@media (max-width:992px) {
+    .rows {
+            width: 356px;
+            height: 382.48px;
+        }
+    
+        .menu-img {
+            width: 356px;
+            height: 227.15px;
+        }
+    /* Feebcack row */
+    .feedback-rows{
+        width: 342px ;
+        height: 411px ;
+    }
+}
+@media (max-width:768px) {
+    .rows {
+            width: 266px;
+            height: 382.48px;
+        }
+    
+        .menu-img {
+            width: 266px;
+            height: 217.15px;
+        }
+    .feedback-rows {
+        width: 502px;
+        height: 332px;
+    }
 }
 
 @media (max-width:576px){
@@ -230,14 +325,26 @@ figure p {
     }
 
     /* Grid menu images sizing */
+    .rows {
+        margin: 0px 104.045px ;
+        width: 343.91px;
+        height: 362.48px;
+    }
     .menu-img {
         width: 343.91px;
-        height: 171.78px;
+        height: 229px;
     }
         
     .menu-img1 {
-        width: 284.65px;
-        height: 148px;
+        width: 304.65px;
+        height: 168px;
+    }
+    .feedback-rows {
+        width: 432px;
+        height: 400px;
+    }
+    .feedback-files{
+        margin: 0px 48px;
     }
 }
 

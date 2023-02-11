@@ -4,7 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bon Café</title>
+    <title>Bon Café | Sign-up</title>
+    <link
+      rel="shortcut icon"
+      type="image/jpg"
+      href="./assets/img/boncage-logo.ico"
+      class="rounded-circle"
+    />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -32,7 +38,7 @@
       <!-- Navigation start -->
       <nav class="navbar navbar-expand-sm bg-white border-bottom">
         <div class="container-fluid">
-          <a href="#" class="navbar-brand"
+          <a href="./index.html" class="navbar-brand"
             ><img
               class="logo-img rounded-pill ms-6"
               id="brand-logo"
@@ -51,9 +57,9 @@
             id="menu"
             class="justify-content-between collapse navbar-collapse"
           >
-            <ul class="navbar-nav align-items-425 m-3">
+            <ul class="navbar-nav align-items-center m-3">
               <li class="nav-item">
-                <a class="btn nav-link px-3" href="#">Home</a>
+                <a class="btn nav-link px-3" href="./index.html">Home</a>
               </li>
               <li class="nav-item">
                 <a class="btn nav-link px-3" href="#">Order Online</a>
@@ -66,14 +72,9 @@
             <div class="d-flex justify-content-end">
               <div class="mx-2">
                 <a
-                  class="animate slideInLeft btn btn-outline-success rounded-pill px-3"
-                  href=""
+                  class="animate slideInLeft btn btn-outline-darkgreen rounded-pill px-3 me-5"
+                  href="./login.html"
                   >Login</a
-                >
-              </div>
-              <div>
-                <a class="btn btn-success rounded-pill px-3 me-6" href=""
-                  >Signup</a
                 >
               </div>
             </div>
@@ -136,37 +137,61 @@
                 placeholder="Enter password"
                 required
               />
-              <div><img
-                class="show-hide pass-hidden position-absolute"
-                src="./assets/img/eye-slash-solid.svg"
-                alt=""
-              /></div>
+              <div>
+                <img
+                  class="show-hide pass-hidden position-absolute"
+                  src="./assets/img/eye-slash-solid.svg"
+                  alt=""
+                />
+              </div>
             </div>
-            
+
             <div>
               <button
                 type="button"
-                class="btn-signup btn btn-secondary text-white fw-bold mb-4" data-bs-toggle="modal" data-bs-target="#signup-greetings" onclick="usernameValue()"
+                class="btn-signup btn btn-secondary text-white fw-bold mb-4"
+                data-bs-toggle="modal"
+                data-bs-target="#signup-greetings"
+                onclick="usernameValue()"
               >
                 Sign Up
               </button>
             </div>
             <div class="accnt-description">
               Already have an account
-              <span><a href="./login.html" class="login-btn btn text-brown fw-bold">Login</a></span>
+              <span
+                ><a href="./login.html" class="login-btn btn text-brown fw-bold"
+                  >Login</a
+                ></span
+              >
             </div>
           </div>
         </form>
       </div>
       <!-- Login end -->
       <!-- Email sent Modal start -->
-      <div class="modal fade" id="signup-greetings" tabindex="-1" aria-labelledby="signup-greetings" aria-hidden="true">
+      <div
+        class="modal fade"
+        id="signup-greetings"
+        tabindex="-1"
+        aria-labelledby="signup-greetings"
+        aria-hidden="true"
+      >
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
-              <div class="modal-header"><h1>Account Created</h1></div>
-              <div class="modal-body"><h2 class="text-start">Welcome!</h2><p id="usernameInput" class="text-start"></p></div>
-              <div class="modal-footer">
-                <a href="./login.html" type="button" class="btn btn-outline-secondary" onclick="">Login</a>
+            <div class="modal-header"><h1>Account Created</h1></div>
+            <div class="modal-body">
+              <h2 class="text-start">Welcome!</h2>
+              <p id="usernameInput" class="text-start"></p>
+            </div>
+            <div class="modal-footer">
+              <a
+                href="./login.html"
+                type="button"
+                class="btn btn-outline-secondary"
+                onclick=""
+                >Login</a
+              >
             </div>
           </div>
         </div>
