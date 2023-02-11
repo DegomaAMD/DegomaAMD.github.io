@@ -86,8 +86,12 @@
       <!-- Login start -->
       <div class="login-form container">
         <div class="mb-5 mb-sm-4">
-          <h1 class="welcome-greet fnt-outfit fw-bold text-start">Welcome back!</h1>
-          <h4 class="login-greet fnt-roboto m-2 text-start">Login to your account</h4>
+          <h1 class="welcome-greet fnt-outfit fw-bold text-start">
+            Welcome back!
+          </h1>
+          <h4 class="login-greet fnt-roboto m-2 text-start">
+            Login to your account
+          </h4>
         </div>
         <form class="">
           <div class="justify-content-center">
@@ -123,58 +127,111 @@
             </div>
             <!-- Forgot Password start -->
             <div class="text-end">
-              <a href="#" class="fgt-btn btn fw-bold mb-3"type="button" data-bs-toggle="modal" data-bs-target="#forgotpass-modal"> Forgot password</a>
+              <a
+                href="#"
+                class="fgt-btn btn fw-bold mb-3"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#forgotpass-modal"
+              >
+                Forgot password</a
+              >
             </div>
             <!-- Forgot Password end -->
 
-              <!-- Forgot Password Modal start -->
-              <div class="modal fade" id="forgotpass-modal" tabindex="-1" aria-labelledby="forgotpass-modal" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered ">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h1>Reset Password</h1>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    
-                    <div class="modal-body">
-                      <p>Reset your password by providing your account email below.</p>
-                      <form action="#">
-                        <div class="form-floating">
-                          <input type="email" class="form-control m-0 text-start" id="inputEmail" placeholder="name@example.com" value="" required>
-                          <label for="inputEmail">Email address</label>
-                          <button type="button" class="btn btn-primary mt-4" data-bs-toggle="modal" data-bs-target="#forgotpass-emailverification" onclick="passResetValue()">Submit</button>
-                        </div>
-                      </form>
-                    </div>
-                    <div class="modal-footer" >
-                      
-                    </div>
+            <!-- Forgot Password Modal start -->
+            <div
+              class="modal fade"
+              id="forgotpass-modal"
+              tabindex="-1"
+              aria-labelledby="forgotpass-modal"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1>Reset Password</h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+
+                  <div class="modal-body">
+                    <p>
+                      Reset your password by providing your account email below.
+                    </p>
+                    <form action="#">
+                      <div class="form-floating">
+                        <input
+                          type="email"
+                          class="form-control m-0 text-start"
+                          id="inputEmail"
+                          placeholder="name@example.com"
+                          value=""
+                          required
+                        />
+                        <label for="inputEmail">Email address</label>
+                        <button
+                          type="button"
+                          class="btn btn-primary mt-4"
+                          data-bs-toggle="modal"
+                          data-bs-target="#forgotpass-emailverification"
+                          onclick="passResetValue()"
+                        >
+                          Submit
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer"></div>
+                </div>
+              </div>
+            </div>
+            <!-- Forgot Password Modal end -->
+            <!-- Email sent Modal start -->
+            <div
+              class="modal fade"
+              id="forgotpass-emailverification"
+              tabindex="-1"
+              aria-labelledby="forgotpass-emailverification"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header"><h1>Check your email</h1></div>
+                  <div class="modal-body">
+                    <p class="text-start">
+                      You'll receive a link in the email you supplied that will
+                      enable you to reset your account password.
+                      <br />
+                      <br />
+                      <b id="resetEmail"></b>
+                      <br />
+                      <br />
+                      If you don't see the email, check other places it might
+                      be, like your junk, spam, social, or other folders.
+                    </p>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      id="resendEmail"
+                      type="button"
+                      class="btn btn-outline-secondary"
+                      onclick="emailResend()"
+                    >
+                      Resend Email
+                    </button>
                   </div>
                 </div>
               </div>
-<!-- Forgot Password Modal end -->
-<!-- Email sent Modal start -->
-                   <div class="modal fade" id="forgotpass-emailverification" tabindex="-1" aria-labelledby="forgotpass-emailverification" aria-hidden="true">
-                      <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                            <div class="modal-header"><h1>Check your email</h1></div>
-                            <div class="modal-body"><p class="text-start">You'll receive a link in the email you 
-                              supplied that will enable you to reset your account password.
-                              <br>
-                              <br>
-                           <b id="resetEmail"></b>
-                            <br>
-                            <br>
-                            If you don't see the email, check other places it might be, like your junk, spam, social, or other folders.</p></div>
-                            <div class="modal-footer">
-                              <button id="resendEmail" type="button" class="btn btn-outline-secondary" onclick="emailResend()">Resend Email</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- Email sent Modal end -->
+            </div>
+            <!-- Email sent Modal end -->
             <div>
-              <a href="./home.html"
+              <a
+                href="./home.html"
                 type="button"
                 class="btn-login btn btn-secondary text-white fw-bold mb-5"
               >
@@ -184,7 +241,9 @@
             <div class="accnt-description">
               Need an account?
               <span
-                ><a href="./signup.html" class="signup-btn btn fw-bold">Sign Up</a></span
+                ><a href="./signup.html" class="signup-btn btn fw-bold"
+                  >Sign Up</a
+                ></span
               >
             </div>
           </div>
