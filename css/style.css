@@ -458,5 +458,16 @@ border-radius: 17px;
     width: 127px;
     height: 124px;
 }
+.item-image{
+    height: 417px ;
+    width: 437px ;
+}
+.menu-modal .modal{
+    --bs-modal-width: 1000px;
+}
+.menu-modal .modal-header{
+    border-bottom: none;
+    padding: 16px 16px 0px 16px;
+}
 
 
