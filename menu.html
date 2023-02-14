@@ -66,7 +66,7 @@
               </li>
 
               <li class="nav-item">
-                <a class="btn nav-link px-3" href="#">About</a>
+                <a class="btn nav-link px-3" href="#back-to-mainMenu">About</a>
               </li>
             </ul>
             <div class="d-flex justify-content-end">
@@ -92,87 +92,93 @@
 
       <!-- Menu Heading start -->
       <div class="bg-menu text-brown">
-        <h2 class="menu-name-bg fnt-outfit text-start">MENU</h2>
+        <h2 class="menu-name-bg fnt-outfit text-start" id="back-to-mainMenu">
+          MENU
+        </h2>
       </div>
       <!-- Menu Heading end -->
 
-      <!-- Menu Desktopview start -->
-      <div class="container">
+      <!-- Menu start -->
+      <div class="container-fluid container-lg">
         <div class="row">
-          <div class="col-3">
+          <div class="col-3 d-none d-md-block">
             <nav
               id="menu-items"
               class="h-100 flex-column align-items-stretch pe-4 mt-3"
             >
               <nav class="nav nav-pills flex-column">
                 <a
-                  class="nav-link text-start fnt-outfit ms-5 mb-2 ps-3 text-brown"
-                  href="#drinks"
+                  class="nav-link text-start fnt-outfit ms-lg-5 mb-2 ps-3 text-brown"
+                  href="#back-to-mainMenu"
                   >DRINKS</a
                 >
                 <nav class="nav nav-pills flex-column">
                   <a
-                    class="nav-link my-1 text-start fnt-outfit ms-5 text-dark fw-light"
-                    href="#"
+                    class="nav-link my-1 text-start fnt-outfit ms-lg-5 text-dark fw-light"
+                    href="#back-to-mainMenu"
                     onclick="changeMainMenuToEspressoPage()"
                     >Espresso</a
                   >
                   <a
-                    class="nav-link my-1 text-start fnt-outfit ms-5 text-dark fw-light"
-                    href="#"
+                    class="nav-link my-1 text-start fnt-outfit ms-lg-5 text-dark fw-light"
+                    href="#back-to-mainMenu"
                     onclick="changeMainMenuTononCoffeePage()"
                     >Non-coffee</a
                   >
                   <a
-                    class="nav-link my-1 text-start fnt-outfit ms-5 text-dark fw-light"
-                    href="#"
+                    class="nav-link my-1 text-start fnt-outfit ms-lg-5 text-dark fw-light"
+                    href="#back-to-mainMenu"
                     onclick="changeMainMenuTofrappeNonCoffee()"
                     >Non-coffee based Frappe</a
                   >
                   <a
-                    class="nav-link my-1 text-start fnt-outfit ms-5 text-dark fw-light"
-                    href="#"
+                    class="nav-link my-1 text-start fnt-outfit ms-lg-5 text-dark fw-light"
+                    href="#back-to-mainMenu"
                     onclick="changeMainMenuTofrappeCoffee()"
                     >Coffee based Frappe</a
                   >
                   <a
-                    class="nav-link my-1 text-start fnt-outfit ms-5 text-dark fw-light"
-                    href="#"
+                    class="nav-link my-1 text-start fnt-outfit ms-lg-5 text-dark fw-light"
+                    href="#back-to-mainMenu"
                     onclick="changeMainMenuTorefresher()"
                     >Refresher</a
                   >
                 </nav>
                 <a
-                  class="nav-link text-start fnt-outfit ms-5 mb-2 mt-5 ps-3 text-brown"
-                  href="#foods"
+                  class="nav-link text-start fnt-outfit ms-lg-5 mb-2 mt-5 ps-3 text-brown"
+                  href="#back-to-mainMenu"
                   >FOODS</a
                 >
                 <nav class="nav nav-pills flex-column">
                   <a
-                    class="nav-link my-1 text-start fnt-outfit ms-5 text-dark fw-light"
-                    href="#silog"
+                    class="nav-link my-1 text-start fnt-outfit ms-lg-5 text-dark fw-light"
+                    href="#back-to-mainMenu"
+                    onclick="changeMainMenuTosilogPage()"
                     >Silog</a
                   >
                   <a
-                    class="nav-link my-1 text-start fnt-outfit ms-5 text-dark fw-light"
-                    href="#eggdrop"
+                    class="nav-link my-1 text-start fnt-outfit ms-lg-5 text-dark fw-light"
+                    href="#back-to-mainMenu"
+                    onclick="changeMainMenuToeggdropPage()"
                     >Eggdrop</a
                   >
                   <a
-                    class="nav-link my-1 text-start fnt-outfit ms-5 text-dark fw-light"
-                    href="#pastries"
+                    class="nav-link my-1 text-start fnt-outfit ms-lg-5 text-dark fw-light"
+                    href="#back-to-mainMenu"
+                    onclick="changeMainMenuTopastriesPage()"
                     >Pastries</a
                   >
                   <a
-                    class="nav-link my-1 text-start fnt-outfit ms-5 text-dark fw-light"
-                    href="#add-ons"
+                    class="nav-link my-1 text-start fnt-outfit ms-lg-5 text-dark fw-light"
+                    href="#back-to-mainMenu"
+                    onclick="changeMainMenuToaddOnsPage()"
                     >Add-ons</a
                   >
                 </nav>
               </nav>
             </nav>
           </div>
-          <div class="col-8 ms-3" id="mainMenu">
+          <div class="col-12 col-sm-9" id="mainMenu">
             <div
               data-bs-spy="scroll"
               data-bs-target="#menu-items"
@@ -186,7 +192,7 @@
               >
                 DRINKS
               </div>
-              <div class="d-flex justify-content-between">
+              <div class="d-block d-sm-flex justify-content-between">
                 <div class="d-flex" id="espresso">
                   <div class="text-start">
                     <img
@@ -200,7 +206,7 @@
                   >
                     <a
                       class="nav-link text-brown"
-                      href="#"
+                      href="#back-to-mainMenu"
                       onclick="changeMainMenuToEspressoPage()"
                     >
                       Espresso
@@ -218,7 +224,7 @@
                   <div class="text-start align-self-center fnt-outfit ms-4">
                     <a
                       class="nav-link me-2"
-                      href="#"
+                      href="#back-to-mainMenu"
                       onclick="changeMainMenuTofrappeCoffee()"
                     >
                       <div class="fs-4 text-start text-brown">Frappe</div>
@@ -227,7 +233,7 @@
                   </div>
                 </div>
               </div>
-              <div class="d-flex justify-content-between">
+              <div class="d-block d-sm-flex justify-content-between">
                 <div class="d-flex" id="non-coffee">
                   <div class="text-start">
                     <img
@@ -241,7 +247,7 @@
                   >
                     <a
                       class="nav-link text-brown"
-                      href="#"
+                      href="#back-to-mainMenu"
                       onclick="changeMainMenuTononCoffeePage()"
                       >Non-Coffee</a
                     >
@@ -260,7 +266,7 @@
                   >
                     <a
                       class="nav-link text-brown"
-                      href="#"
+                      href="#back-to-mainMenu"
                       onclick="changeMainMenuTorefresher()"
                       >Refresher</a
                     >
@@ -279,7 +285,7 @@
                 <div class="text-start align-self-center fnt-outfit ms-4">
                   <a
                     class="nav-link"
-                    href="#"
+                    href="#back-to-mainMenu"
                     onclick="changeMainMenuTofrappeNonCoffee()"
                   >
                     <div class="fs-4 text-start text-brown">Frappe</div>
@@ -295,7 +301,7 @@
               >
                 FOODS
               </div>
-              <div class="d-flex justify-content-between">
+              <div class="d-block d-sm-flex justify-content-between">
                 <div class="d-flex" id="silog">
                   <div class="text-start">
                     <img
@@ -307,7 +313,12 @@
                   <div
                     class="text-start align-self-center fs-4 fnt-outfit ms-4"
                   >
-                    <a class="nav-link text-brown" href="#">Silog</a>
+                    <a
+                      class="nav-link text-brown"
+                      href="#back-to-mainMenu"
+                      onclick="changeMainMenuTosilogPage()"
+                      >Silog</a
+                    >
                   </div>
                 </div>
                 <div class="d-flex" id="add-ons">
@@ -321,7 +332,12 @@
                   <div
                     class="text-start align-self-center fs-4 fnt-outfit ms-4"
                   >
-                    <a class="nav-link text-brown" href="#">Add-ons</a>
+                    <a
+                      class="nav-link text-brown"
+                      href="#back-to-mainMenu"
+                      onclick="changeMainMenuToaddOnsPage()"
+                      >Add-ons</a
+                    >
                   </div>
                 </div>
               </div>
@@ -335,7 +351,12 @@
                   />
                 </div>
                 <div class="text-start align-self-center fs-4 fnt-outfit ms-4">
-                  <a class="nav-link text-brown" href="#">Eggdrop</a>
+                  <a
+                    class="nav-link text-brown"
+                    href="#back-to-mainMenu"
+                    onclick="changeMainMenuToeggdropPage()"
+                    >Eggdrop</a
+                  >
                 </div>
               </div>
               <div class="d-flex mb-5" id="pastries">
@@ -347,7 +368,12 @@
                   />
                 </div>
                 <div class="text-start align-self-center fs-4 fnt-outfit ms-4">
-                  <a class="nav-link text-brown" href="#">Pastries</a>
+                  <a
+                    class="nav-link text-brown"
+                    href="#back-to-mainMenu"
+                    onclick="changeMainMenuTopastriesPage()"
+                    >Pastries</a
+                  >
                 </div>
               </div>
             </div>
@@ -365,7 +391,7 @@
               <div class="d-flex">
                 <a
                   class="nav-link my-4 text-start fw-bold fnt-outfit text-brown pe-1"
-                  href="#"
+                  href="#back-to-mainMenu"
                   onclick="changeEspressoPageToMainMenu()"
                   >Menu
                 </a>
@@ -379,7 +405,7 @@
               >
                 ESPRESSO
               </div>
-              <div class="d-flex justify-content-between">
+              <div class="d-block d-sm-flex justify-content-between">
                 <div class="d-flex">
                   <div class="text-start">
                     <img
@@ -393,7 +419,7 @@
                   >
                     <a
                       class="nav-link text-brown"
-                      href="#"
+                      href="#back-to-mainMenu"
                       type="button"
                       data-bs-toggle="modal"
                       data-bs-target="#spanishLatte-modal"
@@ -415,7 +441,7 @@
                   >
                     <a
                       class="nav-link text-brown me-2"
-                      href="#"
+                      href="#back-to-mainMenu"
                       type="button"
                       data-bs-toggle="modal"
                       data-bs-target="#hazelnutEspresso-modal"
@@ -425,7 +451,7 @@
                   </div>
                 </div>
               </div>
-              <div class="d-flex justify-content-between">
+              <div class="d-block d-sm-flex justify-content-between">
                 <div class="d-flex">
                   <div class="text-start">
                     <img
@@ -439,7 +465,7 @@
                   >
                     <a
                       class="nav-link text-brown"
-                      href="#"
+                      href="#back-to-mainMenu"
                       type="button"
                       data-bs-toggle="modal"
                       data-bs-target="#frenchVanilla-modal"
@@ -461,7 +487,7 @@
                   >
                     <a
                       class="nav-link text-brown me-5"
-                      href="#"
+                      href="#back-to-mainMenu"
                       type="button"
                       data-bs-toggle="modal"
                       data-bs-target="#dirtyMatcha-modal"
@@ -471,7 +497,7 @@
                 </div>
               </div>
 
-              <div class="d-flex justify-content-between">
+              <div class="d-block d-sm-flex justify-content-between">
                 <div class="d-flex">
                   <div class="text-start">
                     <img
@@ -485,7 +511,8 @@
                   >
                     <a
                       class="nav-link text-brown"
-                      href="#"
+                      href="#back-to-mainMenu"
+                      ="#"
                       type="button"
                       data-bs-toggle="modal"
                       data-bs-target="#caramelMacchiato-modal"
@@ -507,7 +534,8 @@
                   >
                     <a
                       class="nav-link text-brown me-4"
-                      href="#"
+                      href="#back-to-mainMenu"
+                      ="#"
                       type="button"
                       data-bs-toggle="modal"
                       data-bs-target="#saltedCaramel-modal"
@@ -516,7 +544,7 @@
                   </div>
                 </div>
               </div>
-              <div class="d-flex justify-content-between mb-5">
+              <div class="d-block d-sm-flex justify-content-between mb-5">
                 <div class="d-flex">
                   <div class="text-start">
                     <img
@@ -530,7 +558,8 @@
                   >
                     <a
                       class="nav-link text-brown"
-                      href="#"
+                      href="#back-to-mainMenu"
+                      ="#"
                       type="button"
                       data-bs-toggle="modal"
                       data-bs-target="#whiteChocolate-modal"
@@ -552,7 +581,8 @@
                   >
                     <a
                       class="nav-link text-brown"
-                      href="#"
+                      href="#back-to-mainMenu"
+                      ="#"
                       type="button"
                       data-bs-toggle="modal"
                       data-bs-target="#bonCafeSignature-modal"
@@ -585,7 +615,7 @@
                       aria-label="Close"
                     ></button>
                   </div>
-                  <div class="modal-body d-flex">
+                  <div class="modal-body d-block d-md-flex">
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
@@ -634,7 +664,7 @@
                       aria-label="Close"
                     ></button>
                   </div>
-                  <div class="modal-body d-flex">
+                  <div class="modal-body d-block d-md-flex">
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
@@ -681,7 +711,7 @@
                       aria-label="Close"
                     ></button>
                   </div>
-                  <div class="modal-body d-flex">
+                  <div class="modal-body d-block d-md-flex">
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
@@ -734,7 +764,7 @@
                       aria-label="Close"
                     ></button>
                   </div>
-                  <div class="modal-body d-flex">
+                  <div class="modal-body d-block d-md-flex">
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
@@ -785,7 +815,7 @@
                       aria-label="Close"
                     ></button>
                   </div>
-                  <div class="modal-body d-flex">
+                  <div class="modal-body d-block d-md-flex">
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
@@ -834,7 +864,7 @@
                       aria-label="Close"
                     ></button>
                   </div>
-                  <div class="modal-body d-flex">
+                  <div class="modal-body d-block d-md-flex">
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
@@ -879,7 +909,7 @@
                       aria-label="Close"
                     ></button>
                   </div>
-                  <div class="modal-body d-flex">
+                  <div class="modal-body d-block d-md-flex">
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
@@ -923,7 +953,7 @@
                       aria-label="Close"
                     ></button>
                   </div>
-                  <div class="modal-body d-flex">
+                  <div class="modal-body d-block d-md-flex">
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
@@ -961,7 +991,7 @@
               <div class="d-flex">
                 <a
                   class="nav-link my-4 text-start fw-bold fnt-outfit text-brown pe-1"
-                  href="#"
+                  href="#back-to-mainMenu"
                   onclick="changenonCoffeePageToMainMenu()"
                   >Menu
                 </a>
@@ -975,7 +1005,7 @@
               >
                 NON-COFFEE
               </div>
-              <div class="d-flex justify-content-between">
+              <div class="d-block d-sm-flex justify-content-between">
                 <div class="d-flex">
                   <div class="text-start">
                     <img
@@ -989,7 +1019,7 @@
                   >
                     <a
                       class="nav-link text-brown"
-                      href="#"
+                      href="#back-to-mainMenu"
                       type="button"
                       data-bs-toggle="modal"
                       data-bs-target="#vanilla-modal"
@@ -1011,7 +1041,7 @@
                   >
                     <a
                       class="nav-link text-brown me-2"
-                      href="#"
+                      href="#back-to-mainMenu"
                       type="button"
                       data-bs-toggle="modal"
                       data-bs-target="#matchaLatte-modal"
@@ -1021,7 +1051,7 @@
                   </div>
                 </div>
               </div>
-              <div class="d-flex justify-content-between">
+              <div class="d-block d-sm-flex justify-content-between">
                 <div class="d-flex">
                   <div class="text-start">
                     <img
@@ -1035,7 +1065,7 @@
                   >
                     <a
                       class="nav-link text-brown"
-                      href="#"
+                      href="#back-to-mainMenu"
                       type="button"
                       data-bs-toggle="modal"
                       data-bs-target="#straberryLatte-modal"
@@ -1057,18 +1087,18 @@
                   >
                     <a
                       class="nav-link text-brown"
-                      href="#"
+                      href="#back-to-mainMenu"
                       type="button"
                       data-bs-toggle="modal"
                       data-bs-target="#nuttelaLatte-modal"
-                      >Nuttela Latte</a
+                      >Nutella Latte</a
                     >
                   </div>
                 </div>
               </div>
 
-              <div class="d-flex justify-content-between">
-                <div class="d-flex">
+              <div class="d-block d-sm-flex justify-content-between">
+                <div class="d-flex mb-5">
                   <div class="text-start">
                     <img
                       class="menuImg mt-4"
@@ -1081,7 +1111,7 @@
                   >
                     <a
                       class="nav-link text-brown"
-                      href="#"
+                      href="#back-to-mainMenu"
                       type="button"
                       data-bs-toggle="modal"
                       data-bs-target="#matchaOreo-modal"
@@ -1093,6 +1123,230 @@
             </div>
           </div>
           <!-- Non-Coffee Menu end -->
+
+          <!-- NON-COFFEE ITEM MODAL START -->
+          <!-- Vanilla Modal start -->
+          <div class="menu-modal">
+            <div
+              class="modal fade"
+              id="vanilla-modal"
+              tabindex="-1"
+              aria-labelledby="vanilla-modal"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body d-block d-md-flex">
+                    <div class="ms-3 mb-4">
+                      <img
+                        class="item-image rounded-2"
+                        src="./assets/img/espresso.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ps-4 align-items-center">
+                      <h1 class="text-start fnt-outfit fw-bold mt-5">
+                        Vanilla
+                      </h1>
+                      <p class="text-start fnt-roboto mt-4">
+                        This rich and creamy blend of vanilla bean, milk and ice
+                        topped with whipped cream takes va-va-vanilla flavor to
+                        another level.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Vanilla Modal end -->
+          <!-- Matcha Latte Modal start -->
+          <div class="menu-modal">
+            <div
+              class="modal fade"
+              id="matchaLatte-modal"
+              tabindex="-1"
+              aria-labelledby="matchaLatte-modal"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body d-block d-md-flex">
+                    <div class="ms-3 mb-4">
+                      <img
+                        class="item-image rounded-2"
+                        src="./assets/img/nonCoffee.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ps-4 align-items-center">
+                      <h1 class="text-start fnt-outfit fw-bold mt-5">
+                        Matcha Latte
+                      </h1>
+                      <p class="text-start fnt-roboto mt-4">
+                        Matcha latte is a milk-based drink, and it works just
+                        like a regular latte. Except it has a shot of Matcha tea
+                        instead of a shot of espresso . By a shot of Matcha I
+                        mean a 2 oz serving of thick Matcha tea, sweetened and
+                        mixed into the milk foam as any other coffee latte would
+                        be.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Matcha Latte Modal end -->
+          <!-- Strawberry Latte Modal start -->
+          <div class="menu-modal">
+            <div
+              class="modal fade"
+              id="straberryLatte-modal"
+              tabindex="-1"
+              aria-labelledby="straberryLatte-modal"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body d-block d-md-flex">
+                    <div class="ms-3 mb-4">
+                      <img
+                        class="item-image rounded-2"
+                        src="./assets/img/strawberryLatte.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ps-4 align-items-center">
+                      <h1 class="text-start fnt-outfit fw-bold mt-5">
+                        Strawberry Latte
+                      </h1>
+                      <p class="text-start fnt-roboto mt-4">
+                        Served over ice, this strawberry latte offers stunning
+                        layers of espresso, milk, and homemade strawberry syrup.
+                        The strawberries are the perfect complement to bold
+                        espresso and velvety milk!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Strawberry Latte Modal end -->
+          <!-- Nutella Latte Modal start -->
+          <div class="menu-modal">
+            <div
+              class="modal fade"
+              id="nuttelaLatte-modal"
+              tabindex="-1"
+              aria-labelledby="nuttelaLatte-modal"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body d-block d-md-flex">
+                    <div class="ms-3 mb-4">
+                      <img
+                        class="item-image rounded-2"
+                        src="./assets/img/bonCafeSignature.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ps-4 align-items-center">
+                      <h1 class="text-start fnt-outfit fw-bold mt-5">
+                        Nutella Latte
+                      </h1>
+                      <p class="text-start fnt-roboto mt-4">
+                        It’s a unique combination of espresso, whole milk, and
+                        Nutella. The Nutella latte has unique flavors that come
+                        with a regular latte but is sweetened with Nutella!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Nutella Latte Modal end -->
+          <!-- Matcha Oreo Modal start -->
+          <div class="menu-modal">
+            <div
+              class="modal fade"
+              id="matchaOreo-modal"
+              tabindex="-1"
+              aria-labelledby="matchaOreo-modal"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body d-block d-md-flex">
+                    <div class="ms-3 mb-4">
+                      <img
+                        class="item-image rounded-2"
+                        src="./assets/img/matchaOreo.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ps-4 align-items-center">
+                      <h1 class="text-start fnt-outfit fw-bold mt-5">
+                        Matcha Oreo
+                      </h1>
+                      <p class="text-start fnt-roboto mt-4">
+                        There are days when you need a sweet, warm cup of
+                        coffee. An espresso won’t cut it. But you get bored with
+                        the same old options – latte, cappuccino. Until a combo
+                        catches your eye – the mighty vanilla meets caramel in a
+                        cup of macchiato.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Matcha Oreo Modal end -->
+          <!-- NON-COFFEE ITEM MODAL END -->
 
           <!-- Frappe Non-Coffee Menu start -->
           <div class="col-8 ms-3 d-none" id="frappeNonCoffee">
@@ -1106,7 +1360,7 @@
               <div class="d-flex">
                 <a
                   class="nav-link my-4 text-start fw-bold fnt-outfit text-brown pe-1"
-                  href="#"
+                  href="#back-to-mainMenu"
                   onclick="changefrappeNonCoffeeToMainMenu()"
                   >Menu
                 </a>
@@ -1122,7 +1376,7 @@
                   Non-Coffee based
                 </div>
               </div>
-              <div class="d-flex justify-content-between">
+              <div class="d-block d-sm-flex justify-content-between">
                 <div class="d-flex">
                   <div class="text-start">
                     <img
@@ -1136,7 +1390,7 @@
                   >
                     <a
                       class="nav-link text-brown"
-                      href="#"
+                      href="#back-to-mainMenu"
                       type="button"
                       data-bs-toggle="modal"
                       data-bs-target="#matchaFrappe-modal"
@@ -1158,7 +1412,7 @@
                   >
                     <a
                       class="nav-link text-brown me-2"
-                      href="#"
+                      href="#back-to-mainMenu"
                       type="button"
                       data-bs-toggle="modal"
                       data-bs-target="#darkchocoFrappe-modal"
@@ -1169,7 +1423,7 @@
                   </div>
                 </div>
               </div>
-              <div class="d-flex justify-content-between">
+              <div class="d-block d-sm-flex justify-content-between">
                 <div class="d-flex">
                   <div class="text-start">
                     <img
@@ -1183,7 +1437,7 @@
                   >
                     <a
                       class="nav-link text-brown"
-                      href="#"
+                      href="#back-to-mainMenu"
                       type="button"
                       data-bs-toggle="modal"
                       data-bs-target="#strawberryFrappe-modal"
@@ -1205,7 +1459,7 @@
                   >
                     <a
                       class="nav-link text-brown"
-                      href="#"
+                      href="#back-to-mainMenu"
                       type="button"
                       data-bs-toggle="modal"
                       data-bs-target="#oreoNutella-modal"
@@ -1215,8 +1469,8 @@
                 </div>
               </div>
 
-              <div class="d-flex justify-content-between">
-                <div class="d-flex">
+              <div class="d-block d-sm-flex justify-content-between">
+                <div class="d-flex mb-5">
                   <div class="text-start">
                     <img
                       class="menuImg mt-4 rounded-circle"
@@ -1229,7 +1483,7 @@
                   >
                     <a
                       class="nav-link text-brown"
-                      href="#"
+                      href="#back-to-mainMenu"
                       type="button"
                       data-bs-toggle="modal"
                       data-bs-target="#oreoCheesecake-modal"
@@ -1241,6 +1495,228 @@
             </div>
           </div>
           <!-- Frappe Non-Coffee Menu end -->
+
+          <!-- FRAPPE NON-COFFEE ITEM MODAL START -->
+          <!-- Matche Frappe Modal start -->
+          <div class="menu-modal">
+            <div
+              class="modal fade"
+              id="matchaFrappe-modal"
+              tabindex="-1"
+              aria-labelledby="matchaFrappe-modal"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body d-block d-md-flex">
+                    <div class="ms-3 mb-4">
+                      <img
+                        class="item-image rounded-2"
+                        src="./assets/img/matchaFrappe.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ps-4 align-items-center">
+                      <h1 class="text-start fnt-outfit fw-bold mt-5">
+                        Matcha Frappe
+                      </h1>
+                      <p class="text-start fnt-roboto mt-4">
+                        This blend of sweetened premium matcha green tea, milk
+                        and ice—topped off with sweetened whipped cream—inspires
+                        a delicious boost and good green vibes.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Matche Frappe Modal end -->
+          <!-- Dark Choco Modal start -->
+          <div class="menu-modal">
+            <div
+              class="modal fade"
+              id="darkchocoFrappe-modal"
+              tabindex="-1"
+              aria-labelledby="darkchocoFrappe-modal"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body d-block d-md-flex">
+                    <div class="ms-3 mb-4">
+                      <img
+                        class="item-image rounded-2"
+                        src="./assets/img/darkchocoFrappe.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ps-4 align-items-center">
+                      <h1 class="text-start fnt-outfit fw-bold mt-5">
+                        Dark Choco w/ Oreo Frappe
+                      </h1>
+                      <p class="text-start fnt-roboto mt-4">
+                        This Chocolate Frappe recipe is just as delicious as one
+                        you could buy at an expensive coffee shop but free from
+                        bad ingredients and so much less expensive.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Dark Choco Modal end -->
+          <!-- Strawberry Modal start -->
+          <div class="menu-modal">
+            <div
+              class="modal fade"
+              id="strawberryFrappe-modal"
+              tabindex="-1"
+              aria-labelledby="strawberryFrappe-modal"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body d-block d-md-flex">
+                    <div class="ms-3 mb-4">
+                      <img
+                        class="item-image rounded-2"
+                        src="./assets/img/strawberryFrappe.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ps-4 align-items-center">
+                      <h1 class="text-start fnt-outfit fw-bold mt-5">
+                        Strawberry w/ Oreo
+                      </h1>
+                      <p class="text-start fnt-roboto mt-4">
+                        Strawberries and oreo are blended with ice and topped
+                        with a swirl of whipped cream. Sip on the crème of the
+                        crop.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Strawberry Modal end -->
+          <!-- Oreo Nutella Modal start -->
+          <div class="menu-modal">
+            <div
+              class="modal fade"
+              id="oreoNutella-modal"
+              tabindex="-1"
+              aria-labelledby="oreoNutella-modal"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body d-block d-md-flex">
+                    <div class="ms-3 mb-4">
+                      <img
+                        class="item-image rounded-2"
+                        src="./assets/img/nutella Latte.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ps-4 align-items-center">
+                      <h1 class="text-start fnt-outfit fw-bold mt-5">
+                        Oreo Nutella
+                      </h1>
+                      <p class="text-start fnt-roboto mt-4">
+                        There are days when you need a sweet, warm cup of
+                        coffee. An espresso won’t cut it. But you get bored with
+                        the same old options – latte, cappuccino. Until a combo
+                        catches your eye – the mighty vanilla meets caramel in a
+                        cup of macchiato.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Oreo Nutella Modal end -->
+          <!-- Oreo Cheesecake Modal start -->
+          <div class="menu-modal">
+            <div
+              class="modal fade"
+              id="oreoCheesecake-modal"
+              tabindex="-1"
+              aria-labelledby="oreoCheesecake-modal"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body d-block d-md-flex">
+                    <div class="ms-3 mb-4">
+                      <img
+                        class="item-image rounded-2"
+                        src="./assets/img/bonCafeSignature.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ps-4 align-items-center">
+                      <h1 class="text-start fnt-outfit fw-bold mt-5">
+                        Oreo Cheesecake
+                      </h1>
+                      <p class="text-start fnt-roboto mt-4">
+                        Oreo Cheesecake Frappe is a chocolatey cold non-based
+                        coffee packed with the goodness and crunchiness of Oreo
+                        cookies. It is a heavenly frappe recipe using three
+                        different forms of chocolate syrup, Oreo cookies, Oreo
+                        Cheesecake filling.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Oreo Cheesecake Modal end -->
+          <!-- FRAPPE NON-COFFEE ITEM MODAL START -->
 
           <!-- Frappe Coffee Menu start -->
           <div class="col-8 ms-3 d-none" id="frappeCoffee">
@@ -1254,7 +1730,7 @@
               <div class="d-flex">
                 <a
                   class="nav-link my-4 text-start fw-bold fnt-outfit text-brown pe-1"
-                  href="#"
+                  href="#back-to-mainMenu"
                   onclick="changefrappeCoffeeToMainMenu()"
                   >Menu
                 </a>
@@ -1270,7 +1746,7 @@
                   Coffee based
                 </div>
               </div>
-              <div class="d-flex justify-content-between">
+              <div class="d-block d-sm-flex justify-content-between">
                 <div class="d-flex">
                   <div class="text-start">
                     <img
@@ -1284,7 +1760,7 @@
                   >
                     <a
                       class="nav-link text-brown"
-                      href="#"
+                      href="#back-to-mainMenu"
                       type="button"
                       data-bs-toggle="modal"
                       data-bs-target="#darkChoco-modal"
@@ -1306,7 +1782,7 @@
                   >
                     <a
                       class="nav-link text-brown me-2"
-                      href="#"
+                      href="#back-to-mainMenu"
                       type="button"
                       data-bs-toggle="modal"
                       data-bs-target="#saltedCaramel-modal"
@@ -1316,7 +1792,7 @@
                   </div>
                 </div>
               </div>
-              <div class="d-flex justify-content-between">
+              <div class="d-block d-sm-flex justify-content-between">
                 <div class="d-flex">
                   <div class="text-start">
                     <img
@@ -1330,7 +1806,7 @@
                   >
                     <a
                       class="nav-link text-brown"
-                      href="#"
+                      href="#back-to-mainMenu"
                       type="button"
                       data-bs-toggle="modal"
                       data-bs-target="#caramelMacchiato-modal"
@@ -1352,7 +1828,7 @@
                   >
                     <a
                       class="nav-link text-brown"
-                      href="#"
+                      href="#back-to-mainMenu"
                       type="button"
                       data-bs-toggle="modal"
                       data-bs-target="#chocoHazelnut-modal"
@@ -1362,8 +1838,8 @@
                 </div>
               </div>
 
-              <div class="d-flex justify-content-between">
-                <div class="d-flex">
+              <div class="d-block d-sm-flex justify-content-between">
+                <div class="d-flex mb-5">
                   <div class="text-start">
                     <img
                       class="menuImg mt-4 rounded-circle"
@@ -1376,7 +1852,7 @@
                   >
                     <a
                       class="nav-link text-brown"
-                      href="#"
+                      href="#back-to-mainMenu"
                       type="button"
                       data-bs-toggle="modal"
                       data-bs-target="#dirtyMatcha-modal"
@@ -1388,6 +1864,95 @@
             </div>
           </div>
           <!-- Frappe Coffee Menu end -->
+
+          <!-- FRAPPE COFFEE_BASED ITEM MODAL START -->
+          <!-- Choco Hazelnut Modal start -->
+          <div class="menu-modal">
+            <div
+              class="modal fade"
+              id="chocoHazelnut-modal"
+              tabindex="-1"
+              aria-labelledby="chocoHazelnut-modal"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body d-block d-md-flex">
+                    <div class="ms-3 mb-4">
+                      <img
+                        class="item-image rounded-2"
+                        src="./assets/img/darkchocoFrappe.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ps-4 align-items-center">
+                      <h1 class="text-start fnt-outfit fw-bold mt-5">
+                        Choco Hazelnut
+                      </h1>
+                      <p class="text-start fnt-roboto mt-4">
+                        Never dread your mornings again! Indulge in this healthy
+                        and decadent Chocolate Hazelnut Frappuccino, I promise
+                        it will make your day amazing!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Choco Hazelnut Modal end -->
+          <!-- Dark Choco Modal start -->
+          <div class="menu-modal">
+            <div
+              class="modal fade"
+              id="darkChoco-modal"
+              tabindex="-1"
+              aria-labelledby="darkChoco-modal"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body d-block d-md-flex">
+                    <div class="ms-3 mb-4">
+                      <img
+                        class="item-image rounded-2"
+                        src="./assets/img/nutella Latte.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ps-4 align-items-center">
+                      <h1 class="text-start fnt-outfit fw-bold mt-5">
+                        Dark Choco
+                      </h1>
+                      <p class="text-start fnt-roboto mt-4">
+                        This Chocolate Frappe recipe is just as delicious as one
+                        you could buy at an expensive coffee shop but free from
+                        bad ingredients and so much less expensive.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Dark Choco Modal end -->
+          <!-- FRAPPE COFFEE_BASED ITEM MODAL END -->
 
           <!-- Refresher Menu start -->
           <div class="col-8 ms-3 d-none" id="refresherDrinks">
@@ -1401,7 +1966,7 @@
               <div class="d-flex">
                 <a
                   class="nav-link my-4 text-start fw-bold fnt-outfit text-brown pe-1"
-                  href="#"
+                  href="#back-to-mainMenu"
                   onclick="changerefresherToMainMenu()"
                   >Menu
                 </a>
@@ -1415,7 +1980,7 @@
               >
                 REFRESHER
               </div>
-              <div class="d-flex justify-content-between">
+              <div class="d-block d-sm-flex justify-content-between">
                 <div class="d-flex">
                   <div class="text-start">
                     <img
@@ -1429,7 +1994,7 @@
                   >
                     <a
                       class="nav-link text-brown"
-                      href="#"
+                      href="#back-to-mainMenu"
                       type="button"
                       data-bs-toggle="modal"
                       data-bs-target="#sparklingLemon-modal"
@@ -1438,7 +2003,7 @@
                     </a>
                   </div>
                 </div>
-                <div class="d-flex">
+                <div class="d-flex mb-5">
                   <div class="text-start">
                     <img
                       class="menuImg mt-4"
@@ -1451,7 +2016,7 @@
                   >
                     <a
                       class="nav-link text-brown me-2"
-                      href="#"
+                      href="#back-to-mainMenu"
                       type="button"
                       data-bs-toggle="modal"
                       data-bs-target="#sparklingStrawberry-modal"
@@ -1464,22 +2029,970 @@
             </div>
           </div>
           <!-- Refresher Menu end -->
+
+          <!-- REFRESHER ITEM MODAL START -->
+          <!-- Sparkling Lemon Modal start -->
+          <div class="menu-modal">
+            <div
+              class="modal fade"
+              id="sparklingLemon-modal"
+              tabindex="-1"
+              aria-labelledby="sparklingLemon-modal"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body d-block d-md-flex">
+                    <div class="ms-3 mb-4">
+                      <img
+                        class="item-image rounded-2"
+                        src="./assets/img/sparklingLemon.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ps-4 align-items-center">
+                      <h1 class="text-start fnt-outfit fw-bold mt-5">
+                        Sparkling Lemon
+                      </h1>
+                      <p class="text-start fnt-roboto mt-4">
+                        Sparkling fruit beverage is rich in the real juices of
+                        ripe lemons for a very fresh, crisp taste. A rich
+                        combination of ingredients offers a balance of
+                        pleasingly tart and sweet notes. Its bright, fragrant
+                        notes and zesty finish create a delicious way to quench
+                        your thirst. Fruit beverage is perfect for keeping in
+                        breakrooms, reception areas, kitchens and more.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Sparkling Lemon Modal end -->
+          <!-- Sparkling Strawberry Modal start -->
+          <div class="menu-modal">
+            <div
+              class="modal fade"
+              id="sparklingStrawberry-modal"
+              tabindex="-1"
+              aria-labelledby="sparklingStrawberry-modal"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body d-block d-md-flex">
+                    <div class="ms-3 mb-4">
+                      <img
+                        class="item-image rounded-2"
+                        src="./assets/img/sparklingStrawberry.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ps-4 align-items-center">
+                      <h1 class="text-start fnt-outfit fw-bold mt-5">
+                        Sparkling Strawberry
+                      </h1>
+                      <p class="text-start fnt-roboto mt-4">
+                        Sparkling fruit beverage is rich in the real juices of
+                        ripe strawberry for a very fresh, crisp taste. A rich
+                        combination of ingredients offers a balance of
+                        pleasingly tart and sweet notes. Fruit beverage is
+                        perfect for keeping in breakrooms, reception areas,
+                        kitchens and more.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Sparkling Strawberry Modal end -->
+          <!-- REFRESHER ITEM MODAL END -->
+
+          <!-- Silog Menu start -->
+          <div class="col-8 ms-3 d-none" id="silogPage">
+            <div
+              data-bs-spy="scroll"
+              data-bs-target="#menu-items"
+              data-bs-smooth-scroll="true"
+              class="menu-item"
+              tabindex="0"
+            >
+              <div class="d-flex">
+                <a
+                  class="nav-link my-4 text-start fw-bold fnt-outfit text-brown pe-1"
+                  href="#back-to-mainMenu"
+                  onclick="changesilogPageToMainMenu()"
+                  >Menu
+                </a>
+                <span class="align-self-center pe-1"> | </span>
+                <span class="align-self-center"> Drinks</span>
+              </div>
+
+              <div
+                class="mb-4 text-start fs-4 fw-bold fnt-outfit text-brown"
+                id="drinks"
+              >
+                ESPRESSO
+              </div>
+              <div class="d-block d-sm-flex justify-content-between">
+                <div class="d-flex">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/espresso.png"
+                      alt="Spanish Latte logo"
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown"
+                      href="#back-to-mainMenu"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#spanishLatte-modal"
+                    >
+                      Spanish Latte
+                    </a>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/hazelnutEspresso-modified.png"
+                      alt="hazelnutEspresso logo "
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown me-2"
+                      href="#back-to-mainMenu"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#hazelnutEspresso-modal"
+                    >
+                      Hazelnut Espresso
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="d-block d-sm-flex justify-content-between">
+                <div class="d-flex">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/frenchVanilla-modified.png"
+                      alt="frenchVanilla logo "
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown"
+                      href="#back-to-mainMenu"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#frenchVanilla-modal"
+                      >French Vanilla</a
+                    >
+                  </div>
+                </div>
+
+                <div class="d-flex me-3">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/dirtyMatcha-modified.png"
+                      alt="dirtyMatcha logo "
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown me-5"
+                      href="#back-to-mainMenu"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#dirtyMatcha-modal"
+                      >Dirty Matcha</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-block d-sm-flex justify-content-between">
+                <div class="d-flex">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/caramelMacchiato-modified.png"
+                      alt="caramelMacchiato logo "
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown"
+                      href="#back-to-mainMenu"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#caramelMacchiato-modal"
+                      >Caramel Macchiato</a
+                    >
+                  </div>
+                </div>
+
+                <div class="d-flex me-3">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/saltedCaramel-modified.png"
+                      alt="saltedCaramel logo "
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown me-4"
+                      href="#back-to-mainMenu"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#saltedCaramel-modal"
+                      >Salted Caramel</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="d-block d-sm-flex justify-content-between mb-5">
+                <div class="d-flex">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/whiteChocolate-modified.png"
+                      alt="whiteChocolate logo "
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown"
+                      href="#back-to-mainMenu"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#whiteChocolate-modal"
+                      >White Chocolate</a
+                    >
+                  </div>
+                </div>
+
+                <div class="d-flex">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/bonCafeSignature-modified.png"
+                      alt="bonCafeSignature logo "
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown"
+                      href="#back-to-mainMenu"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#bonCafeSignature-modal"
+                      >Bon Cafe Signature</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Silog Menu end -->
+          <!-- Add-ons Menu start -->
+          <div class="col-8 ms-3 d-none" id="addOnsPage">
+            <div
+              data-bs-spy="scroll"
+              data-bs-target="#menu-items"
+              data-bs-smooth-scroll="true"
+              class="menu-item"
+              tabindex="0"
+            >
+              <div class="d-flex">
+                <a
+                  class="nav-link my-4 text-start fw-bold fnt-outfit text-brown pe-1"
+                  href="#back-to-mainMenu"
+                  onclick="changeaddOnsPageToMainMenu()"
+                  >Menu
+                </a>
+                <span class="align-self-center pe-1"> | </span>
+                <span class="align-self-center"> Drinks</span>
+              </div>
+
+              <div
+                class="mb-4 text-start fs-4 fw-bold fnt-outfit text-brown"
+                id="drinks"
+              >
+                ESPRESSO
+              </div>
+              <div class="d-block d-sm-flex justify-content-between">
+                <div class="d-flex">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/espresso.png"
+                      alt="Spanish Latte logo"
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown"
+                      href="#back-to-mainMenu"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#spanishLatte-modal"
+                    >
+                      Spanish Latte
+                    </a>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/hazelnutEspresso-modified.png"
+                      alt="hazelnutEspresso logo "
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown me-2"
+                      href="#back-to-mainMenu"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#hazelnutEspresso-modal"
+                    >
+                      Hazelnut Espresso
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="d-block d-sm-flex justify-content-between">
+                <div class="d-flex">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/frenchVanilla-modified.png"
+                      alt="frenchVanilla logo "
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown"
+                      href="#back-to-mainMenu"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#frenchVanilla-modal"
+                      >French Vanilla</a
+                    >
+                  </div>
+                </div>
+
+                <div class="d-flex me-3">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/dirtyMatcha-modified.png"
+                      alt="dirtyMatcha logo "
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown me-5"
+                      href="#back-to-mainMenu"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#dirtyMatcha-modal"
+                      >Dirty Matcha</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-block d-sm-flex justify-content-between">
+                <div class="d-flex">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/caramelMacchiato-modified.png"
+                      alt="caramelMacchiato logo "
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown"
+                      href="#back-to-mainMenu"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#caramelMacchiato-modal"
+                      >Caramel Macchiato</a
+                    >
+                  </div>
+                </div>
+
+                <div class="d-flex me-3">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/saltedCaramel-modified.png"
+                      alt="saltedCaramel logo "
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown me-4"
+                      href="#back-to-mainMenu"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#saltedCaramel-modal"
+                      >Salted Caramel</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="d-block d-sm-flex justify-content-between mb-5">
+                <div class="d-flex">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/whiteChocolate-modified.png"
+                      alt="whiteChocolate logo "
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown"
+                      href="#back-to-mainMenu"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#whiteChocolate-modal"
+                      >White Chocolate</a
+                    >
+                  </div>
+                </div>
+
+                <div class="d-flex">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/bonCafeSignature-modified.png"
+                      alt="bonCafeSignature logo "
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown"
+                      href="#back-to-mainMenu"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#bonCafeSignature-modal"
+                      >Bon Cafe Signature</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Add-ons Menu end -->
+          <!-- Eggdrop Menu start -->
+          <div class="col-8 ms-3 d-none" id="eggdropPage">
+            <div
+              data-bs-spy="scroll"
+              data-bs-target="#menu-items"
+              data-bs-smooth-scroll="true"
+              class="menu-item"
+              tabindex="0"
+            >
+              <div class="d-flex">
+                <a
+                  class="nav-link my-4 text-start fw-bold fnt-outfit text-brown pe-1"
+                  href="#back-to-mainMenu"
+                  onclick="changeeggdropPageToMainMenu()"
+                  >Menu
+                </a>
+                <span class="align-self-center pe-1"> | </span>
+                <span class="align-self-center"> Drinks</span>
+              </div>
+
+              <div
+                class="mb-4 text-start fs-4 fw-bold fnt-outfit text-brown"
+                id="drinks"
+              >
+                ESPRESSO
+              </div>
+              <div class="d-block d-sm-flex justify-content-between">
+                <div class="d-flex">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/espresso.png"
+                      alt="Spanish Latte logo"
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown"
+                      href="#back-to-mainMenu"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#spanishLatte-modal"
+                    >
+                      Spanish Latte
+                    </a>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/hazelnutEspresso-modified.png"
+                      alt="hazelnutEspresso logo "
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown me-2"
+                      href="#back-to-mainMenu"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#hazelnutEspresso-modal"
+                    >
+                      Hazelnut Espresso
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="d-block d-sm-flex justify-content-between">
+                <div class="d-flex">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/frenchVanilla-modified.png"
+                      alt="frenchVanilla logo "
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown"
+                      href="#back-to-mainMenu"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#frenchVanilla-modal"
+                      >French Vanilla</a
+                    >
+                  </div>
+                </div>
+
+                <div class="d-flex me-3">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/dirtyMatcha-modified.png"
+                      alt="dirtyMatcha logo "
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown me-5"
+                      href="#back-to-mainMenu"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#dirtyMatcha-modal"
+                      >Dirty Matcha</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-block d-sm-flex justify-content-between">
+                <div class="d-flex">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/caramelMacchiato-modified.png"
+                      alt="caramelMacchiato logo "
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown"
+                      href="#back-to-mainMenu"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#caramelMacchiato-modal"
+                      >Caramel Macchiato</a
+                    >
+                  </div>
+                </div>
+
+                <div class="d-flex me-3">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/saltedCaramel-modified.png"
+                      alt="saltedCaramel logo "
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown me-4"
+                      href="#back-to-mainMenu"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#saltedCaramel-modal"
+                      >Salted Caramel</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="d-block d-sm-flex justify-content-between mb-5">
+                <div class="d-flex">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/whiteChocolate-modified.png"
+                      alt="whiteChocolate logo "
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown"
+                      href="#back-to-mainMenu"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#whiteChocolate-modal"
+                      >White Chocolate</a
+                    >
+                  </div>
+                </div>
+
+                <div class="d-flex">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/bonCafeSignature-modified.png"
+                      alt="bonCafeSignature logo "
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown"
+                      href="#back-to-mainMenu"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#bonCafeSignature-modal"
+                      >Bon Cafe Signature</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Eggdrop Menu end -->
+          <!-- Pastries Menu start -->
+          <div class="col-8 ms-3 d-none" id="pastriesPage">
+            <div
+              data-bs-spy="scroll"
+              data-bs-target="#menu-items"
+              data-bs-smooth-scroll="true"
+              class="menu-item"
+              tabindex="0"
+            >
+              <div class="d-flex">
+                <a
+                  class="nav-link my-4 text-start fw-bold fnt-outfit text-brown pe-1"
+                  href="#back-to-mainMenu"
+                  onclick="changepastriesPageToMainMenu()"
+                  >Menu
+                </a>
+                <span class="align-self-center pe-1"> | </span>
+                <span class="align-self-center"> Drinks</span>
+              </div>
+
+              <div
+                class="mb-4 text-start fs-4 fw-bold fnt-outfit text-brown"
+                id="drinks"
+              >
+                ESPRESSO
+              </div>
+              <div class="d-block d-sm-flex justify-content-between">
+                <div class="d-flex">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/espresso.png"
+                      alt="Spanish Latte logo"
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown"
+                      href="#back-to-mainMenu"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#spanishLatte-modal"
+                    >
+                      Spanish Latte
+                    </a>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/hazelnutEspresso-modified.png"
+                      alt="hazelnutEspresso logo "
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown me-2"
+                      href="#back-to-mainMenu"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#hazelnutEspresso-modal"
+                    >
+                      Hazelnut Espresso
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="d-block d-sm-flex justify-content-between">
+                <div class="d-flex">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/frenchVanilla-modified.png"
+                      alt="frenchVanilla logo "
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown"
+                      href="#back-to-mainMenu"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#frenchVanilla-modal"
+                      >French Vanilla</a
+                    >
+                  </div>
+                </div>
+
+                <div class="d-flex me-3">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/dirtyMatcha-modified.png"
+                      alt="dirtyMatcha logo "
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown me-5"
+                      href="#back-to-mainMenu"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#dirtyMatcha-modal"
+                      >Dirty Matcha</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-block d-sm-flex justify-content-between">
+                <div class="d-flex">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/caramelMacchiato-modified.png"
+                      alt="caramelMacchiato logo "
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown"
+                      href="#back-to-mainMenu"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#caramelMacchiato-modal"
+                      >Caramel Macchiato</a
+                    >
+                  </div>
+                </div>
+
+                <div class="d-flex me-3">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/saltedCaramel-modified.png"
+                      alt="saltedCaramel logo "
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown me-4"
+                      href="#back-to-mainMenu"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#saltedCaramel-modal"
+                      >Salted Caramel</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="d-block d-sm-flex justify-content-between mb-5">
+                <div class="d-flex">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/whiteChocolate-modified.png"
+                      alt="whiteChocolate logo "
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown"
+                      href="#back-to-mainMenu"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#whiteChocolate-modal"
+                      >White Chocolate</a
+                    >
+                  </div>
+                </div>
+
+                <div class="d-flex">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/bonCafeSignature-modified.png"
+                      alt="bonCafeSignature logo "
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown"
+                      href="#back-to-mainMenu"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#bonCafeSignature-modal"
+                      >Bon Cafe Signature</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Pastries Menu end -->
         </div>
       </div>
 
-      <!-- Menu Desktopview end -->
-
-      <!-- Menu Mobileview start -->
-      <!-- Menu Mobileview end -->
+      <!-- Menu end -->
     </main>
     <footer class="container-fluid">
       <div class="footer-data d-flex justify-content-evenly">
         <div class="d-block d-md-flex">
-          <div class="fw-bold fnt-outfit mx-3 px-5">About</div>
-          <div class="fw-bold fnt-outfit mx-3 px-5">
+          <div
+            class="fw-bold fnt-outfit text-start text-sm-center me-3 pe-5 mx-sm-3 px-sm-5"
+          >
+            About
+          </div>
+          <div
+            class="fw-bold fnt-outfit text-start text-sm-center me-3 pe-5 mx-sm-3 px-sm-5"
+          >
             <i class="fa-solid fa-location-dot"></i> Find our store
           </div>
-          <div class="fw-bold fnt-outfit mx-3 px-5">Promotion</div>
+          <div
+            class="fw-bold fnt-outfit text-start text-sm-center me-3 pe-5 mx-sm-3 px-sm-5"
+          >
+            Promotion
+          </div>
         </div>
         <div class="fw-bold fnt-outfit">
           Our Socials
@@ -1494,7 +3007,7 @@
           </div>
         </div>
       </div>
-      <div class="align-bottom">© 2023 Bon Café. All rights reserved.</div>
+      <div class="align-bottom pb-2">© 2023 Bon Café. All rights reserved.</div>
     </footer>
     <!-- Bootstrap 5 -->
     <script

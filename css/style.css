@@ -471,3 +471,23 @@ border-radius: 17px;
 }
 
 
+@media (max-width:768px){
+    .menu-name-bg {
+            padding: 22px 0px 22px 100px;
+    
+        }
+    .menu-item{
+        width: 90vw ;
+
+    }
+}
+@media (max-width:576px){
+    .menu-name-bg {
+            padding: 22px 0px 22px 50px;
+    
+        }
+    .item-image {
+        height: 40vh;
+        width: 80vw;
+    }
+}

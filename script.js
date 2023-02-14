@@ -1,13 +1,17 @@
-const emailInput = document.getElementById('inputEmail');
-const resetEmail = document.getElementById("resetEmail")
-const resendEmail = document.getElementById('resendEmail');
-const username = document.getElementById('username');
-const mainMenu = document.getElementById('mainMenu');
-const espressoPage = document.getElementById('espressopage');
-const nonCoffeePage = document.getElementById('nonCoffee');
-const frappeNonCoffee = document.getElementById('frappeNonCoffee');
-const frappeCoffee = document.getElementById('frappeCoffee');
-const refresherDrinks = document.getElementById('refresherDrinks');
+const emailInput = document.querySelector('#inputEmail');
+const resetEmail = document.querySelector("#resetEmail")
+const resendEmail = document.querySelector('#resendEmail');
+const username = document.querySelector('#username');
+const mainMenu = document.querySelector('#mainMenu');
+const espressoPage = document.querySelector('#espressopage');
+const nonCoffeePage = document.querySelector('#nonCoffee');
+const frappeNonCoffee = document.querySelector('#frappeNonCoffee');
+const frappeCoffee = document.querySelector('#frappeCoffee');
+const refresherDrinks = document.querySelector('#refresherDrinks');
+const silogPage = document.querySelector('#silogPage');
+const addOnsPage = document.querySelector('#addOnsPage');
+const eggdropPage = document.querySelector('#eggdropPage');
+const pastriesPage = document.querySelector('#pastriesPage');
 
 function passResetValue(){
     valueEmailPass = emailInput.value;
@@ -26,43 +30,111 @@ function usernameValue(){
 // Espresso Menu
 function changeMainMenuToEspressoPage(){
     espressoPage.setAttribute ('class', 'col-8 ms-3');
+    espressoPage.style.display = 'block';
+    mainMenu.style.display = 'none';
     mainMenu.replaceWith(espressoPage, mainMenu);
 }
 function changeEspressoPageToMainMenu(){
+    mainMenu.style.display = 'block';
+    espressoPage.style.display = 'none';
     espressoPage.replaceWith(mainMenu, espressoPage);   
 }
 // Non-Coffee Menu
 function changeMainMenuTononCoffeePage(){
     nonCoffeePage.setAttribute ('class', 'col-8 ms-3');
+    nonCoffeePage.style.display = 'block';
+    mainMenu.style.display = 'none';
     mainMenu.replaceWith(nonCoffeePage, mainMenu);
 }
 function changenonCoffeePageToMainMenu(){
+    mainMenu.style.display = 'block';
+    nonCoffeePage.style.display = 'none';
     nonCoffeePage.replaceWith(mainMenu, nonCoffeePage);
 
 }
 // Frappe Non-Coffee Menu
 function changeMainMenuTofrappeNonCoffee(){
     frappeNonCoffee.setAttribute ('class', 'col-8 ms-3');
+    frappeNonCoffee.style.display = 'block';
+    mainMenu.style.display = 'none';
     mainMenu.replaceWith(frappeNonCoffee, mainMenu);
 }
 function changefrappeNonCoffeeToMainMenu(){
+    mainMenu.style.display = 'block';
+    frappeNonCoffee.style.display = 'none';
     frappeNonCoffee.replaceWith(mainMenu, frappeNonCoffee);
 
 }
 // Frappe Coffee Menu
 function changeMainMenuTofrappeCoffee(){
     frappeCoffee.setAttribute ('class', 'col-8 ms-3');
+    frappeCoffee.style.display = 'block';
+    mainMenu.style.display = 'none';
     mainMenu.replaceWith(frappeCoffee, mainMenu);
 }
 function changefrappeCoffeeToMainMenu(){
+    mainMenu.style.display = 'block';
+    frappeCoffee.style.display = 'none';
     frappeCoffee.replaceWith(mainMenu, frappeCoffee);
 
 }
 // Refresher
 function changeMainMenuTorefresher(){
     refresherDrinks.setAttribute('class', 'col-8 ms-3');
+    refresherDrinks.style.display = 'block';
+    mainMenu.style.display = 'none';
     mainMenu.replaceWith(refresherDrinks, mainMenu);
 }
 function changerefresherToMainMenu(){
+    mainMenu.style.display = 'block';
+    refresherDrinks.style.display = 'none';
     refresherDrinks.replaceWith(mainMenu, refresherDrinks);   
+}
+// Silog
+function changeMainMenuTosilogPage(){
+    silogPage.setAttribute('class', 'col-8 ms-3');
+    silogPage.style.display = 'block';
+    mainMenu.style.display = 'none';
+    mainMenu.replaceWith(silogPage, mainMenu);
+}
+function changesilogPageToMainMenu(){
+    mainMenu.style.display = 'block';
+    silogPage.style.display = 'none';
+    silogPage.replaceWith(mainMenu, silogPage);   
+}
+// Add-Ons
+function changeMainMenuToaddOnsPage(){
+    addOnsPage.setAttribute('class', 'col-8 ms-3');
+    addOnsPage.style.display = 'block';
+    mainMenu.style.display = 'none';
+    mainMenu.replaceWith(addOnsPage, mainMenu);
+}
+function changeaddOnsPageToMainMenu(){
+    mainMenu.style.display = 'block';
+    addOnsPage.style.display = 'none';
+    addOnsPage.replaceWith(mainMenu, addOnsPage);   
+}
+// Eggdrop
+function changeMainMenuToeggdropPage(){
+    eggdropPage.setAttribute('class', 'col-8 ms-3');
+    eggdropPage.style.display = 'block';
+    mainMenu.style.display = 'none';
+    mainMenu.replaceWith(eggdropPage, mainMenu);
+}
+function changeeggdropPageToMainMenu(){
+    mainMenu.style.display = 'block';
+    eggdropPage.style.display = 'none';
+    eggdropPage.replaceWith(mainMenu, eggdropPage);   
+}
+// Pastries
+function changeMainMenuTopastriesPage(){
+    pastriesPage.setAttribute('class', 'col-8 ms-3');
+    pastriesPage.style.display = 'block';
+    mainMenu.style.display = 'none';
+    mainMenu.replaceWith(pastriesPage, mainMenu);
+}
+function changepastriesPageToMainMenu(){
+    mainMenu.style.display = 'block';
+    pastriesPage.style.display = 'none';
+    pastriesPage.replaceWith(mainMenu, pastriesPage);   
 }
