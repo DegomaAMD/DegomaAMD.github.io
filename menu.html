@@ -34,54 +34,95 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header>
-      <!-- Navigation start -->
-      <nav class="navbar navbar-expand-sm bg-white border-bottom">
-        <div class="container-fluid">
-          <a href="./index.html" class="navbar-brand"
+    <header class="border-bottom bg-light">
+      <div class="d-flex justify-content-between mx-5 pt-3 align-items-center">
+        <div class="mb-3">
+          <a href="index.html"
             ><img
-              class="logo-img rounded-pill ms-6"
               id="brand-logo"
-              src="./assets/img/boncage-logo.jpg"
-              alt=""
+              src="./assets/img/boncage-logo.ico"
+              alt="bon cafe logo"
           /></a>
-          <button
-            type="button"
-            class="navbar-toggle d-block d-sm-none me-6"
-            data-bs-toggle="collapse"
-            data-bs-target="#menu"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            id="menu"
-            class="justify-content-between collapse navbar-collapse"
-          >
-            <ul class="navbar-nav align-items-center m-3">
-              <li class="nav-item">
-                <a class="btn nav-link px-3" href="./index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="btn nav-link px-3" href="./menu.html">Menu</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="btn nav-link px-3" href="#back-to-mainMenu">About</a>
-              </li>
-            </ul>
-            <div class="d-flex justify-content-end">
-              <div class="mx-2">
-                <a
-                  class="animate slideInLeft btn btn-outline-darkgreen rounded-pill px-3 me-5"
-                  href="./login.html"
-                  >Login</a
-                >
-              </div>
+        </div>
+        <div
+          class="offcanvas-md offcanvas-end d-flex justify-content-between"
+          tabindex="-1"
+          id="offcanvasRight"
+        >
+          <div class="offcanvas-header">
+            <div class="fnt-outfit text-brown fw-bold">BON CAFE</div>
+            <div>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                data-bs-target="#offcanvasRight"
+                aria-label="Close"
+              ></button>
             </div>
           </div>
+
+          <div class="offcanvas-body">
+            <ul class="nav d-block d-md-flex">
+              <li class="nav-item">
+                <a
+                  class="btn nav-link px-3 mx-3 text-brown fw-semibold"
+                  href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  class="btn nav-link px-3 mx-3 text-brown fw-semibold"
+                  href="menu.html"
+                  >Menu</a
+                >
+              </li>
+              <li>
+                <a
+                  class="btn nav-link px-3 mx-3 text-brown fw-semibold"
+                  href="about.html"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  class="btn nav-link px-3 mx-4 text-brown fw-semibold"
+                  href="pagenotfound.html"
+                  ><i class="fa-solid fa-cart-shopping" aria-hidden="true"></i
+                ></a>
+              </li>
+              <li class="d-block d-md-none">
+                <a
+                  href="./login.html"
+                  type="button"
+                  class="btn btn-outline-darkgreen rounded-pill"
+                  >Login</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="d-none d-md-block">
+            <a
+              href="./login.html"
+              type="button"
+              class="btn btn-outline-darkgreen rounded-pill"
+              >Login</a
+            >
+          </div>
         </div>
-      </nav>
-      <!-- Navigation end -->
+        <div class="d-flex d-md-none justify-content-between">
+          <button
+            type="button"
+            class="btn text-brown mb-1"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight"
+          >
+            <i class="fa-solid fa-bars" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
     </header>
     <main class="bg-brown">
       <!-- Menu Image start -->
@@ -640,6 +681,14 @@
                       </p>
                     </div>
                   </div>
+                  <div class="modal-footer">
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-mug-saucer"></i> M - 115
+                    </div>
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-beer-mug-empty"></i> L - 130
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -685,6 +734,14 @@
                         The nutty creamy note blends well with coffee aroma.​
                         Available as hot, iced, or blended.
                       </p>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-mug-saucer"></i> M - 125
+                    </div>
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-beer-mug-empty"></i> L - 135
                     </div>
                   </div>
                 </div>
@@ -740,6 +797,14 @@
                       </p>
                     </div>
                   </div>
+                  <div class="modal-footer">
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-mug-saucer"></i> M - 125
+                    </div>
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-beer-mug-empty"></i> L - 135
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -791,6 +856,14 @@
                       </p>
                     </div>
                   </div>
+                  <div class="modal-footer">
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-mug-saucer"></i> M - 125
+                    </div>
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-beer-mug-empty"></i> L - 135
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -840,6 +913,14 @@
                       </p>
                     </div>
                   </div>
+                  <div class="modal-footer">
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-mug-saucer"></i> M - 125
+                    </div>
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-beer-mug-empty"></i> L - 135
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -883,6 +964,14 @@
                         hooked on this savory delight. It's great as a morning
                         pick-me-up, or an after-dinner-treat.
                       </p>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-mug-saucer"></i> M - 125
+                    </div>
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-beer-mug-empty"></i> L - 135
                     </div>
                   </div>
                 </div>
@@ -929,6 +1018,14 @@
                       </p>
                     </div>
                   </div>
+                  <div class="modal-footer">
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-mug-saucer"></i> M - 125
+                    </div>
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-beer-mug-empty"></i> L - 135
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -970,6 +1067,14 @@
                         caramelly sweetness is at the very heart of everything
                         we do.
                       </p>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-mug-saucer"></i> M - 135
+                    </div>
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-beer-mug-empty"></i> L - 165
                     </div>
                   </div>
                 </div>
@@ -1163,6 +1268,14 @@
                       </p>
                     </div>
                   </div>
+                  <div class="modal-footer">
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-mug-saucer"></i> M - 115
+                    </div>
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-beer-mug-empty"></i> L - 125
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1209,6 +1322,14 @@
                       </p>
                     </div>
                   </div>
+                  <div class="modal-footer">
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-mug-saucer"></i> M - 125
+                    </div>
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-beer-mug-empty"></i> L - 145
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1253,6 +1374,13 @@
                       </p>
                     </div>
                   </div>
+                  <div class="modal-footer">
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-mug-saucer"></i> M - 125
+                    </div>
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-beer-mug-empty"></i> L - 145
+                    </div>
                 </div>
               </div>
             </div>
@@ -1296,6 +1424,13 @@
                       </p>
                     </div>
                   </div>
+                  <div class="modal-footer">
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-mug-saucer"></i> M - 125
+                    </div>
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-beer-mug-empty"></i> L - 145
+                    </div>
                 </div>
               </div>
             </div>
@@ -1341,6 +1476,13 @@
                       </p>
                     </div>
                   </div>
+                  <div class="modal-footer">
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-mug-saucer"></i> M - 125
+                    </div>
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-beer-mug-empty"></i> L - 145
+                    </div>
                 </div>
               </div>
             </div>
@@ -1535,6 +1677,13 @@
                       </p>
                     </div>
                   </div>
+                  <div class="modal-footer">
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-mug-saucer"></i> M - 130
+                    </div>
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-beer-mug-empty"></i> L - 145
+                    </div>
                 </div>
               </div>
             </div>
@@ -1578,6 +1727,14 @@
                       </p>
                     </div>
                   </div>
+                  <div class="modal-footer">
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-mug-saucer"></i> M - 130
+                    </div>
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-beer-mug-empty"></i> L - 145
+                    </div>
+                </div>
                 </div>
               </div>
             </div>
@@ -1621,6 +1778,14 @@
                       </p>
                     </div>
                   </div>
+                  <div class="modal-footer">
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-mug-saucer"></i> M - 130
+                    </div>
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-beer-mug-empty"></i> L - 145
+                    </div>
+                </div>
                 </div>
               </div>
             </div>
@@ -1666,6 +1831,14 @@
                       </p>
                     </div>
                   </div>
+                  <div class="modal-footer">
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-mug-saucer"></i> M - 130
+                    </div>
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-beer-mug-empty"></i> L - 145
+                    </div>
+                </div>
                 </div>
               </div>
             </div>
@@ -1711,6 +1884,14 @@
                       </p>
                     </div>
                   </div>
+                  <div class="modal-footer">
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-mug-saucer"></i> M - 130
+                    </div>
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-beer-mug-empty"></i> L - 145
+                    </div>
+                </div>
                 </div>
               </div>
             </div>
@@ -1904,6 +2085,14 @@
                       </p>
                     </div>
                   </div>
+                  <div class="modal-footer">
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-mug-saucer"></i> M - 130
+                    </div>
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-beer-mug-empty"></i> L - 150
+                    </div>
+                </div>
                 </div>
               </div>
             </div>
@@ -1947,6 +2136,14 @@
                       </p>
                     </div>
                   </div>
+                                   <div class="modal-footer">
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-mug-saucer"></i> M - 130
+                    </div>
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-beer-mug-empty"></i> L - 150
+                    </div>
+                </div>
                 </div>
               </div>
             </div>
@@ -2073,6 +2270,14 @@
                       </p>
                     </div>
                   </div>
+                                   <div class="modal-footer">
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-mug-saucer"></i> M - 99
+                    </div>
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-beer-mug-empty"></i> L - 120
+                    </div>
+                </div>
                 </div>
               </div>
             </div>
@@ -2119,6 +2324,14 @@
                       </p>
                     </div>
                   </div>
+                    <div class="modal-footer">
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-mug-saucer"></i> M - 99
+                    </div>
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-beer-mug-empty"></i> L - 120
+                    </div>
+                </div>
                 </div>
               </div>
             </div>
@@ -2143,22 +2356,22 @@
                   >Menu
                 </a>
                 <span class="align-self-center pe-1"> | </span>
-                <span class="align-self-center"> Drinks</span>
+                <span class="align-self-center"> Foods</span>
               </div>
 
               <div
                 class="mb-4 text-start fs-4 fw-bold fnt-outfit text-brown"
                 id="drinks"
               >
-                ESPRESSO
+                SILOG
               </div>
               <div class="d-block d-sm-flex justify-content-between">
                 <div class="d-flex">
                   <div class="text-start">
                     <img
                       class="menuImg mt-4"
-                      src="./assets/img/espresso.png"
-                      alt="Spanish Latte logo"
+                      src="./assets/img/hamSilog-modified.png"
+                      alt="Ham Silog logo"
                     />
                   </div>
                   <div
@@ -2169,9 +2382,9 @@
                       href="#back-to-mainMenu"
                       type="button"
                       data-bs-toggle="modal"
-                      data-bs-target="#spanishLatte-modal"
+                      data-bs-target="#hamSilog-modal"
                     >
-                      Spanish Latte
+                      Ham Silog
                     </a>
                   </div>
                 </div>
@@ -2179,113 +2392,22 @@
                   <div class="text-start">
                     <img
                       class="menuImg mt-4"
-                      src="./assets/img/hazelnutEspresso-modified.png"
-                      alt="hazelnutEspresso logo "
+                      src="./assets/img/bacSilog-modified.png"
+                      alt="Bacon Silog logo "
                     />
                   </div>
                   <div
                     class="text-start align-self-center fs-4 fnt-outfit ms-4"
                   >
                     <a
-                      class="nav-link text-brown me-2"
+                      class="nav-link text-brown me-3"
                       href="#back-to-mainMenu"
                       type="button"
                       data-bs-toggle="modal"
-                      data-bs-target="#hazelnutEspresso-modal"
+                      data-bs-target="#bacSilog-modal"
                     >
-                      Hazelnut Espresso
+                      Bacon Silog
                     </a>
-                  </div>
-                </div>
-              </div>
-              <div class="d-block d-sm-flex justify-content-between">
-                <div class="d-flex">
-                  <div class="text-start">
-                    <img
-                      class="menuImg mt-4"
-                      src="./assets/img/frenchVanilla-modified.png"
-                      alt="frenchVanilla logo "
-                    />
-                  </div>
-                  <div
-                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
-                  >
-                    <a
-                      class="nav-link text-brown"
-                      href="#back-to-mainMenu"
-                      type="button"
-                      data-bs-toggle="modal"
-                      data-bs-target="#frenchVanilla-modal"
-                      >French Vanilla</a
-                    >
-                  </div>
-                </div>
-
-                <div class="d-flex me-3">
-                  <div class="text-start">
-                    <img
-                      class="menuImg mt-4"
-                      src="./assets/img/dirtyMatcha-modified.png"
-                      alt="dirtyMatcha logo "
-                    />
-                  </div>
-                  <div
-                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
-                  >
-                    <a
-                      class="nav-link text-brown me-5"
-                      href="#back-to-mainMenu"
-                      type="button"
-                      data-bs-toggle="modal"
-                      data-bs-target="#dirtyMatcha-modal"
-                      >Dirty Matcha</a
-                    >
-                  </div>
-                </div>
-              </div>
-
-              <div class="d-block d-sm-flex justify-content-between">
-                <div class="d-flex">
-                  <div class="text-start">
-                    <img
-                      class="menuImg mt-4"
-                      src="./assets/img/caramelMacchiato-modified.png"
-                      alt="caramelMacchiato logo "
-                    />
-                  </div>
-                  <div
-                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
-                  >
-                    <a
-                      class="nav-link text-brown"
-                      href="#back-to-mainMenu"
-                      type="button"
-                      data-bs-toggle="modal"
-                      data-bs-target="#caramelMacchiato-modal"
-                      >Caramel Macchiato</a
-                    >
-                  </div>
-                </div>
-
-                <div class="d-flex me-3">
-                  <div class="text-start">
-                    <img
-                      class="menuImg mt-4"
-                      src="./assets/img/saltedCaramel-modified.png"
-                      alt="saltedCaramel logo "
-                    />
-                  </div>
-                  <div
-                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
-                  >
-                    <a
-                      class="nav-link text-brown me-4"
-                      href="#back-to-mainMenu"
-                      type="button"
-                      data-bs-toggle="modal"
-                      data-bs-target="#saltedCaramel-modal"
-                      >Salted Caramel</a
-                    >
                   </div>
                 </div>
               </div>
@@ -2294,8 +2416,8 @@
                   <div class="text-start">
                     <img
                       class="menuImg mt-4"
-                      src="./assets/img/whiteChocolate-modified.png"
-                      alt="whiteChocolate logo "
+                      src="./assets/img/beefSilog-modified.png"
+                      alt="Beef Silog logo "
                     />
                   </div>
                   <div
@@ -2306,8 +2428,8 @@
                       href="#back-to-mainMenu"
                       type="button"
                       data-bs-toggle="modal"
-                      data-bs-target="#whiteChocolate-modal"
-                      >White Chocolate</a
+                      data-bs-target="#beefSilog-modal"
+                      >Beef Silog</a
                     >
                   </div>
                 </div>
@@ -2316,8 +2438,8 @@
                   <div class="text-start">
                     <img
                       class="menuImg mt-4"
-                      src="./assets/img/bonCafeSignature-modified.png"
-                      alt="bonCafeSignature logo "
+                      src="./assets/img/hotdogSilog-modified.png"
+                      alt="hotdogSilog logo "
                     />
                   </div>
                   <div
@@ -2328,15 +2450,237 @@
                       href="#back-to-mainMenu"
                       type="button"
                       data-bs-toggle="modal"
-                      data-bs-target="#bonCafeSignature-modal"
-                      >Bon Cafe Signature</a
-                    >
+                      data-bs-target="#hotdogSilog-modal"
+                      >Hotdog Silog
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <!-- Silog Menu end -->
+
+          <!-- SILOG ITEM MODAL START -->
+          <!-- HamSilog Modal start -->
+          <div class="menu-modal">
+            <div
+              class="modal fade"
+              id="hamSilog-modal"
+              tabindex="-1"
+              aria-labelledby="hamSilog-modal"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body d-block d-md-flex">
+                    <div class="ms-3 mb-4">
+                      <img
+                        class="item-image rounded-2"
+                        src="./assets/img/hamSilog.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ps-4 align-items-center">
+                      <h1 class="text-start fnt-outfit fw-bold mt-5">
+                        Ham Silog
+                      </h1>
+                      <p class="text-start fnt-roboto mt-4">
+                        There may be a variety of ham available in the market,
+                        but it is normally the sweet ham that completes the
+                        hamsilog combo. Ham and rice may be too plain of a meal
+                        for some people, hence the addition of egg on the
+                        platter. But note that the egg does not steal the
+                        spotlight from the personal flavor of ham—because if
+                        anything, it brings it out more for you to savor.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-money-check-dollar"></i> 65
+                    </div>
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-circle-plus"></i> Extra Rice - 20
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- HamSilog Modal end -->
+
+          <!-- BacSilog Modal start -->
+          <div class="menu-modal">
+            <div
+              class="modal fade"
+              id="bacSilog-modal"
+              tabindex="-1"
+              aria-labelledby="bacSilog-modal"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body d-block d-md-flex">
+                    <div class="ms-3 mb-4">
+                      <img
+                        class="item-image rounded-2"
+                        src="./assets/img/bacSilog.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ps-4 align-items-center">
+                      <h1 class="text-start fnt-outfit fw-bold mt-5">
+                        Bacon Silog
+                      </h1>
+                      <p class="text-start fnt-roboto mt-4">
+                        Bacon can be enjoyed either in its toasted glory or in
+                        its soft luster, depending on one’s preference. But
+                        nothing beats bacon paired with egg, because the serene
+                        taste of egg offers a good mix to the powerful flavor
+                        emanated by the bacon.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-money-check-dollar"></i> 75
+                    </div>
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-circle-plus"></i> Extra Rice - 20
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- BacSilog ModalBacSilog -->
+
+          <!-- beefSilog Modal start -->
+          <div class="menu-modal">
+            <div
+              class="modal fade"
+              id="beefSilog-modal"
+              tabindex="-1"
+              aria-labelledby="beefSilog-modal"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body d-block d-md-flex">
+                    <div class="ms-3 mb-4">
+                      <img
+                        class="item-image rounded-2"
+                        src="./assets/img/beefSilog.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ps-4 align-items-center">
+                      <h1 class="text-start fnt-outfit fw-bold mt-5">
+                        Beef Silog (Tapa)
+                      </h1>
+                      <p class="text-start fnt-roboto mt-4">
+                        A staple silog combo that graces every menu of eateries
+                        and restaurants offering breakfast meals, tapsilog—or
+                        the pair up of tapa (marinated pork or beef), egg, and
+                        fried rice—remains sought-after even with the
+                        availability of other morning meal offerings because of
+                        its pungent taste.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-money-check-dollar"></i> 85
+                    </div>
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-circle-plus"></i> Extra Rice - 20
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- beefSilog ModalBacSilog -->
+
+          <!-- hotdogSilog Modal start -->
+          <div class="menu-modal">
+            <div
+              class="modal fade"
+              id="hotdogSilog-modal"
+              tabindex="-1"
+              aria-labelledby="hotdogSilog-modal"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body d-block d-md-flex">
+                    <div class="ms-3 mb-4">
+                      <img
+                        class="item-image rounded-2"
+                        src="./assets/img/hotdogSilog.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ps-4 align-items-center">
+                      <h1 class="text-start fnt-outfit fw-bold mt-5">
+                        Hotdog Silog
+                      </h1>
+                      <p class="text-start fnt-roboto mt-4">
+                        Almost like a “National Packed Lunch” for Filipino
+                        students, hotdog paired with fried rice and egg remains
+                        not only as the go-to food for children, but also for
+                        adults who do not want the food served on the dining
+                        table. Nothing could ever go wrong with this combo.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-money-check-dollar"></i> 69
+                    </div>
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-circle-plus"></i> Extra Rice - 20
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- hotdogSilog ModalBacSilog -->
+          <!-- SILOG ITEM MODAL START -->
+
           <!-- Add-ons Menu start -->
           <div class="col-8 ms-3 d-none" id="addOnsPage">
             <div
@@ -2354,22 +2698,22 @@
                   >Menu
                 </a>
                 <span class="align-self-center pe-1"> | </span>
-                <span class="align-self-center"> Drinks</span>
+                <span class="align-self-center"> Foods</span>
               </div>
 
               <div
                 class="mb-4 text-start fs-4 fw-bold fnt-outfit text-brown"
                 id="drinks"
               >
-                ESPRESSO
+                ADD-ONS
               </div>
               <div class="d-block d-sm-flex justify-content-between">
                 <div class="d-flex">
                   <div class="text-start">
                     <img
                       class="menuImg mt-4"
-                      src="./assets/img/espresso.png"
-                      alt="Spanish Latte logo"
+                      src="./assets/img/veggies-modified.png"
+                      alt="veggies logo"
                     />
                   </div>
                   <div
@@ -2380,9 +2724,9 @@
                       href="#back-to-mainMenu"
                       type="button"
                       data-bs-toggle="modal"
-                      data-bs-target="#spanishLatte-modal"
+                      data-bs-target="#veggies-modal"
                     >
-                      Spanish Latte
+                      Veggies
                     </a>
                   </div>
                 </div>
@@ -2390,21 +2734,21 @@
                   <div class="text-start">
                     <img
                       class="menuImg mt-4"
-                      src="./assets/img/hazelnutEspresso-modified.png"
-                      alt="hazelnutEspresso logo "
+                      src="./assets/img/cheese-modified.png"
+                      alt="cheese logo "
                     />
                   </div>
                   <div
                     class="text-start align-self-center fs-4 fnt-outfit ms-4"
                   >
                     <a
-                      class="nav-link text-brown me-2"
+                      class="nav-link text-brown me-3"
                       href="#back-to-mainMenu"
                       type="button"
                       data-bs-toggle="modal"
-                      data-bs-target="#hazelnutEspresso-modal"
+                      data-bs-target="#cheese-modal"
                     >
-                      Hazelnut Espresso
+                      Cheese
                     </a>
                   </div>
                 </div>
@@ -2414,8 +2758,8 @@
                   <div class="text-start">
                     <img
                       class="menuImg mt-4"
-                      src="./assets/img/frenchVanilla-modified.png"
-                      alt="frenchVanilla logo "
+                      src="./assets/img/egg-modified.png"
+                      alt="egg logo "
                     />
                   </div>
                   <div
@@ -2426,30 +2770,30 @@
                       href="#back-to-mainMenu"
                       type="button"
                       data-bs-toggle="modal"
-                      data-bs-target="#frenchVanilla-modal"
-                      >French Vanilla</a
+                      data-bs-target="#egg-modal"
+                      >Egg</a
                     >
                   </div>
                 </div>
 
-                <div class="d-flex me-3">
+                <div class="d-flex me-4">
                   <div class="text-start">
                     <img
                       class="menuImg mt-4"
-                      src="./assets/img/dirtyMatcha-modified.png"
-                      alt="dirtyMatcha logo "
+                      src="./assets/img/fries-modified.png"
+                      alt="fries logo "
                     />
                   </div>
                   <div
                     class="text-start align-self-center fs-4 fnt-outfit ms-4"
                   >
                     <a
-                      class="nav-link text-brown me-5"
+                      class="nav-link text-brown me-3"
                       href="#back-to-mainMenu"
                       type="button"
                       data-bs-toggle="modal"
-                      data-bs-target="#dirtyMatcha-modal"
-                      >Dirty Matcha</a
+                      data-bs-target="#fries-modal"
+                      >Fries</a
                     >
                   </div>
                 </div>
@@ -2460,8 +2804,8 @@
                   <div class="text-start">
                     <img
                       class="menuImg mt-4"
-                      src="./assets/img/caramelMacchiato-modified.png"
-                      alt="caramelMacchiato logo "
+                      src="./assets/img/espressoShot-modified.png"
+                      alt="espressoShot logo "
                     />
                   </div>
                   <div
@@ -2472,31 +2816,32 @@
                       href="#back-to-mainMenu"
                       type="button"
                       data-bs-toggle="modal"
-                      data-bs-target="#caramelMacchiato-modal"
-                      >Caramel Macchiato</a
+                      data-bs-target="#espressoShot-modal"
+                      >Espresso Shot</a
                     >
                   </div>
                 </div>
 
-                <div class="d-flex me-3">
+                <div class="d-flex">
                   <div class="text-start">
                     <img
                       class="menuImg mt-4"
-                      src="./assets/img/saltedCaramel-modified.png"
-                      alt="saltedCaramel logo "
+                      src="./assets/img/espressoPump-modified.png"
+                      alt="espressoPump logo "
                     />
                   </div>
                   <div
                     class="text-start align-self-center fs-4 fnt-outfit ms-4"
                   >
                     <a
-                      class="nav-link text-brown me-4"
+                      class="nav-link text-brown"
                       href="#back-to-mainMenu"
                       type="button"
                       data-bs-toggle="modal"
-                      data-bs-target="#saltedCaramel-modal"
-                      >Salted Caramel</a
-                    >
+                      data-bs-target="#espressoPump-modal"
+                      ><div class="text-start">Espresso</div>
+                      <div class="text-start">Pump</div>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -2505,8 +2850,8 @@
                   <div class="text-start">
                     <img
                       class="menuImg mt-4"
-                      src="./assets/img/whiteChocolate-modified.png"
-                      alt="whiteChocolate logo "
+                      src="./assets/img/milk-modified.png"
+                      alt="milk logo "
                     />
                   </div>
                   <div
@@ -2517,30 +2862,8 @@
                       href="#back-to-mainMenu"
                       type="button"
                       data-bs-toggle="modal"
-                      data-bs-target="#whiteChocolate-modal"
-                      >White Chocolate</a
-                    >
-                  </div>
-                </div>
-
-                <div class="d-flex">
-                  <div class="text-start">
-                    <img
-                      class="menuImg mt-4"
-                      src="./assets/img/bonCafeSignature-modified.png"
-                      alt="bonCafeSignature logo "
-                    />
-                  </div>
-                  <div
-                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
-                  >
-                    <a
-                      class="nav-link text-brown"
-                      href="#back-to-mainMenu"
-                      type="button"
-                      data-bs-toggle="modal"
-                      data-bs-target="#bonCafeSignature-modal"
-                      >Bon Cafe Signature</a
+                      data-bs-target="#milk-modal"
+                      >Milk</a
                     >
                   </div>
                 </div>
@@ -2548,6 +2871,311 @@
             </div>
           </div>
           <!-- Add-ons Menu end -->
+
+          <!-- ADDONS ITEM MODAL START -->
+          <!-- Veggies Modal start -->
+          <div class="menu-modal">
+            <div
+              class="modal fade"
+              id="veggies-modal"
+              tabindex="-1"
+              aria-labelledby="veggies-modal"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body d-block d-md-flex">
+                    <div class="ms-3 mb-4">
+                      <img
+                        class="item-image rounded-2"
+                        src="./assets/img/veggies.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ps-4 align-items-center">
+                      <h1 class="fnt-outfit fw-bold mt-5 text-center">
+                        Veggies
+                      </h1>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-money-check-dollar"></i> 10
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Veggies Modal end -->
+
+          <!-- Cheese Modal start -->
+          <div class="menu-modal">
+            <div
+              class="modal fade"
+              id="cheese-modal"
+              tabindex="-1"
+              aria-labelledby="cheese-modal"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body d-block d-md-flex">
+                    <div class="ms-3 mb-4">
+                      <img
+                        class="item-image rounded-2"
+                        src="./assets/img/cheese.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ps-4 align-items-center">
+                      <h1 class="fnt-outfit fw-bold mt-5 text-center">
+                        Cheese
+                      </h1>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-money-check-dollar"></i> 10
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Cheese ModalBacSilog -->
+
+          <!-- Egg Modal start -->
+          <div class="menu-modal">
+            <div
+              class="modal fade"
+              id="egg-modal"
+              tabindex="-1"
+              aria-labelledby="egg-modal"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body d-block d-md-flex">
+                    <div class="ms-3 mb-4">
+                      <img
+                        class="item-image rounded-2"
+                        src="./assets/img/egg.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ps-4 align-items-center">
+                      <h1 class="fnt-outfit fw-bold mt-5 text-center">Egg</h1>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-money-check-dollar"></i> 15
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Egg ModalBacSilog -->
+
+          <!-- Fries Modal start -->
+          <div class="menu-modal">
+            <div
+              class="modal fade"
+              id="fries-modal"
+              tabindex="-1"
+              aria-labelledby="fries-modal"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body d-block d-md-flex">
+                    <div class="ms-3 mb-4">
+                      <img
+                        class="item-image rounded-2"
+                        src="./assets/img/fries.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ps-4 align-items-center">
+                      <h1 class="fnt-outfit fw-bold mt-5 text-center">Fries</h1>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-money-check-dollar"></i> 75
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Fries ModalBacSilog -->
+
+          <!-- Espresso Shot Modal start -->
+          <div class="menu-modal">
+            <div
+              class="modal fade"
+              id="espressoShot-modal"
+              tabindex="-1"
+              aria-labelledby="espressoShot-modal"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body d-block d-md-flex">
+                    <div class="ms-3 mb-4">
+                      <img
+                        class="item-image rounded-2"
+                        src="./assets/img/espressoShot.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ps-4 align-items-center">
+                      <h1 class="fnt-outfit fw-bold mt-5 text-center">
+                        Espresso Shot
+                      </h1>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-money-check-dollar"></i> 25
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Espresso Shot ModalBacSilog -->
+
+          <!-- Espresso Pump Modal start -->
+          <div class="menu-modal">
+            <div
+              class="modal fade"
+              id="espressoPump-modal"
+              tabindex="-1"
+              aria-labelledby="espressoPump-modal"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body d-block d-md-flex">
+                    <div class="ms-3 mb-4">
+                      <img
+                        class="item-image rounded-2"
+                        src="./assets/img/espressoPump.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ps-4 align-items-center">
+                      <h1 class="fnt-outfit fw-bold mt-5 text-center">
+                        Espresso Pump
+                      </h1>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-money-check-dollar"></i> 20
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Espresso Pump ModalBacSilog -->
+
+          <!-- Milk Modal start -->
+          <div class="menu-modal">
+            <div
+              class="modal fade"
+              id="milk-modal"
+              tabindex="-1"
+              aria-labelledby="milk-modal"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body d-block d-md-flex">
+                    <div class="ms-3 mb-4">
+                      <img
+                        class="item-image rounded-2"
+                        src="./assets/img/milk.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ps-4 align-items-center">
+                      <h1 class="fnt-outfit fw-bold mt-5 text-center">Milk</h1>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-money-check-dollar"></i> 20
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Milk ModalBacSilog -->
+          <!-- ADDONS ITEM MODAL START -->
+
           <!-- Eggdrop Menu start -->
           <div class="col-8 ms-3 d-none" id="eggdropPage">
             <div
@@ -2565,159 +3193,22 @@
                   >Menu
                 </a>
                 <span class="align-self-center pe-1"> | </span>
-                <span class="align-self-center"> Drinks</span>
+                <span class="align-self-center"> Foods</span>
               </div>
 
               <div
                 class="mb-4 text-start fs-4 fw-bold fnt-outfit text-brown"
                 id="drinks"
               >
-                ESPRESSO
-              </div>
-              <div class="d-block d-sm-flex justify-content-between">
-                <div class="d-flex">
-                  <div class="text-start">
-                    <img
-                      class="menuImg mt-4"
-                      src="./assets/img/espresso.png"
-                      alt="Spanish Latte logo"
-                    />
-                  </div>
-                  <div
-                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
-                  >
-                    <a
-                      class="nav-link text-brown"
-                      href="#back-to-mainMenu"
-                      type="button"
-                      data-bs-toggle="modal"
-                      data-bs-target="#spanishLatte-modal"
-                    >
-                      Spanish Latte
-                    </a>
-                  </div>
-                </div>
-                <div class="d-flex">
-                  <div class="text-start">
-                    <img
-                      class="menuImg mt-4"
-                      src="./assets/img/hazelnutEspresso-modified.png"
-                      alt="hazelnutEspresso logo "
-                    />
-                  </div>
-                  <div
-                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
-                  >
-                    <a
-                      class="nav-link text-brown me-2"
-                      href="#back-to-mainMenu"
-                      type="button"
-                      data-bs-toggle="modal"
-                      data-bs-target="#hazelnutEspresso-modal"
-                    >
-                      Hazelnut Espresso
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="d-block d-sm-flex justify-content-between">
-                <div class="d-flex">
-                  <div class="text-start">
-                    <img
-                      class="menuImg mt-4"
-                      src="./assets/img/frenchVanilla-modified.png"
-                      alt="frenchVanilla logo "
-                    />
-                  </div>
-                  <div
-                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
-                  >
-                    <a
-                      class="nav-link text-brown"
-                      href="#back-to-mainMenu"
-                      type="button"
-                      data-bs-toggle="modal"
-                      data-bs-target="#frenchVanilla-modal"
-                      >French Vanilla</a
-                    >
-                  </div>
-                </div>
-
-                <div class="d-flex me-3">
-                  <div class="text-start">
-                    <img
-                      class="menuImg mt-4"
-                      src="./assets/img/dirtyMatcha-modified.png"
-                      alt="dirtyMatcha logo "
-                    />
-                  </div>
-                  <div
-                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
-                  >
-                    <a
-                      class="nav-link text-brown me-5"
-                      href="#back-to-mainMenu"
-                      type="button"
-                      data-bs-toggle="modal"
-                      data-bs-target="#dirtyMatcha-modal"
-                      >Dirty Matcha</a
-                    >
-                  </div>
-                </div>
-              </div>
-
-              <div class="d-block d-sm-flex justify-content-between">
-                <div class="d-flex">
-                  <div class="text-start">
-                    <img
-                      class="menuImg mt-4"
-                      src="./assets/img/caramelMacchiato-modified.png"
-                      alt="caramelMacchiato logo "
-                    />
-                  </div>
-                  <div
-                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
-                  >
-                    <a
-                      class="nav-link text-brown"
-                      href="#back-to-mainMenu"
-                      type="button"
-                      data-bs-toggle="modal"
-                      data-bs-target="#caramelMacchiato-modal"
-                      >Caramel Macchiato</a
-                    >
-                  </div>
-                </div>
-
-                <div class="d-flex me-3">
-                  <div class="text-start">
-                    <img
-                      class="menuImg mt-4"
-                      src="./assets/img/saltedCaramel-modified.png"
-                      alt="saltedCaramel logo "
-                    />
-                  </div>
-                  <div
-                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
-                  >
-                    <a
-                      class="nav-link text-brown me-4"
-                      href="#back-to-mainMenu"
-                      type="button"
-                      data-bs-toggle="modal"
-                      data-bs-target="#saltedCaramel-modal"
-                      >Salted Caramel</a
-                    >
-                  </div>
-                </div>
+                EGGDROP
               </div>
               <div class="d-block d-sm-flex justify-content-between mb-5">
                 <div class="d-flex">
                   <div class="text-start">
                     <img
                       class="menuImg mt-4"
-                      src="./assets/img/whiteChocolate-modified.png"
-                      alt="whiteChocolate logo "
+                      src="./assets/img/eggdropflavors-modified.png"
+                      alt="eggdropflavors logo"
                     />
                   </div>
                   <div
@@ -2728,37 +3219,90 @@
                       href="#back-to-mainMenu"
                       type="button"
                       data-bs-toggle="modal"
-                      data-bs-target="#whiteChocolate-modal"
-                      >White Chocolate</a
+                      data-bs-target="#eggdropflavors-modal"
                     >
-                  </div>
-                </div>
-
-                <div class="d-flex">
-                  <div class="text-start">
-                    <img
-                      class="menuImg mt-4"
-                      src="./assets/img/bonCafeSignature-modified.png"
-                      alt="bonCafeSignature logo "
-                    />
-                  </div>
-                  <div
-                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
-                  >
-                    <a
-                      class="nav-link text-brown"
-                      href="#back-to-mainMenu"
-                      type="button"
-                      data-bs-toggle="modal"
-                      data-bs-target="#bonCafeSignature-modal"
-                      >Bon Cafe Signature</a
-                    >
+                      Eggdrop flavors
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <!-- Eggdrop Menu end -->
+
+          <!-- EGG DROP ITEM MODAL START -->
+          <!-- Flavors Modal start -->
+          <div class="menu-modal">
+            <div
+              class="modal fade"
+              id="eggdropflavors-modal"
+              tabindex="-1"
+              aria-labelledby="eggdropflavors-modal"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div
+                    class="modal-body d-block d-md-flex justify-content-between me-5"
+                  >
+                    <div class="ms-3 mb-4">
+                      <img
+                        class="item-image rounded-2"
+                        src="./assets/img/eggdrop.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ps-4 align-items-center me-md-5 pe-lg-5">
+                      <h1 class="fnt-outfit fw-bold mt-5 text-center mb-5">
+                        Eggdrop Flavors
+                      </h1>
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">Flavors</th>
+                            <th scope="col">Price</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">Ham</th>
+                            <td>110</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Bacon</th>
+                            <td>130</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Beef</th>
+                            <td>140</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Bacon & Ham</th>
+                            <td>155</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Bacon, Ham & Beef</th>
+                            <td>165</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Flavors Modal end -->
+          <!-- EGG DROP ITEM MODAL END -->
+
           <!-- Pastries Menu start -->
           <div class="col-8 ms-3 d-none" id="pastriesPage">
             <div
@@ -2776,22 +3320,22 @@
                   >Menu
                 </a>
                 <span class="align-self-center pe-1"> | </span>
-                <span class="align-self-center"> Drinks</span>
+                <span class="align-self-center"> Foods</span>
               </div>
 
               <div
                 class="mb-4 text-start fs-4 fw-bold fnt-outfit text-brown"
                 id="drinks"
               >
-                ESPRESSO
+                PASTRIES
               </div>
               <div class="d-block d-sm-flex justify-content-between">
                 <div class="d-flex">
                   <div class="text-start">
                     <img
                       class="menuImg mt-4"
-                      src="./assets/img/espresso.png"
-                      alt="Spanish Latte logo"
+                      src="./assets/img/blueberryCheesecake-modified.png"
+                      alt="blueberryCheesecake logo"
                     />
                   </div>
                   <div
@@ -2802,9 +3346,10 @@
                       href="#back-to-mainMenu"
                       type="button"
                       data-bs-toggle="modal"
-                      data-bs-target="#spanishLatte-modal"
+                      data-bs-target="#blueberryCheesecake-modal"
                     >
-                      Spanish Latte
+                      <div class="text-start">Blueberry</div>
+                      <div class="text-start">Cheesecake</div>
                     </a>
                   </div>
                 </div>
@@ -2812,8 +3357,8 @@
                   <div class="text-start">
                     <img
                       class="menuImg mt-4"
-                      src="./assets/img/hazelnutEspresso-modified.png"
-                      alt="hazelnutEspresso logo "
+                      src="./assets/img/oreoCheesecake-modified.png"
+                      alt="oreoCheesecake logo "
                     />
                   </div>
                   <div
@@ -2824,9 +3369,10 @@
                       href="#back-to-mainMenu"
                       type="button"
                       data-bs-toggle="modal"
-                      data-bs-target="#hazelnutEspresso-modal"
+                      data-bs-target="#oreoCheesecake1-modal"
                     >
-                      Hazelnut Espresso
+                      <div class="text-start">Oreo</div>
+                      <div class="text-start">Cheesecake</div>
                     </a>
                   </div>
                 </div>
@@ -2836,8 +3382,8 @@
                   <div class="text-start">
                     <img
                       class="menuImg mt-4"
-                      src="./assets/img/frenchVanilla-modified.png"
-                      alt="frenchVanilla logo "
+                      src="./assets/img/strawberryCheesecake-modified.png"
+                      alt="strawberryCheesecake logo "
                     />
                   </div>
                   <div
@@ -2848,42 +3394,19 @@
                       href="#back-to-mainMenu"
                       type="button"
                       data-bs-toggle="modal"
-                      data-bs-target="#frenchVanilla-modal"
-                      >French Vanilla</a
+                      data-bs-target="#strawberryCheesecake-modal"
+                      ><div class="text-start">Strawberry</div>
+                      <div class="text-start">Cheesecake</div></a
                     >
                   </div>
                 </div>
 
-                <div class="d-flex me-3">
-                  <div class="text-start">
-                    <img
-                      class="menuImg mt-4"
-                      src="./assets/img/dirtyMatcha-modified.png"
-                      alt="dirtyMatcha logo "
-                    />
-                  </div>
-                  <div
-                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
-                  >
-                    <a
-                      class="nav-link text-brown me-5"
-                      href="#back-to-mainMenu"
-                      type="button"
-                      data-bs-toggle="modal"
-                      data-bs-target="#dirtyMatcha-modal"
-                      >Dirty Matcha</a
-                    >
-                  </div>
-                </div>
-              </div>
-
-              <div class="d-block d-sm-flex justify-content-between">
                 <div class="d-flex">
                   <div class="text-start">
                     <img
                       class="menuImg mt-4"
-                      src="./assets/img/caramelMacchiato-modified.png"
-                      alt="caramelMacchiato logo "
+                      src="./assets/img/bananaLoaf-modified.png"
+                      alt="bananaLoaf logo "
                     />
                   </div>
                   <div
@@ -2894,41 +3417,20 @@
                       href="#back-to-mainMenu"
                       type="button"
                       data-bs-toggle="modal"
-                      data-bs-target="#caramelMacchiato-modal"
-                      >Caramel Macchiato</a
-                    >
-                  </div>
-                </div>
-
-                <div class="d-flex me-3">
-                  <div class="text-start">
-                    <img
-                      class="menuImg mt-4"
-                      src="./assets/img/saltedCaramel-modified.png"
-                      alt="saltedCaramel logo "
-                    />
-                  </div>
-                  <div
-                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
-                  >
-                    <a
-                      class="nav-link text-brown me-4"
-                      href="#back-to-mainMenu"
-                      type="button"
-                      data-bs-toggle="modal"
-                      data-bs-target="#saltedCaramel-modal"
-                      >Salted Caramel</a
+                      data-bs-target="#bananaLoaf-modal"
+                      >Banana Loaf</a
                     >
                   </div>
                 </div>
               </div>
+
               <div class="d-block d-sm-flex justify-content-between mb-5">
                 <div class="d-flex">
                   <div class="text-start">
                     <img
                       class="menuImg mt-4"
-                      src="./assets/img/whiteChocolate-modified.png"
-                      alt="whiteChocolate logo "
+                      src="./assets/img/brownies-modified.png"
+                      alt="brownies logo "
                     />
                   </div>
                   <div
@@ -2939,30 +3441,30 @@
                       href="#back-to-mainMenu"
                       type="button"
                       data-bs-toggle="modal"
-                      data-bs-target="#whiteChocolate-modal"
-                      >White Chocolate</a
+                      data-bs-target="#brownies-modal"
+                      >Brownies</a
                     >
                   </div>
                 </div>
 
-                <div class="d-flex">
+                <div class="d-flex me-5">
                   <div class="text-start">
                     <img
                       class="menuImg mt-4"
-                      src="./assets/img/bonCafeSignature-modified.png"
-                      alt="bonCafeSignature logo "
+                      src="./assets/img/cookies-modified.png"
+                      alt="cookies logo "
                     />
                   </div>
                   <div
                     class="text-start align-self-center fs-4 fnt-outfit ms-4"
                   >
                     <a
-                      class="nav-link text-brown"
+                      class="nav-link text-brown me-1"
                       href="#back-to-mainMenu"
                       type="button"
                       data-bs-toggle="modal"
-                      data-bs-target="#bonCafeSignature-modal"
-                      >Bon Cafe Signature</a
+                      data-bs-target="#cookies-modal"
+                      >Cookies</a
                     >
                   </div>
                 </div>
@@ -2970,40 +3472,389 @@
             </div>
           </div>
           <!-- Pastries Menu end -->
+
+          <!-- PASTRIES ITEM MODAL START -->
+          <!-- Blueberry Modal start -->
+          <div class="menu-modal">
+            <div
+              class="modal fade"
+              id="blueberryCheesecake-modal"
+              tabindex="-1"
+              aria-labelledby="blueberryCheesecake-modal"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body d-block d-md-flex">
+                    <div class="ms-3 mb-4">
+                      <img
+                        class="item-image rounded-2"
+                        src="./assets/img/blueberryCheesecake.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ps-4 align-items-center">
+                      <h1 class="fnt-outfit fw-bold mt-5 text-center">
+                        Blueberry Cheesecake
+                      </h1>
+                      <p class="text-start fnt-roboto mt-4">
+                        Creamy, rich cheesecake flavored with a bit of lemon
+                        zest is crowned with blueberry topping in this lovely
+                        blueberry cheesecake. This is one dessert you’ll want to
+                        make all year round!
+                      </p>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-bread-slice"></i> Slice/Piece - 65
+                    </div>
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-money-check-dollar"></i> Whole - 500
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Blueberry Modal end -->
+
+          <!-- Oreo Modal start -->
+          <div class="menu-modal">
+            <div
+              class="modal fade"
+              id="oreoCheesecake1-modal"
+              tabindex="-1"
+              aria-labelledby="oreoCheesecake1-modal"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body d-block d-md-flex">
+                    <div class="ms-3 mb-4">
+                      <img
+                        class="item-image rounded-2"
+                        src="./assets/img/oreoCheesecake.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ps-4 align-items-center">
+                      <h1 class="fnt-outfit fw-bold mt-5 text-center">
+                        Oreo Cheesecake
+                      </h1>
+                      <p class="text-start fnt-roboto mt-4">
+                        Calling all Oreo lovers!! This creamy Oreo cheesecake is
+                        chock full of those delicious cookies, covered in a
+                        beautiful swirled chocolate ganache and crowned with
+                        whipped cream.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-bread-slice"></i> Slice/Piece - 65
+                    </div>
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-money-check-dollar"></i> Whole - 500
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Oreo ModalBacSilog -->
+
+          <!-- Strawberry Modal start -->
+          <div class="menu-modal">
+            <div
+              class="modal fade"
+              id="strawberryCheesecake-modal"
+              tabindex="-1"
+              aria-labelledby="strawberryCheesecake-modal"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body d-block d-md-flex">
+                    <div class="ms-3 mb-4">
+                      <img
+                        class="item-image rounded-2"
+                        src="./assets/img/strawberryCheesecake.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ps-4 align-items-center">
+                      <h1 class="fnt-outfit fw-bold mt-5 text-center">
+                        Strawberry Cheesecake
+                      </h1>
+                      <p class="text-start fnt-roboto mt-4">
+                        If you’re looking for the easiest upgrade to classic
+                        cheesecake, you can’t get much better (or easier!) than
+                        a sweet strawberry topping. Our recipe adds a
+                        2-ingredient syrupy strawberry glaze to a fresh
+                        strawberry topping, making this cheesecake not only
+                        extremely delicious, but completely wow-worthy. If
+                        you’re looking for an impressive Valentine’s Day dessert
+                        or a summer treat to cool off with, you can’t go wrong
+                        with this classic.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-bread-slice"></i> Slice/Piece - 65
+                    </div>
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-money-check-dollar"></i> Whole - 500
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Strawberry ModalBacSilog -->
+
+          <!-- Banana Modal start -->
+          <div class="menu-modal">
+            <div
+              class="modal fade"
+              id="bananaLoaf-modal"
+              tabindex="-1"
+              aria-labelledby="bananaLoaf-modal"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body d-block d-md-flex">
+                    <div class="ms-3 mb-4">
+                      <img
+                        class="item-image rounded-2"
+                        src="./assets/img/bananaLoaf.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ps-4 align-items-center">
+                      <h1 class="fnt-outfit fw-bold mt-5 text-center">
+                        Banana Loaf
+                      </h1>
+                      <p class="text-start fnt-roboto mt-4">
+                        Banana bread is comfort food at its finest. The light,
+                        fluffy quick bread not only tastes amazing, but fills
+                        your whole kitchen with a decadent smell as it bakes.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-bread-slice"></i> Slice/Piece - 30
+                    </div>
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-money-check-dollar"></i> Whole - 180
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Banana Modal end -->
+
+          <!-- Brownies Modal start -->
+          <div class="menu-modal">
+            <div
+              class="modal fade"
+              id="brownies-modal"
+              tabindex="-1"
+              aria-labelledby="brownies-modal"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body d-block d-md-flex">
+                    <div class="ms-3 mb-4">
+                      <img
+                        class="item-image rounded-2"
+                        src="./assets/img/brownies.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ps-4 align-items-center">
+                      <h1 class="fnt-outfit fw-bold mt-5 text-center">
+                        Brownies
+                      </h1>
+                      <p class="text-start fnt-roboto mt-4">
+                        Brownies are a baked good that typically contain
+                        chocolate, eggs, butter, sugar, flour, salt, and vanilla
+                        extract. (Here’s my very best brownie recipe, if you’d
+                        like to see an example.) Although the ingredients are
+                        similar to what is used for a chocolate cake, a brownie
+                        is denser and heavier than a cake. Different recipes may
+                        produce a “fudgier” or “cakier” brownie depending on the
+                        ingredients or method of combination that is used.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-money-check-dollar"></i> 3 Pieces -
+                      70
+                    </div>
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-money-check-dollar"></i> 6 Pieces -
+                      130
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Brownies Modal end -->
+
+          <!-- Cookies Modal start -->
+          <div class="menu-modal">
+            <div
+              class="modal fade"
+              id="cookies-modal"
+              tabindex="-1"
+              aria-labelledby="cookies-modal"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body d-block d-md-flex">
+                    <div class="ms-3 mb-4">
+                      <img
+                        class="item-image rounded-2"
+                        src="./assets/img/cookies.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ps-4 align-items-center">
+                      <h1 class="fnt-outfit fw-bold mt-5 text-center">
+                        Cookies
+                      </h1>
+                      <p class="text-start fnt-roboto mt-4">
+                        Cookies are baked treats. A cookie is a small sweet,
+                        crispy or cake-like pastry most often made with flour,
+                        sugar, liquid and fat.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-bread-slice"></i> Slice/Piece - 20
+                    </div>
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-money-check-dollar"></i> 3 Pieces -
+                      55
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Cookies Modal end -->
+          <!-- PASTRIES ITEM MODAL END -->
         </div>
       </div>
 
       <!-- Menu end -->
     </main>
-    <footer class="container-fluid">
+    <footer>
       <div class="footer-data d-flex justify-content-evenly">
         <div class="d-block d-md-flex">
           <div
-            class="fw-bold fnt-outfit text-start text-sm-center me-3 pe-5 mx-sm-3 px-sm-5"
+            class="fw-bold fnt-outfit text-start text-md-center me-3 pe-5 mx-sm-3 px-sm-5 mb-2"
           >
-            About
+            <a class="text-decoration-none text-dark" href="#">About</a>
           </div>
           <div
-            class="fw-bold fnt-outfit text-start text-sm-center me-3 pe-5 mx-sm-3 px-sm-5"
+            class="fw-bold fnt-outfit text-start text-md-center me-3 pe-5 mx-sm-3 px-sm-5 mb-2"
           >
-            <i class="fa-solid fa-location-dot"></i> Find our store
+            <a class="text-decoration-none text-dark" href="pagenotfound.html"
+              ><i class="fa-solid fa-location-dot"></i> Find our store</a
+            >
           </div>
           <div
-            class="fw-bold fnt-outfit text-start text-sm-center me-3 pe-5 mx-sm-3 px-sm-5"
+            class="fw-bold fnt-outfit text-start text-md-center me-3 pe-5 mx-sm-3 px-sm-5 mb-2"
           >
-            Promotion
+            <a class="text-decoration-none text-dark" href="pagenotfound.html"
+              >Promotion</a
+            >
           </div>
         </div>
         <div class="fw-bold fnt-outfit">
           Our Socials
           <div class="fnt-roboto fw-light text-start mt-2">
-            <i class="fa-brands fa-facebook"></i> Facebook
+            <a
+              class="text-decoration-none text-dark"
+              href="https://www.facebook.com/boncafe22"
+              target="_blank"
+              ><i class="fa-brands fa-facebook"></i> Facebook</a
+            >
           </div>
           <div class="fnt-roboto fw-light text-start mt-2">
-            <i class="fa-brands fa-instagram"></i> Instagram
+            <a
+              class="text-decoration-none text-dark"
+              href="https://www.instagram.com/boncafe_byjels/"
+              target="_blank"
+              ><i class="fa-brands fa-instagram"></i> Instagram
+            </a>
           </div>
           <div class="fnt-roboto fw-light text-start mt-2">
-            <i class="fa-brands fa-tiktok"></i> Tiktok
+            <a
+              class="text-decoration-none text-dark"
+              href="https://www.tiktok.com/@boncafeph"
+              target="_blank"
+              ><i class="fa-brands fa-tiktok"></i> Tiktok</a
+            >
           </div>
         </div>
       </div>

@@ -31,7 +31,7 @@ TABLE OF CONTENTS
     margin-right: 189px;
 }
 .mt-6 {
-    margin-top: 189px;
+    margin-top: 169px;
 }
 .text-brown {
     color: #281D05;
@@ -72,10 +72,6 @@ TABLE OF CONTENTS
             --bs-gradient: none;
     color: #8E8948;
 }
-.animate{
-    animation-duration: 1s;
-    animation-fill-mode: both;
-}
 
 /* 2. Universal Modification */
 
@@ -112,46 +108,6 @@ footer i{
     color: #8E8948;
 }
 
-/* 3. Animations */
-@keyframes slideToBottom {
-    from{
-        transform:  translateY(-300px);
-    }
-    to{
-        transform: translateY(0);
-    }
-}
-.slideToBottom {
-    animation: slideToBottom ease-in;
-}
-
-@keyframes slideInLeft {
-    from{
-        transform:  translateX(-300px);
-    }
-    to{
-        transform: translateX(0);
-    }
-}
-.slideInLeft {
-    animation: slideInLeft ease-in;
-}
-
-@keyframes slideInRight {
-    from{
-        transform:  translateX(300px);
-    }
-    to{
-        transform: translateX(0);
-    }
-}
-
-.slideInRight {
-    animation: slideInLeft ease;
-}
-
-/* 4. Body Modification */
-
 
 /* 5. Header Modification */
 #brand-logo {
@@ -176,7 +132,12 @@ nav {
 
 /* Home page big-image */
 .img-big{
-    width: 100vw;
+background-image: url(../assets/img/boncafe1.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+opacity: 0.49;
+height: 709px;
 }
 /* Home page big-paragraph */
 .p-big{
@@ -187,11 +148,11 @@ nav {
 /* Grid menu images sizing */
 .rows{
     width: 656px;
-    height: 487px;
+    height: 637px;
 }
 .menu-img{
     width: 656px;
-    height: 323px;
+    height: 423px;
     padding: 0;
 }
 .menu-img1{
@@ -200,6 +161,9 @@ nav {
     padding: 0;
 }
 /* Feedback modification */
+.feedback-body{
+    margin: auto;
+}
 .feedback{
     margin: 50px 0 100px 0;
 }
@@ -232,12 +196,15 @@ figure p {
                 width: 322px;
                 height: 421px;
             }
+        .feedback-header {
+            font-size: 48px;
+        }
 }
 @media (max-width:1400px) {
     /* Grid menu images sizing */
         .rows {
             width: 566px;
-            height: 487px;
+            height: 507px;
         }
     
         .menu-img {
@@ -248,12 +215,15 @@ figure p {
             width: 277px;
             height: 486px;
         }
+    .feedback-header{
+        font-size: 36px;
+    }
 
 }
 
 @media (max-width:1200px) {
     .img-big{
-        height: 709px;;
+        height: 709px;
     }
     .ms-6 {
         margin-left: 101px;
@@ -269,7 +239,7 @@ figure p {
         /* Grid menu images sizing */
         .rows {
             width: 476px;
-            height: 382.48px;
+            height: 437px;
         }
         .menu-img {
             width: 476px;
@@ -284,15 +254,17 @@ figure p {
             width: 472px;
             height: 381px;
         }
+                .feedback-header {
+                    font-size: 28px;
+                }
 }
 @media (max-width:992px) {
     .rows {
-            width: 356px;
-            height: 382.48px;
+            width: 48vw;
         }
     
         .menu-img {
-            width: 356px;
+            width: 48vw;
             height: 227.15px;
         }
     /* Feebcack row */
@@ -304,7 +276,7 @@ figure p {
 @media (max-width:768px) {
     .rows {
             width: 266px;
-            height: 382.48px;
+            height: 452px;
         }
     
         .menu-img {
@@ -328,10 +300,17 @@ figure p {
     }
 
     /* Grid menu images sizing */
+    .row{
+        width: 100%;
+    }
+    .row1{
+        width: 100vw;
+    }
+
     .rows {
-        margin: 0px 104.045px ;
-        width: 343.91px;
-        height: 362.48px;
+        margin: auto ;
+        width: 60vw;
+        height: 45vh;
     }
     .menu-img {
         width: 343.91px;
@@ -340,14 +319,14 @@ figure p {
         
     .menu-img1 {
         width: 304.65px;
-        height: 168px;
+        height: 208px;
     }
     .feedback-rows {
         width: 432px;
         height: 400px;
     }
     .feedback-files{
-        margin: 0px 48px;
+        margin: 0px 2vw;
     }
 }
 
@@ -470,6 +449,11 @@ border-radius: 17px;
     padding: 16px 16px 0px 16px;
 }
 
+tr:hover{
+    background-color: #b29f919a;
+    border-radius: 5px;
+}
+
 
 @media (max-width:768px){
     .menu-name-bg {
@@ -490,4 +474,10 @@ border-radius: 17px;
         height: 40vh;
         width: 80vw;
     }
+}
+
+/* 404 Page */
+.img404{
+    height: 62vh;
+    width: 40vw;
 }
