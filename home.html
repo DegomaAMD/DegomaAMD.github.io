@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bon Café | Home</title>
+    <title>Bon Café</title>
     <link
       rel="shortcut icon"
       type="image/jpg"
@@ -35,96 +35,367 @@
   </head>
   <body class="bg-gold">
     <header class="border-bottom bg-light">
-      <div class="d-flex justify-content-between mx-5 pt-3 align-items-center">
-        <div class="mb-3">
-          <a href="index.html"
-            ><img
-              id="brand-logo"
-              src="./assets/img/boncage-logo.ico"
-              alt="bon cafe logo"
-          /></a>
-        </div>
+      <nav>
         <div
-          class="offcanvas-md offcanvas-end d-flex justify-content-between"
-          tabindex="-1"
-          id="offcanvasRight"
+          class="d-flex justify-content-between mx-5 pt-3 align-items-center bg-light"
         >
-          <div class="offcanvas-header">
-            <div class="fnt-outfit text-brown fw-bold">BON CAFE</div>
-            <div>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="offcanvas"
-                data-bs-target="#offcanvasRight"
-                aria-label="Close"
-              ></button>
+          <div class="mb-3">
+            <a href="index.html"
+              ><img
+                id="brand-logo"
+                src="./assets/img/boncage-logo.ico"
+                alt="bon cafe logo"
+            /></a>
+          </div>
+          <div
+            class="offcanvas-md offcanvas-end d-flex justify-content-between"
+            tabindex="-1"
+            id="offcanvasRight"
+          >
+            <div class="offcanvas-header">
+              <div class="fnt-outfit text-brown fw-bold">BON CAFE</div>
+              <div>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  data-bs-target="#offcanvasRight"
+                  aria-label="Close"
+                ></button>
+              </div>
+            </div>
+
+            <div class="offcanvas-body">
+              <ul class="nav d-block d-md-flex">
+                <div class="prof-img border d-block d-md-none fs-2">AM</div>
+
+                <li class="nav-item">
+                  <a
+                    class="btn nav-link px-3 mx-3 text-brown fw-semibold"
+                    href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="btn nav-link px-3 mx-3 text-brown fw-semibold"
+                    href="menu.html"
+                    >Menu</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="btn nav-link px-3 mx-3 text-brown fw-semibold"
+                    href="about.html"
+                    >About</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="btn nav-link px-3 mx-4 text-brown fw-semibold"
+                    href="pagenotfound.html"
+                    ><i class="fa-solid fa-cart-shopping" aria-hidden="true"></i
+                  ></a>
+                </li>
+                <li>
+                  <div class="dropdown d-none d-md-block">
+                    <button
+                      type="button"
+                      class="dropdown-toggle border-0 ms-2 d-flex align-items-center bg-white"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <div class="border p-2 rounded-circle text-dark">AM</div>
+                    </button>
+
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a
+                          class="dropdown-item text-start"
+                          href="pagenotfound.html"
+                          >Your Profile</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item text-start"
+                          href="pagenotfound.html"
+                          >Your Order Details</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item text-start" href="./index.html"
+                          >Logout</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <hr />
+                <li>
+                  <a
+                    class="nav-link px-3 mx-3 text-brown fw-semibold text-start d-block d-md-none"
+                    href="pagenotfound.html"
+                    >Your Profile</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="nav-link px-3 mx-3 text-brown fw-semibold text-start d-block d-md-none"
+                    href="pagenotfound.html"
+                    >Your Order Details</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="nav-link px-3 mx-3 text-brown fw-semibold text-start d-block d-md-none"
+                    href="./index.html"
+                    >Logout</a
+                  >
+                </li>
+              </ul>
             </div>
           </div>
-
-          <div class="offcanvas-body">
-            <ul class="nav d-block d-md-flex">
-              <li class="nav-item">
-                <a
-                  class="btn nav-link px-3 mx-3 text-brown fw-semibold"
-                  href="index.html"
-                  >Home</a
-                >
-              </li>
-              <li>
-                <a
-                  class="btn nav-link px-3 mx-3 text-brown fw-semibold"
-                  href="menu.html"
-                  >Menu</a
-                >
-              </li>
-              <li>
-                <a
-                  class="btn nav-link px-3 mx-3 text-brown fw-semibold"
-                  href="about.html"
-                  >About</a
-                >
-              </li>
-              <li>
-                <a
-                  class="btn nav-link px-3 mx-4 text-brown fw-semibold"
-                  href="pagenotfound.html"
-                  ><i class="fa-solid fa-cart-shopping" aria-hidden="true"></i
-                ></a>
-              </li>
-              <li class="d-block d-md-none">
-                <a
-                  href="./login.html"
-                  type="button"
-                  class="btn btn-outline-darkgreen rounded-pill"
-                  >Login</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="d-none d-md-block">
-            <a
-              href="./login.html"
+          <div class="d-flex d-md-none justify-content-between">
+            <button
               type="button"
-              class="btn btn-outline-darkgreen rounded-pill"
-              >Login</a
+              class="btn text-brown mb-1"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasRight"
+              aria-controls="offcanvasRight"
+            >
+              <i class="fa-solid fa-bars" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="">
+      <!-- Homepage big image start -->
+      <div class="img-big position-relative">
+        <!-- <img
+          class="img-big opacity-25"
+          src="./assets/img/boncafe1.jpg"
+          alt=""
+        /> -->
+      </div>
+      <div class="position-absolute top-50 left-0 ms-4 ms-lg-5">
+        <p class="text-white fnt-outfit h1 mt-6">Welcome to our Cafe</p>
+        <a href="./menu.html" class="btn btn-outline-darkgreen mt-3">
+          Discover flavors</a
+        >
+      </div>
+
+      <!-- Homepage big image end -->
+
+      <!-- Grid menu start -->
+      <div class="container-fluid container-lg text-center">
+        <div class="row m-0">
+          <div
+            class="rows col-12 bg-lightgreen p-0 pb-3 mt-5 me-sm-1 ms-0 ms-md-1 ms-lg-0"
+          >
+            <div>
+              <img
+                class="menu-img img-fluid mb-3"
+                src="./assets/img/frappe-non-coffee.jpg"
+                alt=""
+              />
+            </div>
+            <div class="feedback-header fw-bold mb-3 fnt-outfit">
+              Cozy up this season
+            </div>
+            <div>
+              <p class="mb-3 px-3">
+                Enjoy warm and quality time with your loved ones with new
+                beverages.
+              </p>
+            </div>
+
+            <div>
+              <a
+                href="menu.html"
+                type="button"
+                class="btn btn-outline-dark fw-boldfnt-roboto rounded-pill"
+                >See More</a
+              >
+            </div>
+          </div>
+          <div
+            class="rows col-12 bg-lightgreen p-0 pb-3 mt-3 mt-3 mt-sm-5 ms-sm-1"
+          >
+            <div>
+              <img
+                class="menu-img img-fluid mb-3"
+                src="./assets/img/pastries.jpg"
+                alt=""
+              />
+            </div>
+            <div class="feedback-header fw-bold mb-3 fnt-outfit">
+              Soothing Comfort Treats
+            </div>
+            <div>
+              <p class="mb-3 fnt-roboto px-3">
+                All-day goodness with new and returning snacks.
+              </p>
+            </div>
+            <a
+              href="menu.html"
+              type="button"
+              class="btn btn-outline-dark fw-boldfnt-roboto rounded-pill"
+              >See More</a
             >
           </div>
         </div>
-        <div class="d-flex d-md-none justify-content-between">
-          <button
-            type="button"
-            class="btn text-brown mb-1"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasRight"
-            aria-controls="offcanvasRight"
+      </div>
+      <div class="container-lg">
+        <div class="row">
+          <div
+            class="row1 col bg-darkgreen d-flex justify-content-between align-items-center mt-3 p-0"
           >
-            <i class="fa-solid fa-bars" aria-hidden="true"></i>
-          </button>
+            <div>
+              <img
+                class="menu-img1 img-fluid"
+                src="./assets/img/about-boncafe.jpg"
+                alt=""
+              />
+            </div>
+            <div class="px-5">
+              <div class="feedback-header fw-bold mb-3 fnt-outfit">
+                Soothing Comfort Treats
+              </div>
+              <p class="mb-3 fnt-roboto">
+                All-day goodness with new and returning snacks.
+              </p>
+              <a
+                href="menu.html"
+                type="button"
+                class="btn btn-outline-dark fw-boldfnt-roboto rounded-pill"
+                >See More</a
+              >
+            </div>
+          </div>
         </div>
       </div>
-    </header>
-    <footer class="container-fluid">
+      <!-- Grid menu end -->
+
+      <!-- Feedback start -->
+      <div class="feedback-body container">
+        <div class="feedback">
+          <div><h2 class="text-white fw-bold fnt-outfit">FEEDBACK</h2></div>
+          <div>
+            <p class="text-white">Here are some feedbacks from our customers</p>
+          </div>
+        </div>
+        <div class="feedback-files row">
+          <div
+            class="feedback-rows col-12 col-lg-6 col-xl-3 bg-lightbrown position-relative rounded m-1 mb-4 mt-5 mt-xl-1"
+          >
+            <img
+              class="fb-img rounded-circle position-absolute top-0 left-50 translate-middle animate slideToBottom"
+              src="./assets/img/r1.jpg"
+              alt=""
+            />
+            <figure class="mx-2">
+              <blockquote class="blockquote">
+                <p class="fs-7">
+                  “they deliver 24/7 ata. Kaya suki ako neto kasi yung cravings
+                  ko ng kape, pag midnight talaga e. HAHAHAHAHA Favorite ko
+                  talaga yung matcha. Sabi nga nila Tam lasang damo daw.
+                  Hahahahahahaha Pero masarap talaga sa panlasa ko. Bonus na
+                  yung pagtitimpla nung oorderan ko if sasarapan nya lalo Thank
+                  you Bon Kape the best kayo Grabe din yung level up nung store
+                  na 'to. Upgraded yung lasa”
+                </p>
+              </blockquote>
+              <figcaption
+                class="blockquote-footer mt-5 text-end text-dark fw-bold"
+              >
+                Nicole
+              </figcaption>
+            </figure>
+          </div>
+          <div
+            class="feedback-rows col-12 col-lg-6 col-xl-3 bg-lightbrown position-relative rounded m-1 mt-5 mt-xl-1 mb-4"
+          >
+            <img
+              class="fb-img rounded-circle position-absolute top-0 left-50 translate-middle"
+              src="./assets/img/r2.jpg"
+              alt=""
+            />
+            <figure class="mx-2">
+              <blockquote class="blockquote">
+                <p class="fs-6">
+                  “ - Coffee with friends is like capturing happiness in a cup!
+                  - - Thanks sa late night coffee treat guys Ru and Kim! - - Ang
+                  nice ng atmosphere at interior sa Bon Kape, cute and cozy
+                  place!Polite din po staff!Maraming salamat! - ”
+                </p>
+              </blockquote>
+              <figcaption
+                class="blockquote-footer mt-5 text-end text-dark fw-bold"
+              >
+                공주병
+              </figcaption>
+            </figure>
+          </div>
+          <div
+            class="feedback-rows col-12 col-lg-6 col-xl-3 bg-lightbrown position-relative rounded m-1 mt-5 mt-xl-1 mb-4"
+          >
+            <img
+              class="fb-img rounded-circle position-absolute top-0 left-50 translate-middle"
+              src="./assets/img/r3.jpg"
+              alt=""
+            />
+            <figure class="mx-2">
+              <blockquote class="blockquote">
+                <p class="fs-6">
+                  “ May the cold brew be with you. Must Try Grabe Yung Signature
+                  at Banana cake nila. Bon Kape #coffee #instafood #coffeetime
+                  #supportlocal “
+                </p>
+              </blockquote>
+              <figcaption
+                class="blockquote-footer mt-5 text-end text-dark fw-bold"
+              >
+                Charles
+              </figcaption>
+            </figure>
+          </div>
+          <div
+            class="feedback-rows col-12 col-lg-6 col-xl-3 bg-lightbrown position-relative rounded m-1 mt-5 mt-xl-1 mb-4"
+          >
+            <img
+              class="fb-img rounded-circle position-absolute top-0 left-50 translate-middle"
+              src="./assets/img/r4.jpg"
+              alt=""
+            />
+            <figure class="mx-2">
+              <blockquote class="blockquote">
+                <p class="fs-7">
+                  “ Midnight Snacks ba kamo? Arat na at Bon Kape #instagramable
+                  Level-up ung cart to shop, Level-up din ung lasa
+                  mala-starbucks, d ka na mamasahe mga ka-Villa Payatas Phase 3
+                  Area C Urban lang yan kahit hating gabi sulit ung bayad
+                  malamig naman ung tatambayan nyo "relaxing" & "comfy".
+                  Napaka-generous pa ng Owner Ms. Jela Saragoza super na-enjoy
+                  ng mga bata ung free choco mousse cupcakes. Til our next
+                  visit. Try nyo n din mga kape lover jan. #cravings
+                  #frenchvanillaicedcoffee #spanishlatteicedcoffee #fries
+                  #cupcakes “
+                </p>
+              </blockquote>
+              <figcaption
+                class="blockquote-footer mt-5 text-end text-dark fw-bold"
+              >
+                Ruffah
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+      <!-- Feedback end -->
+    </main>
+    <footer>
       <div class="footer-data d-flex justify-content-evenly">
         <div class="d-block d-md-flex">
           <div

@@ -1,0 +1,3872 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bon Café | Menu</title>
+    <link
+      rel="shortcut icon"
+      type="image/jpg"
+      href="./assets/img/boncage-logo.ico"
+      class="rounded-circle"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;800&family=Roboto&family=Rubik+80s+Fade&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <!-- Font Awesome Code Kit -->
+    <script
+      src="https://kit.fontawesome.com/de1d73e5bb.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="border-bottom bg-light">
+      <div class="d-flex justify-content-between mx-5 pt-3 align-items-center">
+        <div class="mb-3">
+          <a href="index.html"
+            ><img
+              id="brand-logo"
+              src="./assets/img/boncage-logo.ico"
+              alt="bon cafe logo"
+          /></a>
+        </div>
+        <div
+          class="offcanvas-md offcanvas-end d-flex justify-content-between"
+          tabindex="-1"
+          id="offcanvasRight"
+        >
+          <div class="offcanvas-header">
+            <div class="fnt-outfit text-brown fw-bold">BON CAFE</div>
+            <div>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                data-bs-target="#offcanvasRight"
+                aria-label="Close"
+              ></button>
+            </div>
+          </div>
+
+          <div class="offcanvas-body">
+            <ul class="nav d-block d-md-flex">
+              <li class="nav-item">
+                <a
+                  class="btn nav-link px-3 mx-3 text-brown fw-semibold"
+                  href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  class="btn nav-link px-3 mx-3 text-brown fw-semibold"
+                  href="menu.html"
+                  >Menu</a
+                >
+              </li>
+              <li>
+                <a
+                  class="btn nav-link px-3 mx-3 text-brown fw-semibold"
+                  href="about.html"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  class="btn nav-link px-3 mx-4 text-brown fw-semibold"
+                  href="pagenotfound.html"
+                  ><i class="fa-solid fa-cart-shopping" aria-hidden="true"></i
+                ></a>
+              </li>
+              <li class="d-block d-md-none">
+                <a
+                  href="./login.html"
+                  type="button"
+                  class="btn btn-outline-darkgreen rounded-pill"
+                  >Login</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="d-none d-md-block">
+            <a
+              href="./login.html"
+              type="button"
+              class="btn btn-outline-darkgreen rounded-pill"
+              >Login</a
+            >
+          </div>
+        </div>
+        <div class="d-flex d-md-none justify-content-between">
+          <button
+            type="button"
+            class="btn text-brown mb-1"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight"
+          >
+            <i class="fa-solid fa-bars" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="bg-brown">
+      <!-- Menu Image start -->
+      <div>
+        <img class="menu-bg img-fluid" src="./assets/img/boncafe3.jpg" alt="" />
+      </div>
+      <!-- Menu Image end -->
+
+      <!-- Menu Heading start -->
+      <div class="bg-menu text-brown">
+        <h2 class="menu-name-bg fnt-outfit text-start" id="back-to-mainMenu">
+          MENU
+        </h2>
+      </div>
+      <!-- Menu Heading end -->
+
+      <!-- Menu start -->
+      <div class="container-fluid container-lg">
+        <div class="row">
+          <div class="col-3 d-none d-md-block">
+            <nav
+              id="menu-items"
+              class="h-100 flex-column align-items-stretch pe-4 mt-3"
+            >
+              <nav class="nav nav-pills flex-column">
+                <a
+                  class="nav-link text-start fnt-outfit ms-lg-5 mb-2 ps-3 text-brown"
+                  href="#back-to-mainMenu"
+                  >DRINKS</a
+                >
+                <nav class="nav nav-pills flex-column">
+                  <a
+                    class="nav-link my-1 text-start fnt-outfit ms-lg-5 text-dark fw-light"
+                    href="#back-to-mainMenu"
+                    onclick="changeMainMenuToEspressoPage()"
+                    >Espresso</a
+                  >
+                  <a
+                    class="nav-link my-1 text-start fnt-outfit ms-lg-5 text-dark fw-light"
+                    href="#back-to-mainMenu"
+                    onclick="changeMainMenuTononCoffeePage()"
+                    >Non-coffee</a
+                  >
+                  <a
+                    class="nav-link my-1 text-start fnt-outfit ms-lg-5 text-dark fw-light"
+                    href="#back-to-mainMenu"
+                    onclick="changeMainMenuTofrappeNonCoffee()"
+                    >Non-coffee based Frappe</a
+                  >
+                  <a
+                    class="nav-link my-1 text-start fnt-outfit ms-lg-5 text-dark fw-light"
+                    href="#back-to-mainMenu"
+                    onclick="changeMainMenuTofrappeCoffee()"
+                    >Coffee based Frappe</a
+                  >
+                  <a
+                    class="nav-link my-1 text-start fnt-outfit ms-lg-5 text-dark fw-light"
+                    href="#back-to-mainMenu"
+                    onclick="changeMainMenuTorefresher()"
+                    >Refresher</a
+                  >
+                </nav>
+                <a
+                  class="nav-link text-start fnt-outfit ms-lg-5 mb-2 mt-5 ps-3 text-brown"
+                  href="#back-to-mainMenu"
+                  >FOODS</a
+                >
+                <nav class="nav nav-pills flex-column">
+                  <a
+                    class="nav-link my-1 text-start fnt-outfit ms-lg-5 text-dark fw-light"
+                    href="#back-to-mainMenu"
+                    onclick="changeMainMenuTosilogPage()"
+                    >Silog</a
+                  >
+                  <a
+                    class="nav-link my-1 text-start fnt-outfit ms-lg-5 text-dark fw-light"
+                    href="#back-to-mainMenu"
+                    onclick="changeMainMenuToeggdropPage()"
+                    >Eggdrop</a
+                  >
+                  <a
+                    class="nav-link my-1 text-start fnt-outfit ms-lg-5 text-dark fw-light"
+                    href="#back-to-mainMenu"
+                    onclick="changeMainMenuTopastriesPage()"
+                    >Pastries</a
+                  >
+                  <a
+                    class="nav-link my-1 text-start fnt-outfit ms-lg-5 text-dark fw-light"
+                    href="#back-to-mainMenu"
+                    onclick="changeMainMenuToaddOnsPage()"
+                    >Add-ons</a
+                  >
+                </nav>
+              </nav>
+            </nav>
+          </div>
+          <div class="col-12 col-sm-9" id="mainMenu">
+            <div
+              data-bs-spy="scroll"
+              data-bs-target="#menu-items"
+              data-bs-smooth-scroll="true"
+              class="menu-item"
+              tabindex="0"
+            >
+              <div
+                class="my-4 text-start fs-4 fw-bold fnt-outfit text-brown"
+                id="drinks"
+              >
+                DRINKS
+              </div>
+              <div class="d-block d-sm-flex justify-content-between">
+                <div class="d-flex" id="espresso">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/espresso.png"
+                      alt="espresso logo"
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown"
+                      href="#back-to-mainMenu"
+                      onclick="changeMainMenuToEspressoPage()"
+                    >
+                      Espresso
+                    </a>
+                  </div>
+                </div>
+                <div class="d-flex" id="coffeeFrappe">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/coffeeFrappe.png"
+                      alt="coffeeFrappe logo "
+                    />
+                  </div>
+                  <div class="text-start align-self-center fnt-outfit ms-4">
+                    <a
+                      class="nav-link me-2"
+                      href="#back-to-mainMenu"
+                      onclick="changeMainMenuTofrappeCoffee()"
+                    >
+                      <div class="fs-4 text-start text-brown">Frappe</div>
+                      <div class="fs-6 text-start text-brown">Coffee based</div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="d-block d-sm-flex justify-content-between">
+                <div class="d-flex" id="non-coffee">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/nonCoffee.png"
+                      alt="non-coffee logo "
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown"
+                      href="#back-to-mainMenu"
+                      onclick="changeMainMenuTononCoffeePage()"
+                      >Non-Coffee</a
+                    >
+                  </div>
+                </div>
+                <div class="d-flex" id="refresher">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/refresher.png"
+                      alt="refresher logo "
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown"
+                      href="#back-to-mainMenu"
+                      onclick="changeMainMenuTorefresher()"
+                      >Refresher</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex" id="non-coffeeFrappe">
+                <div class="text-start">
+                  <img
+                    class="menuImg mt-4"
+                    src="./assets/img/nonCoffeeFrappe.png"
+                    alt="non-coffeeFrappe logo "
+                  />
+                </div>
+                <div class="text-start align-self-center fnt-outfit ms-4">
+                  <a
+                    class="nav-link"
+                    href="#back-to-mainMenu"
+                    onclick="changeMainMenuTofrappeNonCoffee()"
+                  >
+                    <div class="fs-4 text-start text-brown">Frappe</div>
+                    <div class="fs-6 text-start text-brown">
+                      Non-Coffee based
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div
+                class="mt-5 mb-4 text-start fs-4 fw-bold fnt-outfit"
+                id="foods"
+              >
+                FOODS
+              </div>
+              <div class="d-block d-sm-flex justify-content-between">
+                <div class="d-flex" id="silog">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/silog.png"
+                      alt="silog logo"
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown"
+                      href="#back-to-mainMenu"
+                      onclick="changeMainMenuTosilogPage()"
+                      >Silog</a
+                    >
+                  </div>
+                </div>
+                <div class="d-flex" id="add-ons">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/addOn.png"
+                      alt="add-ons logo"
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown"
+                      href="#back-to-mainMenu"
+                      onclick="changeMainMenuToaddOnsPage()"
+                      >Add-ons</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex" id="eggdrop">
+                <div class="text-start">
+                  <img
+                    class="menuImg mt-4"
+                    src="./assets/img/eggdrop.png"
+                    alt="eggdrop logo"
+                  />
+                </div>
+                <div class="text-start align-self-center fs-4 fnt-outfit ms-4">
+                  <a
+                    class="nav-link text-brown"
+                    href="#back-to-mainMenu"
+                    onclick="changeMainMenuToeggdropPage()"
+                    >Eggdrop</a
+                  >
+                </div>
+              </div>
+              <div class="d-flex mb-5" id="pastries">
+                <div class="text-start">
+                  <img
+                    class="menuImg mt-4"
+                    src="./assets/img/pastries.png"
+                    alt="pastries logo"
+                  />
+                </div>
+                <div class="text-start align-self-center fs-4 fnt-outfit ms-4">
+                  <a
+                    class="nav-link text-brown"
+                    href="#back-to-mainMenu"
+                    onclick="changeMainMenuTopastriesPage()"
+                    >Pastries</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Espresso Menu start -->
+          <div class="col-8 ms-3 d-none" id="espressopage">
+            <div
+              data-bs-spy="scroll"
+              data-bs-target="#menu-items"
+              data-bs-smooth-scroll="true"
+              class="menu-item"
+              tabindex="0"
+            >
+              <div class="d-flex">
+                <a
+                  class="nav-link my-4 text-start fw-bold fnt-outfit text-brown pe-1"
+                  href="#back-to-mainMenu"
+                  onclick="changeEspressoPageToMainMenu()"
+                  >Menu
+                </a>
+                <span class="align-self-center pe-1"> | </span>
+                <span class="align-self-center"> Drinks</span>
+              </div>
+
+              <div
+                class="mb-4 text-start fs-4 fw-bold fnt-outfit text-brown"
+                id="drinks"
+              >
+                ESPRESSO
+              </div>
+              <div class="d-block d-sm-flex justify-content-between">
+                <div class="d-flex">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/espresso.png"
+                      alt="Spanish Latte logo"
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown"
+                      href="#back-to-mainMenu"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#spanishLatte-modal"
+                    >
+                      Spanish Latte
+                    </a>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/hazelnutEspresso-modified.png"
+                      alt="hazelnutEspresso logo "
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown me-2"
+                      href="#back-to-mainMenu"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#hazelnutEspresso-modal"
+                    >
+                      Hazelnut Espresso
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="d-block d-sm-flex justify-content-between">
+                <div class="d-flex">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/frenchVanilla-modified.png"
+                      alt="frenchVanilla logo "
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown"
+                      href="#back-to-mainMenu"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#frenchVanilla-modal"
+                      >French Vanilla</a
+                    >
+                  </div>
+                </div>
+
+                <div class="d-flex me-3">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/dirtyMatcha-modified.png"
+                      alt="dirtyMatcha logo "
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown me-5"
+                      href="#back-to-mainMenu"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#dirtyMatcha-modal"
+                      >Dirty Matcha</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-block d-sm-flex justify-content-between">
+                <div class="d-flex">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/caramelMacchiato-modified.png"
+                      alt="caramelMacchiato logo "
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown"
+                      href="#back-to-mainMenu"
+                      ="#"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#caramelMacchiato-modal"
+                      >Caramel Macchiato</a
+                    >
+                  </div>
+                </div>
+
+                <div class="d-flex me-3">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/saltedCaramel-modified.png"
+                      alt="saltedCaramel logo "
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown me-4"
+                      href="#back-to-mainMenu"
+                      ="#"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#saltedCaramel-modal"
+                      >Salted Caramel</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="d-block d-sm-flex justify-content-between mb-5">
+                <div class="d-flex">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/whiteChocolate-modified.png"
+                      alt="whiteChocolate logo "
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown"
+                      href="#back-to-mainMenu"
+                      ="#"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#whiteChocolate-modal"
+                      >White Chocolate</a
+                    >
+                  </div>
+                </div>
+
+                <div class="d-flex">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/bonCafeSignature-modified.png"
+                      alt="bonCafeSignature logo "
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown"
+                      href="#back-to-mainMenu"
+                      ="#"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#bonCafeSignature-modal"
+                      >Bon Cafe Signature</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Espresso Menu end -->
+
+          <!-- ESPRESSO ITEM MODAL START -->
+          <!-- Spanish Latte Modal start -->
+          <div class="menu-modal">
+            <div
+              class="modal fade"
+              id="spanishLatte-modal"
+              tabindex="-1"
+              aria-labelledby="spanishLatte-modal"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body d-block d-md-flex">
+                    <div class="ms-3 mb-4">
+                      <img
+                        class="item-image rounded-2"
+                        src="./assets/img/espresso.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ps-4 align-items-center">
+                      <h1 class="text-start fnt-outfit fw-bold mt-5">
+                        Spanish Latte
+                      </h1>
+                      <p class="text-start fnt-roboto mt-4">
+                        Spaniards are famous for their love of strong coffee,
+                        and their version of the latte is as strong as you’d
+                        expect.
+                        <br />
+                        <br />
+                        The Spanish latte is creamy, espresso-forward, and
+                        sweetened, though not as much as an American latte made
+                        with flavored syrup. You don’t have to fly to Spain to
+                        try this twist on a latte!
+                      </p>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-mug-saucer"></i> M - 115
+                    </div>
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-beer-mug-empty"></i> L - 130
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Spanish Latte Modal end -->
+          <!-- Hazelnut Espresso Modal start -->
+          <div class="menu-modal">
+            <div
+              class="modal fade"
+              id="hazelnutEspresso-modal"
+              tabindex="-1"
+              aria-labelledby="hazelnutEspresso-modal"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body d-block d-md-flex">
+                    <div class="ms-3 mb-4">
+                      <img
+                        class="item-image rounded-2"
+                        src="./assets/img/hazelnutEspresso.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ps-4 align-items-center">
+                      <h1 class="text-start fnt-outfit fw-bold mt-5">
+                        Hazelnut
+                      </h1>
+                      <p class="text-start fnt-roboto mt-4">
+                        This beverage combines espresso with steamed milk and
+                        hazelnut sauce, finished with a sprinkling of mocha
+                        powder.
+                        <br />
+                        <br />
+                        The nutty creamy note blends well with coffee aroma.​
+                        Available as hot, iced, or blended.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-mug-saucer"></i> M - 125
+                    </div>
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-beer-mug-empty"></i> L - 135
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Hazelnut Espresso Modal end -->
+          <!-- French Vanilla Modal start -->
+          <div class="menu-modal">
+            <div
+              class="modal fade"
+              id="frenchVanilla-modal"
+              tabindex="-1"
+              aria-labelledby="frenchVanilla-modal"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body d-block d-md-flex">
+                    <div class="ms-3 mb-4">
+                      <img
+                        class="item-image rounded-2"
+                        src="./assets/img/frenchVanilla.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ps-4 align-items-center">
+                      <h1 class="text-start fnt-outfit fw-bold mt-5">
+                        French Vanilla
+                      </h1>
+                      <p class="text-start fnt-roboto mt-4">
+                        French Vanilla flavored coffee is delicious, so if you
+                        are looking for a way to enhance your coffee drinking
+                        ritual then look no further. Our strongly aromatic
+                        French Vanilla flavored coffee will be sure to please.
+                        Rich in sweet vanilla flavors and heavenly fragrant, our
+                        natural flavorings will simulate the experience of
+                        having fresh vanilla pods seeped into your cup of fine
+                        roasted coffee.
+                        <br />
+                        <br />
+                        Give yourself something to look forward to each day with
+                        this completely rich and full-bodied coffee. This French
+                        Vanilla flavored coffee will not disappoint!
+                      </p>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-mug-saucer"></i> M - 125
+                    </div>
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-beer-mug-empty"></i> L - 135
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- French Vanilla Modal end -->
+          <!-- Dirty Matcha Modal start -->
+          <div class="menu-modal">
+            <div
+              class="modal fade"
+              id="dirtyMatcha-modal"
+              tabindex="-1"
+              aria-labelledby="dirtyMatcha-modal"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body d-block d-md-flex">
+                    <div class="ms-3 mb-4">
+                      <img
+                        class="item-image rounded-2"
+                        src="./assets/img/dirtyMatcha.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ps-4 align-items-center">
+                      <h1 class="text-start fnt-outfit fw-bold mt-5">
+                        Dirty Matcha
+                      </h1>
+                      <p class="text-start fnt-roboto mt-4">
+                        Dirty Matcha (more widely known as Matcha Espresso
+                        Fusion) serves up the perfect solution for those of you
+                        treading caffeine middle ground. Virgin tries of this
+                        beverage were met with nods of approval from us, so we
+                        recreated this drink without the coffee machine.
+                        <br />
+                        <br />
+                        There are three main components to a Dirty Matcha:
+                        Matcha, milk and coffee. Lightly sweetened Matcha forms
+                        the base while milk allows a smooth transition in
+                        flavour between Matcha and roasted notes of coffee.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-mug-saucer"></i> M - 125
+                    </div>
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-beer-mug-empty"></i> L - 135
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Dirty Matcha Modal end -->
+          <!-- Caramel Macchiato Modal start -->
+          <div class="menu-modal">
+            <div
+              class="modal fade"
+              id="caramelMacchiato-modal"
+              tabindex="-1"
+              aria-labelledby="caramelMacchiato-modal"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body d-block d-md-flex">
+                    <div class="ms-3 mb-4">
+                      <img
+                        class="item-image rounded-2"
+                        src="./assets/img/caramelMacchiato.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ps-4 align-items-center">
+                      <h1 class="text-start fnt-outfit fw-bold mt-5">
+                        Caramel Macchiato
+                      </h1>
+                      <p class="text-start fnt-roboto mt-4">
+                        There are days when you need a sweet, warm cup of
+                        coffee. An espresso won’t cut it. But you get bored with
+                        the same old options – latte, cappuccino. Until a combo
+                        catches your eye – the mighty vanilla meets caramel in a
+                        cup of macchiato.
+                        <br />
+                        <br />
+                        A cozy drink with a caramel drizzle that sticks to your
+                        soul.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-mug-saucer"></i> M - 125
+                    </div>
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-beer-mug-empty"></i> L - 135
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Caramel Macchiato Modal end -->
+          <!-- Salted Caramel Modal start -->
+          <div class="menu-modal">
+            <div
+              class="modal fade"
+              id="saltedCaramel-modal"
+              tabindex="-1"
+              aria-labelledby="saltedCaramel-modal"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body d-block d-md-flex">
+                    <div class="ms-3 mb-4">
+                      <img
+                        class="item-image rounded-2"
+                        src="./assets/img/saltedCaramel.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ps-4 align-items-center">
+                      <h1 class="text-start fnt-outfit fw-bold mt-5">
+                        Salted Caramel
+                      </h1>
+                      <p class="text-start fnt-roboto mt-4">
+                        Sweet and salty have always made a surprisingly tasty
+                        combination, and this coffee is no exception! Just one
+                        sip of Salted Caramel Flavored Coffee and you'll be
+                        hooked on this savory delight. It's great as a morning
+                        pick-me-up, or an after-dinner-treat.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-mug-saucer"></i> M - 125
+                    </div>
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-beer-mug-empty"></i> L - 135
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Salted Caramel Modal end -->
+          <!-- White Chocolate Modal start -->
+          <div class="menu-modal">
+            <div
+              class="modal fade"
+              id="whiteChocolate-modal"
+              tabindex="-1"
+              aria-labelledby="whiteChocolate-modal"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body d-block d-md-flex">
+                    <div class="ms-3 mb-4">
+                      <img
+                        class="item-image rounded-2"
+                        src="./assets/img/whiteChocolate.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ps-4 align-items-center">
+                      <h1 class="text-start fnt-outfit fw-bold mt-5">
+                        White Chocolate
+                      </h1>
+                      <p class="text-start fnt-roboto mt-4">
+                        Our signature espresso meets white chocolate sauce and
+                        steamed milk, and then is finished off with sweetened
+                        whipped cream to create this supreme white chocolate
+                        delight.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-mug-saucer"></i> M - 125
+                    </div>
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-beer-mug-empty"></i> L - 135
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- White Chocolate Modal end -->
+          <!-- Bon Cafe Signature Modal start -->
+          <div class="menu-modal">
+            <div
+              class="modal fade"
+              id="bonCafeSignature-modal"
+              tabindex="-1"
+              aria-labelledby="bonCafeSignature-modal"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body d-block d-md-flex">
+                    <div class="ms-3 mb-4">
+                      <img
+                        class="item-image rounded-2"
+                        src="./assets/img/bonCafeSignature.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ps-4 align-items-center">
+                      <h1 class="text-start fnt-outfit fw-bold mt-5">
+                        Bon Cafe Signature
+                      </h1>
+                      <p class="text-start fnt-roboto mt-4">
+                        Our smooth signature Espresso Roast with rich flavor and
+                        caramelly sweetness is at the very heart of everything
+                        we do.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-mug-saucer"></i> M - 135
+                    </div>
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-beer-mug-empty"></i> L - 165
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Bon Cafe Signature Modal end -->
+          <!-- ESPRESSO ITEM MODAL END -->
+
+          <!-- Non-Coffee Menu start -->
+          <div class="col-8 ms-3 d-none" id="nonCoffee">
+            <div
+              data-bs-spy="scroll"
+              data-bs-target="#menu-items"
+              data-bs-smooth-scroll="true"
+              class="menu-item"
+              tabindex="0"
+            >
+              <div class="d-flex">
+                <a
+                  class="nav-link my-4 text-start fw-bold fnt-outfit text-brown pe-1"
+                  href="#back-to-mainMenu"
+                  onclick="changenonCoffeePageToMainMenu()"
+                  >Menu
+                </a>
+                <span class="align-self-center pe-1"> | </span>
+                <span class="align-self-center"> Drinks</span>
+              </div>
+
+              <div
+                class="mb-4 text-start fs-4 fw-bold fnt-outfit text-brown"
+                id="drinks"
+              >
+                NON-COFFEE
+              </div>
+              <div class="d-block d-sm-flex justify-content-between">
+                <div class="d-flex">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/espresso.png"
+                      alt="Vanilla logo"
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown"
+                      href="#back-to-mainMenu"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#vanilla-modal"
+                    >
+                      Vanilla
+                    </a>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/nonCoffee.png"
+                      alt="MatchaLatte logo "
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown me-2"
+                      href="#back-to-mainMenu"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#matchaLatte-modal"
+                    >
+                      Matcha Latte
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="d-block d-sm-flex justify-content-between">
+                <div class="d-flex">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4 rounded-circle"
+                      src="./assets/img/strawberryLatte.jpg"
+                      alt="strawberryLatte logo "
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown"
+                      href="#back-to-mainMenu"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#straberryLatte-modal"
+                      >Strawberry Latte</a
+                    >
+                  </div>
+                </div>
+
+                <div class="d-flex me-2">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/nutella Latte-modified.png"
+                      alt="nutellaLatte logo "
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown"
+                      href="#back-to-mainMenu"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#nuttelaLatte-modal"
+                      >Nutella Latte</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-block d-sm-flex justify-content-between">
+                <div class="d-flex mb-5">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/matchaOreo-modified.png"
+                      alt="matchaOreo logo "
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown"
+                      href="#back-to-mainMenu"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#matchaOreo-modal"
+                      >Matcha Oreo</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Non-Coffee Menu end -->
+
+          <!-- NON-COFFEE ITEM MODAL START -->
+          <!-- Vanilla Modal start -->
+          <div class="menu-modal">
+            <div
+              class="modal fade"
+              id="vanilla-modal"
+              tabindex="-1"
+              aria-labelledby="vanilla-modal"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body d-block d-md-flex">
+                    <div class="ms-3 mb-4">
+                      <img
+                        class="item-image rounded-2"
+                        src="./assets/img/espresso.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ps-4 align-items-center">
+                      <h1 class="text-start fnt-outfit fw-bold mt-5">
+                        Vanilla
+                      </h1>
+                      <p class="text-start fnt-roboto mt-4">
+                        This rich and creamy blend of vanilla bean, milk and ice
+                        topped with whipped cream takes va-va-vanilla flavor to
+                        another level.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-mug-saucer"></i> M - 115
+                    </div>
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-beer-mug-empty"></i> L - 125
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Vanilla Modal end -->
+          <!-- Matcha Latte Modal start -->
+          <div class="menu-modal">
+            <div
+              class="modal fade"
+              id="matchaLatte-modal"
+              tabindex="-1"
+              aria-labelledby="matchaLatte-modal"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body d-block d-md-flex">
+                    <div class="ms-3 mb-4">
+                      <img
+                        class="item-image rounded-2"
+                        src="./assets/img/nonCoffee.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ps-4 align-items-center">
+                      <h1 class="text-start fnt-outfit fw-bold mt-5">
+                        Matcha Latte
+                      </h1>
+                      <p class="text-start fnt-roboto mt-4">
+                        Matcha latte is a milk-based drink, and it works just
+                        like a regular latte. Except it has a shot of Matcha tea
+                        instead of a shot of espresso . By a shot of Matcha I
+                        mean a 2 oz serving of thick Matcha tea, sweetened and
+                        mixed into the milk foam as any other coffee latte would
+                        be.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-mug-saucer"></i> M - 125
+                    </div>
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-beer-mug-empty"></i> L - 145
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Matcha Latte Modal end -->
+          <!-- Strawberry Latte Modal start -->
+          <div class="menu-modal">
+            <div
+              class="modal fade"
+              id="straberryLatte-modal"
+              tabindex="-1"
+              aria-labelledby="straberryLatte-modal"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body d-block d-md-flex">
+                    <div class="ms-3 mb-4">
+                      <img
+                        class="item-image rounded-2"
+                        src="./assets/img/strawberryLatte.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ps-4 align-items-center">
+                      <h1 class="text-start fnt-outfit fw-bold mt-5">
+                        Strawberry Latte
+                      </h1>
+                      <p class="text-start fnt-roboto mt-4">
+                        Served over ice, this strawberry latte offers stunning
+                        layers of espresso, milk, and homemade strawberry syrup.
+                        The strawberries are the perfect complement to bold
+                        espresso and velvety milk!
+                      </p>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-mug-saucer"></i> M - 125
+                    </div>
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-beer-mug-empty"></i> L - 145
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Strawberry Latte Modal end -->
+          <!-- Nutella Latte Modal start -->
+          <div class="menu-modal">
+            <div
+              class="modal fade"
+              id="nuttelaLatte-modal"
+              tabindex="-1"
+              aria-labelledby="nuttelaLatte-modal"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body d-block d-md-flex">
+                    <div class="ms-3 mb-4">
+                      <img
+                        class="item-image rounded-2"
+                        src="./assets/img/bonCafeSignature.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ps-4 align-items-center">
+                      <h1 class="text-start fnt-outfit fw-bold mt-5">
+                        Nutella Latte
+                      </h1>
+                      <p class="text-start fnt-roboto mt-4">
+                        It’s a unique combination of espresso, whole milk, and
+                        Nutella. The Nutella latte has unique flavors that come
+                        with a regular latte but is sweetened with Nutella!
+                      </p>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-mug-saucer"></i> M - 125
+                    </div>
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-beer-mug-empty"></i> L - 145
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Nutella Latte Modal end -->
+          <!-- Matcha Oreo Modal start -->
+          <div class="menu-modal">
+            <div
+              class="modal fade"
+              id="matchaOreo-modal"
+              tabindex="-1"
+              aria-labelledby="matchaOreo-modal"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body d-block d-md-flex">
+                    <div class="ms-3 mb-4">
+                      <img
+                        class="item-image rounded-2"
+                        src="./assets/img/matchaOreo.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ps-4 align-items-center">
+                      <h1 class="text-start fnt-outfit fw-bold mt-5">
+                        Matcha Oreo
+                      </h1>
+                      <p class="text-start fnt-roboto mt-4">
+                        There are days when you need a sweet, warm cup of
+                        coffee. An espresso won’t cut it. But you get bored with
+                        the same old options – latte, cappuccino. Until a combo
+                        catches your eye – the mighty vanilla meets caramel in a
+                        cup of macchiato.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-mug-saucer"></i> M - 125
+                    </div>
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-beer-mug-empty"></i> L - 145
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Matcha Oreo Modal end -->
+          <!-- NON-COFFEE ITEM MODAL END -->
+
+          <!-- Frappe Non-Coffee Menu start -->
+          <div class="col-8 ms-3 d-none" id="frappeNonCoffee">
+            <div
+              data-bs-spy="scroll"
+              data-bs-target="#menu-items"
+              data-bs-smooth-scroll="true"
+              class="menu-item"
+              tabindex="0"
+            >
+              <div class="d-flex">
+                <a
+                  class="nav-link my-4 text-start fw-bold fnt-outfit text-brown pe-1"
+                  href="#back-to-mainMenu"
+                  onclick="changefrappeNonCoffeeToMainMenu()"
+                  >Menu
+                </a>
+                <span class="align-self-center pe-1"> | </span>
+                <span class="align-self-center"> Drinks</span>
+              </div>
+
+              <div id="drinks">
+                <div class="mb-2 text-start fs-4 fw-bold fnt-outfit text-brown">
+                  FRAPPE
+                </div>
+                <div class="mb-4 text-start fs-6 fnt-roboto text-brown">
+                  Non-Coffee based
+                </div>
+              </div>
+              <div class="d-block d-sm-flex justify-content-between">
+                <div class="d-flex">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4 rounded-circle"
+                      src="./assets/img/matchaFrappe.jpg"
+                      alt="matchaFrappe logo"
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown"
+                      href="#back-to-mainMenu"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#matchaFrappe-modal"
+                    >
+                      Matcha Frappe
+                    </a>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4 rounded-circle"
+                      src="./assets/img/darkchocoFrappe.jpg"
+                      alt="darkchocoFrappe logo "
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown me-2"
+                      href="#back-to-mainMenu"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#darkchocoFrappe-modal"
+                    >
+                      <div>Darkchoco w/</div>
+                      <div>Oreo Frappe</div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="d-block d-sm-flex justify-content-between">
+                <div class="d-flex">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4 rounded-circle"
+                      src="./assets/img/strawberryFrappe.jpg"
+                      alt="strawberryFrappe logo "
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown"
+                      href="#back-to-mainMenu"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#strawberryFrappe-modal"
+                      >Strawberry w/ Oreo</a
+                    >
+                  </div>
+                </div>
+
+                <div class="d-flex me-4">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/nutella Latte-modified.png"
+                      alt="oreoNutella logo "
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown"
+                      href="#back-to-mainMenu"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#oreoNutella-modal"
+                      >Oreo Nutella</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-block d-sm-flex justify-content-between">
+                <div class="d-flex mb-5">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4 rounded-circle"
+                      src="./assets/img/bonCafeSignature-modified.png"
+                      alt="oreoCheesecake logo "
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown"
+                      href="#back-to-mainMenu"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#oreoCheesecake-modal"
+                      >Oreo Cheesecake</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Frappe Non-Coffee Menu end -->
+
+          <!-- FRAPPE NON-COFFEE ITEM MODAL START -->
+          <!-- Matche Frappe Modal start -->
+          <div class="menu-modal">
+            <div
+              class="modal fade"
+              id="matchaFrappe-modal"
+              tabindex="-1"
+              aria-labelledby="matchaFrappe-modal"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body d-block d-md-flex">
+                    <div class="ms-3 mb-4">
+                      <img
+                        class="item-image rounded-2"
+                        src="./assets/img/matchaFrappe.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ps-4 align-items-center">
+                      <h1 class="text-start fnt-outfit fw-bold mt-5">
+                        Matcha Frappe
+                      </h1>
+                      <p class="text-start fnt-roboto mt-4">
+                        This blend of sweetened premium matcha green tea, milk
+                        and ice—topped off with sweetened whipped cream—inspires
+                        a delicious boost and good green vibes.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-mug-saucer"></i> M - 130
+                    </div>
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-beer-mug-empty"></i> L - 145
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Matche Frappe Modal end -->
+          <!-- Dark Choco Modal start -->
+          <div class="menu-modal">
+            <div
+              class="modal fade"
+              id="darkchocoFrappe-modal"
+              tabindex="-1"
+              aria-labelledby="darkchocoFrappe-modal"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body d-block d-md-flex">
+                    <div class="ms-3 mb-4">
+                      <img
+                        class="item-image rounded-2"
+                        src="./assets/img/darkchocoFrappe.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ps-4 align-items-center">
+                      <h1 class="text-start fnt-outfit fw-bold mt-5">
+                        Dark Choco w/ Oreo Frappe
+                      </h1>
+                      <p class="text-start fnt-roboto mt-4">
+                        This Chocolate Frappe recipe is just as delicious as one
+                        you could buy at an expensive coffee shop but free from
+                        bad ingredients and so much less expensive.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-mug-saucer"></i> M - 130
+                    </div>
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-beer-mug-empty"></i> L - 145
+                    </div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Dark Choco Modal end -->
+          <!-- Strawberry Modal start -->
+          <div class="menu-modal">
+            <div
+              class="modal fade"
+              id="strawberryFrappe-modal"
+              tabindex="-1"
+              aria-labelledby="strawberryFrappe-modal"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body d-block d-md-flex">
+                    <div class="ms-3 mb-4">
+                      <img
+                        class="item-image rounded-2"
+                        src="./assets/img/strawberryFrappe.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ps-4 align-items-center">
+                      <h1 class="text-start fnt-outfit fw-bold mt-5">
+                        Strawberry w/ Oreo
+                      </h1>
+                      <p class="text-start fnt-roboto mt-4">
+                        Strawberries and oreo are blended with ice and topped
+                        with a swirl of whipped cream. Sip on the crème of the
+                        crop.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-mug-saucer"></i> M - 130
+                    </div>
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-beer-mug-empty"></i> L - 145
+                    </div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Strawberry Modal end -->
+          <!-- Oreo Nutella Modal start -->
+          <div class="menu-modal">
+            <div
+              class="modal fade"
+              id="oreoNutella-modal"
+              tabindex="-1"
+              aria-labelledby="oreoNutella-modal"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body d-block d-md-flex">
+                    <div class="ms-3 mb-4">
+                      <img
+                        class="item-image rounded-2"
+                        src="./assets/img/nutella Latte.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ps-4 align-items-center">
+                      <h1 class="text-start fnt-outfit fw-bold mt-5">
+                        Oreo Nutella
+                      </h1>
+                      <p class="text-start fnt-roboto mt-4">
+                        There are days when you need a sweet, warm cup of
+                        coffee. An espresso won’t cut it. But you get bored with
+                        the same old options – latte, cappuccino. Until a combo
+                        catches your eye – the mighty vanilla meets caramel in a
+                        cup of macchiato.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-mug-saucer"></i> M - 130
+                    </div>
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-beer-mug-empty"></i> L - 145
+                    </div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Oreo Nutella Modal end -->
+          <!-- Oreo Cheesecake Modal start -->
+          <div class="menu-modal">
+            <div
+              class="modal fade"
+              id="oreoCheesecake-modal"
+              tabindex="-1"
+              aria-labelledby="oreoCheesecake-modal"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body d-block d-md-flex">
+                    <div class="ms-3 mb-4">
+                      <img
+                        class="item-image rounded-2"
+                        src="./assets/img/bonCafeSignature.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ps-4 align-items-center">
+                      <h1 class="text-start fnt-outfit fw-bold mt-5">
+                        Oreo Cheesecake
+                      </h1>
+                      <p class="text-start fnt-roboto mt-4">
+                        Oreo Cheesecake Frappe is a chocolatey cold non-based
+                        coffee packed with the goodness and crunchiness of Oreo
+                        cookies. It is a heavenly frappe recipe using three
+                        different forms of chocolate syrup, Oreo cookies, Oreo
+                        Cheesecake filling.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-mug-saucer"></i> M - 130
+                    </div>
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-beer-mug-empty"></i> L - 145
+                    </div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Oreo Cheesecake Modal end -->
+          <!-- FRAPPE NON-COFFEE ITEM MODAL START -->
+
+          <!-- Frappe Coffee Menu start -->
+          <div class="col-8 ms-3 d-none" id="frappeCoffee">
+            <div
+              data-bs-spy="scroll"
+              data-bs-target="#menu-items"
+              data-bs-smooth-scroll="true"
+              class="menu-item"
+              tabindex="0"
+            >
+              <div class="d-flex">
+                <a
+                  class="nav-link my-4 text-start fw-bold fnt-outfit text-brown pe-1"
+                  href="#back-to-mainMenu"
+                  onclick="changefrappeCoffeeToMainMenu()"
+                  >Menu
+                </a>
+                <span class="align-self-center pe-1"> | </span>
+                <span class="align-self-center"> Drinks</span>
+              </div>
+
+              <div id="drinks">
+                <div class="mb-2 text-start fs-4 fw-bold fnt-outfit text-brown">
+                  FRAPPE
+                </div>
+                <div class="mb-4 text-start fs-6 fnt-roboto text-brown">
+                  Coffee based
+                </div>
+              </div>
+              <div class="d-block d-sm-flex justify-content-between">
+                <div class="d-flex">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/nutella Latte-modified.png"
+                      alt="darkChoco logo"
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown"
+                      href="#back-to-mainMenu"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#darkChoco-modal"
+                    >
+                      Dark Choco
+                    </a>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/saltedCaramel-modified.png"
+                      alt="saltedCaramel logo "
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown me-2"
+                      href="#back-to-mainMenu"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#saltedCaramel-modal"
+                    >
+                      Salted Caramel
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="d-block d-sm-flex justify-content-between">
+                <div class="d-flex">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4 rounded-circle"
+                      src="./assets/img/caramelMacchiato-modified.png"
+                      alt="caramelMacchiato logo "
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown"
+                      href="#back-to-mainMenu"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#caramelMacchiato-modal"
+                      >Caramel Macchiato</a
+                    >
+                  </div>
+                </div>
+
+                <div class="d-flex me-2">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4 rounded-circle"
+                      src="./assets/img/darkchocoFrappe.jpg"
+                      alt="chocoHazelnut logo "
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown"
+                      href="#back-to-mainMenu"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#chocoHazelnut-modal"
+                      >Choco Hazelnut</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-block d-sm-flex justify-content-between">
+                <div class="d-flex mb-5">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4 rounded-circle"
+                      src="./assets/img/dirtyMatcha-modified.png"
+                      alt="dirtyMatcha logo "
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown"
+                      href="#back-to-mainMenu"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#dirtyMatcha-modal"
+                      >Dirty Matcha</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Frappe Coffee Menu end -->
+
+          <!-- FRAPPE COFFEE_BASED ITEM MODAL START -->
+          <!-- Choco Hazelnut Modal start -->
+          <div class="menu-modal">
+            <div
+              class="modal fade"
+              id="chocoHazelnut-modal"
+              tabindex="-1"
+              aria-labelledby="chocoHazelnut-modal"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body d-block d-md-flex">
+                    <div class="ms-3 mb-4">
+                      <img
+                        class="item-image rounded-2"
+                        src="./assets/img/darkchocoFrappe.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ps-4 align-items-center">
+                      <h1 class="text-start fnt-outfit fw-bold mt-5">
+                        Choco Hazelnut
+                      </h1>
+                      <p class="text-start fnt-roboto mt-4">
+                        Never dread your mornings again! Indulge in this healthy
+                        and decadent Chocolate Hazelnut Frappuccino, I promise
+                        it will make your day amazing!
+                      </p>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-mug-saucer"></i> M - 130
+                    </div>
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-beer-mug-empty"></i> L - 150
+                    </div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Choco Hazelnut Modal end -->
+          <!-- Dark Choco Modal start -->
+          <div class="menu-modal">
+            <div
+              class="modal fade"
+              id="darkChoco-modal"
+              tabindex="-1"
+              aria-labelledby="darkChoco-modal"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body d-block d-md-flex">
+                    <div class="ms-3 mb-4">
+                      <img
+                        class="item-image rounded-2"
+                        src="./assets/img/nutella Latte.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ps-4 align-items-center">
+                      <h1 class="text-start fnt-outfit fw-bold mt-5">
+                        Dark Choco
+                      </h1>
+                      <p class="text-start fnt-roboto mt-4">
+                        This Chocolate Frappe recipe is just as delicious as one
+                        you could buy at an expensive coffee shop but free from
+                        bad ingredients and so much less expensive.
+                      </p>
+                    </div>
+                  </div>
+                                   <div class="modal-footer">
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-mug-saucer"></i> M - 130
+                    </div>
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-beer-mug-empty"></i> L - 150
+                    </div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Dark Choco Modal end -->
+          <!-- FRAPPE COFFEE_BASED ITEM MODAL END -->
+
+          <!-- Refresher Menu start -->
+          <div class="col-8 ms-3 d-none" id="refresherDrinks">
+            <div
+              data-bs-spy="scroll"
+              data-bs-target="#menu-items"
+              data-bs-smooth-scroll="true"
+              class="menu-item"
+              tabindex="0"
+            >
+              <div class="d-flex">
+                <a
+                  class="nav-link my-4 text-start fw-bold fnt-outfit text-brown pe-1"
+                  href="#back-to-mainMenu"
+                  onclick="changerefresherToMainMenu()"
+                  >Menu
+                </a>
+                <span class="align-self-center pe-1"> | </span>
+                <span class="align-self-center"> Drinks</span>
+              </div>
+
+              <div
+                class="mb-4 text-start fs-4 fw-bold fnt-outfit text-brown"
+                id="drinks"
+              >
+                REFRESHER
+              </div>
+              <div class="d-block d-sm-flex justify-content-between">
+                <div class="d-flex">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/sparklingLemon-modified.png"
+                      alt="sparklingLemon logo"
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown"
+                      href="#back-to-mainMenu"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#sparklingLemon-modal"
+                    >
+                      Sparkling Lemon
+                    </a>
+                  </div>
+                </div>
+                <div class="d-flex mb-5">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/sparklingStrawberry-modified.png"
+                      alt="sparklingStrawberry logo "
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown me-2"
+                      href="#back-to-mainMenu"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#sparklingStrawberry-modal"
+                    >
+                      Sparkling Strawberry
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Refresher Menu end -->
+
+          <!-- REFRESHER ITEM MODAL START -->
+          <!-- Sparkling Lemon Modal start -->
+          <div class="menu-modal">
+            <div
+              class="modal fade"
+              id="sparklingLemon-modal"
+              tabindex="-1"
+              aria-labelledby="sparklingLemon-modal"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body d-block d-md-flex">
+                    <div class="ms-3 mb-4">
+                      <img
+                        class="item-image rounded-2"
+                        src="./assets/img/sparklingLemon.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ps-4 align-items-center">
+                      <h1 class="text-start fnt-outfit fw-bold mt-5">
+                        Sparkling Lemon
+                      </h1>
+                      <p class="text-start fnt-roboto mt-4">
+                        Sparkling fruit beverage is rich in the real juices of
+                        ripe lemons for a very fresh, crisp taste. A rich
+                        combination of ingredients offers a balance of
+                        pleasingly tart and sweet notes. Its bright, fragrant
+                        notes and zesty finish create a delicious way to quench
+                        your thirst. Fruit beverage is perfect for keeping in
+                        breakrooms, reception areas, kitchens and more.
+                      </p>
+                    </div>
+                  </div>
+                                   <div class="modal-footer">
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-mug-saucer"></i> M - 99
+                    </div>
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-beer-mug-empty"></i> L - 120
+                    </div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Sparkling Lemon Modal end -->
+          <!-- Sparkling Strawberry Modal start -->
+          <div class="menu-modal">
+            <div
+              class="modal fade"
+              id="sparklingStrawberry-modal"
+              tabindex="-1"
+              aria-labelledby="sparklingStrawberry-modal"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body d-block d-md-flex">
+                    <div class="ms-3 mb-4">
+                      <img
+                        class="item-image rounded-2"
+                        src="./assets/img/sparklingStrawberry.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ps-4 align-items-center">
+                      <h1 class="text-start fnt-outfit fw-bold mt-5">
+                        Sparkling Strawberry
+                      </h1>
+                      <p class="text-start fnt-roboto mt-4">
+                        Sparkling fruit beverage is rich in the real juices of
+                        ripe strawberry for a very fresh, crisp taste. A rich
+                        combination of ingredients offers a balance of
+                        pleasingly tart and sweet notes. Fruit beverage is
+                        perfect for keeping in breakrooms, reception areas,
+                        kitchens and more.
+                      </p>
+                    </div>
+                  </div>
+                    <div class="modal-footer">
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-mug-saucer"></i> M - 99
+                    </div>
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-beer-mug-empty"></i> L - 120
+                    </div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Sparkling Strawberry Modal end -->
+          <!-- REFRESHER ITEM MODAL END -->
+
+          <!-- Silog Menu start -->
+          <div class="col-8 ms-3 d-none" id="silogPage">
+            <div
+              data-bs-spy="scroll"
+              data-bs-target="#menu-items"
+              data-bs-smooth-scroll="true"
+              class="menu-item"
+              tabindex="0"
+            >
+              <div class="d-flex">
+                <a
+                  class="nav-link my-4 text-start fw-bold fnt-outfit text-brown pe-1"
+                  href="#back-to-mainMenu"
+                  onclick="changesilogPageToMainMenu()"
+                  >Menu
+                </a>
+                <span class="align-self-center pe-1"> | </span>
+                <span class="align-self-center"> Foods</span>
+              </div>
+
+              <div
+                class="mb-4 text-start fs-4 fw-bold fnt-outfit text-brown"
+                id="drinks"
+              >
+                SILOG
+              </div>
+              <div class="d-block d-sm-flex justify-content-between">
+                <div class="d-flex">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/hamSilog-modified.png"
+                      alt="Ham Silog logo"
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown"
+                      href="#back-to-mainMenu"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#hamSilog-modal"
+                    >
+                      Ham Silog
+                    </a>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/bacSilog-modified.png"
+                      alt="Bacon Silog logo "
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown me-3"
+                      href="#back-to-mainMenu"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#bacSilog-modal"
+                    >
+                      Bacon Silog
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="d-block d-sm-flex justify-content-between mb-5">
+                <div class="d-flex">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/beefSilog-modified.png"
+                      alt="Beef Silog logo "
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown"
+                      href="#back-to-mainMenu"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#beefSilog-modal"
+                      >Beef Silog</a
+                    >
+                  </div>
+                </div>
+
+                <div class="d-flex">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/hotdogSilog-modified.png"
+                      alt="hotdogSilog logo "
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown"
+                      href="#back-to-mainMenu"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#hotdogSilog-modal"
+                      >Hotdog Silog
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Silog Menu end -->
+
+          <!-- SILOG ITEM MODAL START -->
+          <!-- HamSilog Modal start -->
+          <div class="menu-modal">
+            <div
+              class="modal fade"
+              id="hamSilog-modal"
+              tabindex="-1"
+              aria-labelledby="hamSilog-modal"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body d-block d-md-flex">
+                    <div class="ms-3 mb-4">
+                      <img
+                        class="item-image rounded-2"
+                        src="./assets/img/hamSilog.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ps-4 align-items-center">
+                      <h1 class="text-start fnt-outfit fw-bold mt-5">
+                        Ham Silog
+                      </h1>
+                      <p class="text-start fnt-roboto mt-4">
+                        There may be a variety of ham available in the market,
+                        but it is normally the sweet ham that completes the
+                        hamsilog combo. Ham and rice may be too plain of a meal
+                        for some people, hence the addition of egg on the
+                        platter. But note that the egg does not steal the
+                        spotlight from the personal flavor of ham—because if
+                        anything, it brings it out more for you to savor.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-money-check-dollar"></i> 65
+                    </div>
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-circle-plus"></i> Extra Rice - 20
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- HamSilog Modal end -->
+
+          <!-- BacSilog Modal start -->
+          <div class="menu-modal">
+            <div
+              class="modal fade"
+              id="bacSilog-modal"
+              tabindex="-1"
+              aria-labelledby="bacSilog-modal"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body d-block d-md-flex">
+                    <div class="ms-3 mb-4">
+                      <img
+                        class="item-image rounded-2"
+                        src="./assets/img/bacSilog.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ps-4 align-items-center">
+                      <h1 class="text-start fnt-outfit fw-bold mt-5">
+                        Bacon Silog
+                      </h1>
+                      <p class="text-start fnt-roboto mt-4">
+                        Bacon can be enjoyed either in its toasted glory or in
+                        its soft luster, depending on one’s preference. But
+                        nothing beats bacon paired with egg, because the serene
+                        taste of egg offers a good mix to the powerful flavor
+                        emanated by the bacon.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-money-check-dollar"></i> 75
+                    </div>
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-circle-plus"></i> Extra Rice - 20
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- BacSilog ModalBacSilog -->
+
+          <!-- beefSilog Modal start -->
+          <div class="menu-modal">
+            <div
+              class="modal fade"
+              id="beefSilog-modal"
+              tabindex="-1"
+              aria-labelledby="beefSilog-modal"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body d-block d-md-flex">
+                    <div class="ms-3 mb-4">
+                      <img
+                        class="item-image rounded-2"
+                        src="./assets/img/beefSilog.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ps-4 align-items-center">
+                      <h1 class="text-start fnt-outfit fw-bold mt-5">
+                        Beef Silog (Tapa)
+                      </h1>
+                      <p class="text-start fnt-roboto mt-4">
+                        A staple silog combo that graces every menu of eateries
+                        and restaurants offering breakfast meals, tapsilog—or
+                        the pair up of tapa (marinated pork or beef), egg, and
+                        fried rice—remains sought-after even with the
+                        availability of other morning meal offerings because of
+                        its pungent taste.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-money-check-dollar"></i> 85
+                    </div>
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-circle-plus"></i> Extra Rice - 20
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- beefSilog ModalBacSilog -->
+
+          <!-- hotdogSilog Modal start -->
+          <div class="menu-modal">
+            <div
+              class="modal fade"
+              id="hotdogSilog-modal"
+              tabindex="-1"
+              aria-labelledby="hotdogSilog-modal"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body d-block d-md-flex">
+                    <div class="ms-3 mb-4">
+                      <img
+                        class="item-image rounded-2"
+                        src="./assets/img/hotdogSilog.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ps-4 align-items-center">
+                      <h1 class="text-start fnt-outfit fw-bold mt-5">
+                        Hotdog Silog
+                      </h1>
+                      <p class="text-start fnt-roboto mt-4">
+                        Almost like a “National Packed Lunch” for Filipino
+                        students, hotdog paired with fried rice and egg remains
+                        not only as the go-to food for children, but also for
+                        adults who do not want the food served on the dining
+                        table. Nothing could ever go wrong with this combo.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-money-check-dollar"></i> 69
+                    </div>
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-circle-plus"></i> Extra Rice - 20
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- hotdogSilog ModalBacSilog -->
+          <!-- SILOG ITEM MODAL START -->
+
+          <!-- Add-ons Menu start -->
+          <div class="col-8 ms-3 d-none" id="addOnsPage">
+            <div
+              data-bs-spy="scroll"
+              data-bs-target="#menu-items"
+              data-bs-smooth-scroll="true"
+              class="menu-item"
+              tabindex="0"
+            >
+              <div class="d-flex">
+                <a
+                  class="nav-link my-4 text-start fw-bold fnt-outfit text-brown pe-1"
+                  href="#back-to-mainMenu"
+                  onclick="changeaddOnsPageToMainMenu()"
+                  >Menu
+                </a>
+                <span class="align-self-center pe-1"> | </span>
+                <span class="align-self-center"> Foods</span>
+              </div>
+
+              <div
+                class="mb-4 text-start fs-4 fw-bold fnt-outfit text-brown"
+                id="drinks"
+              >
+                ADD-ONS
+              </div>
+              <div class="d-block d-sm-flex justify-content-between">
+                <div class="d-flex">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/veggies-modified.png"
+                      alt="veggies logo"
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown"
+                      href="#back-to-mainMenu"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#veggies-modal"
+                    >
+                      Veggies
+                    </a>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/cheese-modified.png"
+                      alt="cheese logo "
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown me-3"
+                      href="#back-to-mainMenu"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#cheese-modal"
+                    >
+                      Cheese
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="d-block d-sm-flex justify-content-between">
+                <div class="d-flex">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/egg-modified.png"
+                      alt="egg logo "
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown"
+                      href="#back-to-mainMenu"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#egg-modal"
+                      >Egg</a
+                    >
+                  </div>
+                </div>
+
+                <div class="d-flex me-4">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/fries-modified.png"
+                      alt="fries logo "
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown me-3"
+                      href="#back-to-mainMenu"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#fries-modal"
+                      >Fries</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-block d-sm-flex justify-content-between">
+                <div class="d-flex">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/espressoShot-modified.png"
+                      alt="espressoShot logo "
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown"
+                      href="#back-to-mainMenu"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#espressoShot-modal"
+                      >Espresso Shot</a
+                    >
+                  </div>
+                </div>
+
+                <div class="d-flex">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/espressoPump-modified.png"
+                      alt="espressoPump logo "
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown"
+                      href="#back-to-mainMenu"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#espressoPump-modal"
+                      ><div class="text-start">Espresso</div>
+                      <div class="text-start">Pump</div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="d-block d-sm-flex justify-content-between mb-5">
+                <div class="d-flex">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/milk-modified.png"
+                      alt="milk logo "
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown"
+                      href="#back-to-mainMenu"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#milk-modal"
+                      >Milk</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Add-ons Menu end -->
+
+          <!-- ADDONS ITEM MODAL START -->
+          <!-- Veggies Modal start -->
+          <div class="menu-modal">
+            <div
+              class="modal fade"
+              id="veggies-modal"
+              tabindex="-1"
+              aria-labelledby="veggies-modal"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body d-block d-md-flex">
+                    <div class="ms-3 mb-4">
+                      <img
+                        class="item-image rounded-2"
+                        src="./assets/img/veggies.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ps-4 align-items-center">
+                      <h1 class="fnt-outfit fw-bold mt-5 text-center">
+                        Veggies
+                      </h1>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-money-check-dollar"></i> 10
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Veggies Modal end -->
+
+          <!-- Cheese Modal start -->
+          <div class="menu-modal">
+            <div
+              class="modal fade"
+              id="cheese-modal"
+              tabindex="-1"
+              aria-labelledby="cheese-modal"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body d-block d-md-flex">
+                    <div class="ms-3 mb-4">
+                      <img
+                        class="item-image rounded-2"
+                        src="./assets/img/cheese.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ps-4 align-items-center">
+                      <h1 class="fnt-outfit fw-bold mt-5 text-center">
+                        Cheese
+                      </h1>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-money-check-dollar"></i> 10
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Cheese ModalBacSilog -->
+
+          <!-- Egg Modal start -->
+          <div class="menu-modal">
+            <div
+              class="modal fade"
+              id="egg-modal"
+              tabindex="-1"
+              aria-labelledby="egg-modal"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body d-block d-md-flex">
+                    <div class="ms-3 mb-4">
+                      <img
+                        class="item-image rounded-2"
+                        src="./assets/img/egg.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ps-4 align-items-center">
+                      <h1 class="fnt-outfit fw-bold mt-5 text-center">Egg</h1>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-money-check-dollar"></i> 15
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Egg ModalBacSilog -->
+
+          <!-- Fries Modal start -->
+          <div class="menu-modal">
+            <div
+              class="modal fade"
+              id="fries-modal"
+              tabindex="-1"
+              aria-labelledby="fries-modal"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body d-block d-md-flex">
+                    <div class="ms-3 mb-4">
+                      <img
+                        class="item-image rounded-2"
+                        src="./assets/img/fries.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ps-4 align-items-center">
+                      <h1 class="fnt-outfit fw-bold mt-5 text-center">Fries</h1>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-money-check-dollar"></i> 75
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Fries ModalBacSilog -->
+
+          <!-- Espresso Shot Modal start -->
+          <div class="menu-modal">
+            <div
+              class="modal fade"
+              id="espressoShot-modal"
+              tabindex="-1"
+              aria-labelledby="espressoShot-modal"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body d-block d-md-flex">
+                    <div class="ms-3 mb-4">
+                      <img
+                        class="item-image rounded-2"
+                        src="./assets/img/espressoShot.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ps-4 align-items-center">
+                      <h1 class="fnt-outfit fw-bold mt-5 text-center">
+                        Espresso Shot
+                      </h1>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-money-check-dollar"></i> 25
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Espresso Shot ModalBacSilog -->
+
+          <!-- Espresso Pump Modal start -->
+          <div class="menu-modal">
+            <div
+              class="modal fade"
+              id="espressoPump-modal"
+              tabindex="-1"
+              aria-labelledby="espressoPump-modal"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body d-block d-md-flex">
+                    <div class="ms-3 mb-4">
+                      <img
+                        class="item-image rounded-2"
+                        src="./assets/img/espressoPump.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ps-4 align-items-center">
+                      <h1 class="fnt-outfit fw-bold mt-5 text-center">
+                        Espresso Pump
+                      </h1>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-money-check-dollar"></i> 20
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Espresso Pump ModalBacSilog -->
+
+          <!-- Milk Modal start -->
+          <div class="menu-modal">
+            <div
+              class="modal fade"
+              id="milk-modal"
+              tabindex="-1"
+              aria-labelledby="milk-modal"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body d-block d-md-flex">
+                    <div class="ms-3 mb-4">
+                      <img
+                        class="item-image rounded-2"
+                        src="./assets/img/milk.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ps-4 align-items-center">
+                      <h1 class="fnt-outfit fw-bold mt-5 text-center">Milk</h1>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-money-check-dollar"></i> 20
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Milk ModalBacSilog -->
+          <!-- ADDONS ITEM MODAL START -->
+
+          <!-- Eggdrop Menu start -->
+          <div class="col-8 ms-3 d-none" id="eggdropPage">
+            <div
+              data-bs-spy="scroll"
+              data-bs-target="#menu-items"
+              data-bs-smooth-scroll="true"
+              class="menu-item"
+              tabindex="0"
+            >
+              <div class="d-flex">
+                <a
+                  class="nav-link my-4 text-start fw-bold fnt-outfit text-brown pe-1"
+                  href="#back-to-mainMenu"
+                  onclick="changeeggdropPageToMainMenu()"
+                  >Menu
+                </a>
+                <span class="align-self-center pe-1"> | </span>
+                <span class="align-self-center"> Foods</span>
+              </div>
+
+              <div
+                class="mb-4 text-start fs-4 fw-bold fnt-outfit text-brown"
+                id="drinks"
+              >
+                EGGDROP
+              </div>
+              <div class="d-block d-sm-flex justify-content-between mb-5">
+                <div class="d-flex">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/eggdropflavors-modified.png"
+                      alt="eggdropflavors logo"
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown"
+                      href="#back-to-mainMenu"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#eggdropflavors-modal"
+                    >
+                      Eggdrop flavors
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Eggdrop Menu end -->
+
+          <!-- EGG DROP ITEM MODAL START -->
+          <!-- Flavors Modal start -->
+          <div class="menu-modal">
+            <div
+              class="modal fade"
+              id="eggdropflavors-modal"
+              tabindex="-1"
+              aria-labelledby="eggdropflavors-modal"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div
+                    class="modal-body d-block d-md-flex justify-content-between me-5"
+                  >
+                    <div class="ms-3 mb-4">
+                      <img
+                        class="item-image rounded-2"
+                        src="./assets/img/eggdrop.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ps-4 align-items-center me-md-5 pe-lg-5">
+                      <h1 class="fnt-outfit fw-bold mt-5 text-center mb-5">
+                        Eggdrop Flavors
+                      </h1>
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">Flavors</th>
+                            <th scope="col">Price</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">Ham</th>
+                            <td>110</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Bacon</th>
+                            <td>130</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Beef</th>
+                            <td>140</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Bacon & Ham</th>
+                            <td>155</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Bacon, Ham & Beef</th>
+                            <td>165</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Flavors Modal end -->
+          <!-- EGG DROP ITEM MODAL END -->
+
+          <!-- Pastries Menu start -->
+          <div class="col-8 ms-3 d-none" id="pastriesPage">
+            <div
+              data-bs-spy="scroll"
+              data-bs-target="#menu-items"
+              data-bs-smooth-scroll="true"
+              class="menu-item"
+              tabindex="0"
+            >
+              <div class="d-flex">
+                <a
+                  class="nav-link my-4 text-start fw-bold fnt-outfit text-brown pe-1"
+                  href="#back-to-mainMenu"
+                  onclick="changepastriesPageToMainMenu()"
+                  >Menu
+                </a>
+                <span class="align-self-center pe-1"> | </span>
+                <span class="align-self-center"> Foods</span>
+              </div>
+
+              <div
+                class="mb-4 text-start fs-4 fw-bold fnt-outfit text-brown"
+                id="drinks"
+              >
+                PASTRIES
+              </div>
+              <div class="d-block d-sm-flex justify-content-between">
+                <div class="d-flex">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/blueberryCheesecake-modified.png"
+                      alt="blueberryCheesecake logo"
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown"
+                      href="#back-to-mainMenu"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#blueberryCheesecake-modal"
+                    >
+                      <div class="text-start">Blueberry</div>
+                      <div class="text-start">Cheesecake</div>
+                    </a>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/oreoCheesecake-modified.png"
+                      alt="oreoCheesecake logo "
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown me-2"
+                      href="#back-to-mainMenu"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#oreoCheesecake1-modal"
+                    >
+                      <div class="text-start">Oreo</div>
+                      <div class="text-start">Cheesecake</div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="d-block d-sm-flex justify-content-between">
+                <div class="d-flex">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/strawberryCheesecake-modified.png"
+                      alt="strawberryCheesecake logo "
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown"
+                      href="#back-to-mainMenu"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#strawberryCheesecake-modal"
+                      ><div class="text-start">Strawberry</div>
+                      <div class="text-start">Cheesecake</div></a
+                    >
+                  </div>
+                </div>
+
+                <div class="d-flex">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/bananaLoaf-modified.png"
+                      alt="bananaLoaf logo "
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown"
+                      href="#back-to-mainMenu"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#bananaLoaf-modal"
+                      >Banana Loaf</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-block d-sm-flex justify-content-between mb-5">
+                <div class="d-flex">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/brownies-modified.png"
+                      alt="brownies logo "
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown"
+                      href="#back-to-mainMenu"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#brownies-modal"
+                      >Brownies</a
+                    >
+                  </div>
+                </div>
+
+                <div class="d-flex me-5">
+                  <div class="text-start">
+                    <img
+                      class="menuImg mt-4"
+                      src="./assets/img/cookies-modified.png"
+                      alt="cookies logo "
+                    />
+                  </div>
+                  <div
+                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                  >
+                    <a
+                      class="nav-link text-brown me-1"
+                      href="#back-to-mainMenu"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#cookies-modal"
+                      >Cookies</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Pastries Menu end -->
+
+          <!-- PASTRIES ITEM MODAL START -->
+          <!-- Blueberry Modal start -->
+          <div class="menu-modal">
+            <div
+              class="modal fade"
+              id="blueberryCheesecake-modal"
+              tabindex="-1"
+              aria-labelledby="blueberryCheesecake-modal"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body d-block d-md-flex">
+                    <div class="ms-3 mb-4">
+                      <img
+                        class="item-image rounded-2"
+                        src="./assets/img/blueberryCheesecake.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ps-4 align-items-center">
+                      <h1 class="fnt-outfit fw-bold mt-5 text-center">
+                        Blueberry Cheesecake
+                      </h1>
+                      <p class="text-start fnt-roboto mt-4">
+                        Creamy, rich cheesecake flavored with a bit of lemon
+                        zest is crowned with blueberry topping in this lovely
+                        blueberry cheesecake. This is one dessert you’ll want to
+                        make all year round!
+                      </p>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-bread-slice"></i> Slice/Piece - 65
+                    </div>
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-money-check-dollar"></i> Whole - 500
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Blueberry Modal end -->
+
+          <!-- Oreo Modal start -->
+          <div class="menu-modal">
+            <div
+              class="modal fade"
+              id="oreoCheesecake1-modal"
+              tabindex="-1"
+              aria-labelledby="oreoCheesecake1-modal"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body d-block d-md-flex">
+                    <div class="ms-3 mb-4">
+                      <img
+                        class="item-image rounded-2"
+                        src="./assets/img/oreoCheesecake.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ps-4 align-items-center">
+                      <h1 class="fnt-outfit fw-bold mt-5 text-center">
+                        Oreo Cheesecake
+                      </h1>
+                      <p class="text-start fnt-roboto mt-4">
+                        Calling all Oreo lovers!! This creamy Oreo cheesecake is
+                        chock full of those delicious cookies, covered in a
+                        beautiful swirled chocolate ganache and crowned with
+                        whipped cream.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-bread-slice"></i> Slice/Piece - 65
+                    </div>
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-money-check-dollar"></i> Whole - 500
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Oreo ModalBacSilog -->
+
+          <!-- Strawberry Modal start -->
+          <div class="menu-modal">
+            <div
+              class="modal fade"
+              id="strawberryCheesecake-modal"
+              tabindex="-1"
+              aria-labelledby="strawberryCheesecake-modal"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body d-block d-md-flex">
+                    <div class="ms-3 mb-4">
+                      <img
+                        class="item-image rounded-2"
+                        src="./assets/img/strawberryCheesecake.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ps-4 align-items-center">
+                      <h1 class="fnt-outfit fw-bold mt-5 text-center">
+                        Strawberry Cheesecake
+                      </h1>
+                      <p class="text-start fnt-roboto mt-4">
+                        If you’re looking for the easiest upgrade to classic
+                        cheesecake, you can’t get much better (or easier!) than
+                        a sweet strawberry topping. Our recipe adds a
+                        2-ingredient syrupy strawberry glaze to a fresh
+                        strawberry topping, making this cheesecake not only
+                        extremely delicious, but completely wow-worthy. If
+                        you’re looking for an impressive Valentine’s Day dessert
+                        or a summer treat to cool off with, you can’t go wrong
+                        with this classic.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-bread-slice"></i> Slice/Piece - 65
+                    </div>
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-money-check-dollar"></i> Whole - 500
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Strawberry ModalBacSilog -->
+
+          <!-- Banana Modal start -->
+          <div class="menu-modal">
+            <div
+              class="modal fade"
+              id="bananaLoaf-modal"
+              tabindex="-1"
+              aria-labelledby="bananaLoaf-modal"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body d-block d-md-flex">
+                    <div class="ms-3 mb-4">
+                      <img
+                        class="item-image rounded-2"
+                        src="./assets/img/bananaLoaf.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ps-4 align-items-center">
+                      <h1 class="fnt-outfit fw-bold mt-5 text-center">
+                        Banana Loaf
+                      </h1>
+                      <p class="text-start fnt-roboto mt-4">
+                        Banana bread is comfort food at its finest. The light,
+                        fluffy quick bread not only tastes amazing, but fills
+                        your whole kitchen with a decadent smell as it bakes.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-bread-slice"></i> Slice/Piece - 30
+                    </div>
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-money-check-dollar"></i> Whole - 180
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Banana Modal end -->
+
+          <!-- Brownies Modal start -->
+          <div class="menu-modal">
+            <div
+              class="modal fade"
+              id="brownies-modal"
+              tabindex="-1"
+              aria-labelledby="brownies-modal"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body d-block d-md-flex">
+                    <div class="ms-3 mb-4">
+                      <img
+                        class="item-image rounded-2"
+                        src="./assets/img/brownies.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ps-4 align-items-center">
+                      <h1 class="fnt-outfit fw-bold mt-5 text-center">
+                        Brownies
+                      </h1>
+                      <p class="text-start fnt-roboto mt-4">
+                        Brownies are a baked good that typically contain
+                        chocolate, eggs, butter, sugar, flour, salt, and vanilla
+                        extract. (Here’s my very best brownie recipe, if you’d
+                        like to see an example.) Although the ingredients are
+                        similar to what is used for a chocolate cake, a brownie
+                        is denser and heavier than a cake. Different recipes may
+                        produce a “fudgier” or “cakier” brownie depending on the
+                        ingredients or method of combination that is used.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-money-check-dollar"></i> 3 Pieces -
+                      70
+                    </div>
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-money-check-dollar"></i> 6 Pieces -
+                      130
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Brownies Modal end -->
+
+          <!-- Cookies Modal start -->
+          <div class="menu-modal">
+            <div
+              class="modal fade"
+              id="cookies-modal"
+              tabindex="-1"
+              aria-labelledby="cookies-modal"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body d-block d-md-flex">
+                    <div class="ms-3 mb-4">
+                      <img
+                        class="item-image rounded-2"
+                        src="./assets/img/cookies.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ps-4 align-items-center">
+                      <h1 class="fnt-outfit fw-bold mt-5 text-center">
+                        Cookies
+                      </h1>
+                      <p class="text-start fnt-roboto mt-4">
+                        Cookies are baked treats. A cookie is a small sweet,
+                        crispy or cake-like pastry most often made with flour,
+                        sugar, liquid and fat.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-bread-slice"></i> Slice/Piece - 20
+                    </div>
+                    <div class="pe-5 fnt-outfit fw-semibold">
+                      <i class="fa-solid fa-money-check-dollar"></i> 3 Pieces -
+                      55
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Cookies Modal end -->
+          <!-- PASTRIES ITEM MODAL END -->
+        </div>
+      </div>
+
+      <!-- Menu end -->
+    </main>
+    <footer>
+      <div class="footer-data d-flex justify-content-evenly">
+        <div class="d-block d-md-flex">
+          <div
+            class="fw-bold fnt-outfit text-start text-md-center me-3 pe-5 mx-sm-3 px-sm-5 mb-2"
+          >
+            <a class="text-decoration-none text-dark" href="#">About</a>
+          </div>
+          <div
+            class="fw-bold fnt-outfit text-start text-md-center me-3 pe-5 mx-sm-3 px-sm-5 mb-2"
+          >
+            <a class="text-decoration-none text-dark" href="pagenotfound.html"
+              ><i class="fa-solid fa-location-dot"></i> Find our store</a
+            >
+          </div>
+          <div
+            class="fw-bold fnt-outfit text-start text-md-center me-3 pe-5 mx-sm-3 px-sm-5 mb-2"
+          >
+            <a class="text-decoration-none text-dark" href="pagenotfound.html"
+              >Promotion</a
+            >
+          </div>
+        </div>
+        <div class="fw-bold fnt-outfit">
+          Our Socials
+          <div class="fnt-roboto fw-light text-start mt-2">
+            <a
+              class="text-decoration-none text-dark"
+              href="https://www.facebook.com/boncafe22"
+              target="_blank"
+              ><i class="fa-brands fa-facebook"></i> Facebook</a
+            >
+          </div>
+          <div class="fnt-roboto fw-light text-start mt-2">
+            <a
+              class="text-decoration-none text-dark"
+              href="https://www.instagram.com/boncafe_byjels/"
+              target="_blank"
+              ><i class="fa-brands fa-instagram"></i> Instagram
+            </a>
+          </div>
+          <div class="fnt-roboto fw-light text-start mt-2">
+            <a
+              class="text-decoration-none text-dark"
+              href="https://www.tiktok.com/@boncafeph"
+              target="_blank"
+              ><i class="fa-brands fa-tiktok"></i> Tiktok</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="align-bottom pb-2">© 2023 Bon Café. All rights reserved.</div>
+    </footer>
+    <!-- Bootstrap 5 -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/script.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

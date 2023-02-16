@@ -95,23 +95,41 @@
                     ><i class="fa-solid fa-cart-shopping" aria-hidden="true"></i
                   ></a>
                 </li>
-                <li class="d-block d-md-none">
-                  <a
-                    href="./login.html"
-                    type="button"
-                    class="login-btn btn btn-outline-darkgreen rounded-pill"
-                    >Login</a
-                  >
+                <li>
+                  <div class="dropdown">
+                    <button
+                      type="button"
+                      class="dropdown-toggle border-0 ms-2 d-flex align-items-center bg-white"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <div class="border p-2 rounded-circle text-dark">AM</div>
+                    </button>
+
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a
+                          class="dropdown-item text-start"
+                          href="pagenotfound.html"
+                          >Your Profile</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item text-start"
+                          href="pagenotfound.html"
+                          >Your Order Details</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item text-start" href="./index.html"
+                          >Logout</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
                 </li>
               </ul>
-            </div>
-            <div class="d-none d-md-block">
-              <a
-                href="./login.html"
-                type="button"
-                class="login-btn btn btn-outline-darkgreen rounded-pill"
-                >Login</a
-              >
             </div>
           </div>
           <div class="d-flex d-md-none justify-content-between">
@@ -147,7 +165,7 @@
       <!-- Homepage big image end -->
 
       <!-- Grid menu start -->
-      <div class="container-fluid container-lg text-center p-0">
+      <div class="container-fluid container-lg text-center">
         <div class="row m-0">
           <div
             class="rows col-12 bg-lightgreen p-0 pb-3 mt-5 me-sm-1 ms-0 ms-md-1 ms-lg-0"

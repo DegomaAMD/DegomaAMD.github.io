@@ -145,6 +145,12 @@ height: 709px;
     color: #F2C9B1;
     font-size: 100px;
 }
+.prof-img{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    vertical-align: middle;
+}
 /* Grid menu images sizing */
 .rows{
     width: 656px;
@@ -334,7 +340,7 @@ figure p {
 .img-bg{
     background-image: url(../assets/img/boncafe2.jpg);
     background-size: cover;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     
 }
 .welcome-greet, .accnt-description{
@@ -480,4 +486,10 @@ tr:hover{
 .img404{
     height: 62vh;
     width: 40vw;
+}
+
+/* About Page */
+.about-img{
+    width: 50vw;
+    height: 100%;
 }

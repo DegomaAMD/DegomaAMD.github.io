@@ -2,6 +2,7 @@ const emailInput = document.querySelector('#inputEmail');
 const resetEmail = document.querySelector("#resetEmail")
 const resendEmail = document.querySelector('#resendEmail');
 const username = document.querySelector('#username');
+const loginBtn = document.querySelector('.login-btn');
 const mainMenu = document.querySelector('#mainMenu');
 const espressoPage = document.querySelector('#espressopage');
 const nonCoffeePage = document.querySelector('#nonCoffee');
@@ -12,6 +13,16 @@ const silogPage = document.querySelector('#silogPage');
 const addOnsPage = document.querySelector('#addOnsPage');
 const eggdropPage = document.querySelector('#eggdropPage');
 const pastriesPage = document.querySelector('#pastriesPage');
+
+function userLogin(){
+    if (username.value == `andriamae1019`){
+        loginBtn.style.display = 'none';
+        loginBtn.setAttribute('href','./home.html');
+    } else {
+        alert(`incorrect username or password`);
+        loginBtn.setAttribute('href','./login.html');
+    }
+}
 
 function passResetValue(){
     valueEmailPass = emailInput.value;
@@ -138,3 +149,5 @@ function changepastriesPageToMainMenu(){
     pastriesPage.style.display = 'none';
     pastriesPage.replaceWith(mainMenu, pastriesPage);   
 }
+
+
