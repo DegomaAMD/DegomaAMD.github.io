@@ -45,18 +45,36 @@ function changeMainMenuToEspressoPage(){
     espressoPage.style.display = 'block';
     mainMenu.style.display = 'none';
     mainMenu.replaceWith(espressoPage, mainMenu);
+    nonCoffeePage.style.display = 'none';
+    frappeNonCoffee.style.display = 'none';
+    frappeCoffee.style.display = 'none';
+    refresherDrinks.style.display = 'none';
+    silogPage.style.display = 'none';
+    addOnsPage.style.display = 'none';
+    eggdropPage.style.display = 'none';
+    pastriesPage.style.display = 'none';
 }
 function changeEspressoPageToMainMenu(){
     mainMenu.style.display = 'block';
     espressoPage.style.display = 'none';
     espressoPage.replaceWith(mainMenu, espressoPage);   
 }
+
 // Non-Coffee Menu
 function changeMainMenuTononCoffeePage(){
     nonCoffeePage.setAttribute ('class', 'col-8 ms-3');
     nonCoffeePage.style.display = 'block';
     mainMenu.style.display = 'none';
     mainMenu.replaceWith(nonCoffeePage, mainMenu);
+    espressoPage.style.display = 'none';
+    frappeNonCoffee.style.display = 'none';
+    frappeCoffee.style.display = 'none';
+    refresherDrinks.style.display = 'none';
+    silogPage.style.display = 'none';
+    addOnsPage.style.display = 'none';
+    eggdropPage.style.display = 'none';
+    pastriesPage.style.display = 'none';
+
 }
 function changenonCoffeePageToMainMenu(){
     mainMenu.style.display = 'block';
@@ -70,6 +88,14 @@ function changeMainMenuTofrappeNonCoffee(){
     frappeNonCoffee.style.display = 'block';
     mainMenu.style.display = 'none';
     mainMenu.replaceWith(frappeNonCoffee, mainMenu);
+    espressoPage.style.display = 'none';
+    nonCoffeePage.style.display = 'none';
+    frappeCoffee.style.display = 'none';
+    refresherDrinks.style.display = 'none';
+    silogPage.style.display = 'none';
+    addOnsPage.style.display = 'none';
+    eggdropPage.style.display = 'none';
+    pastriesPage.style.display = 'none';
 }
 function changefrappeNonCoffeeToMainMenu(){
     mainMenu.style.display = 'block';
@@ -83,6 +109,14 @@ function changeMainMenuTofrappeCoffee(){
     frappeCoffee.style.display = 'block';
     mainMenu.style.display = 'none';
     mainMenu.replaceWith(frappeCoffee, mainMenu);
+    espressoPage.style.display = 'none';
+    nonCoffeePage.style.display = 'none';
+    frappeNonCoffee.style.display = 'none';
+    refresherDrinks.style.display = 'none';
+    silogPage.style.display = 'none';
+    addOnsPage.style.display = 'none';
+    eggdropPage.style.display = 'none';
+    pastriesPage.style.display = 'none';
 }
 function changefrappeCoffeeToMainMenu(){
     mainMenu.style.display = 'block';
@@ -96,6 +130,14 @@ function changeMainMenuTorefresher(){
     refresherDrinks.style.display = 'block';
     mainMenu.style.display = 'none';
     mainMenu.replaceWith(refresherDrinks, mainMenu);
+    espressoPage.style.display = 'none';
+    nonCoffeePage.style.display = 'none';
+    frappeNonCoffee.style.display = 'none';
+    frappeCoffee.style.display = 'none';
+    silogPage.style.display = 'none';
+    addOnsPage.style.display = 'none';
+    eggdropPage.style.display = 'none';
+    pastriesPage.style.display = 'none';
 }
 function changerefresherToMainMenu(){
     mainMenu.style.display = 'block';
@@ -108,6 +150,14 @@ function changeMainMenuTosilogPage(){
     silogPage.style.display = 'block';
     mainMenu.style.display = 'none';
     mainMenu.replaceWith(silogPage, mainMenu);
+    espressoPage.style.display = 'none';
+    nonCoffeePage.style.display = 'none';
+    frappeNonCoffee.style.display = 'none';
+    frappeCoffee.style.display = 'none';
+    refresherDrinks.style.display = 'none';
+    addOnsPage.style.display = 'none';
+    eggdropPage.style.display = 'none';
+    pastriesPage.style.display = 'none';
 }
 function changesilogPageToMainMenu(){
     mainMenu.style.display = 'block';
@@ -120,6 +170,14 @@ function changeMainMenuToaddOnsPage(){
     addOnsPage.style.display = 'block';
     mainMenu.style.display = 'none';
     mainMenu.replaceWith(addOnsPage, mainMenu);
+    espressoPage.style.display = 'none';
+    nonCoffeePage.style.display = 'none';
+    frappeNonCoffee.style.display = 'none';
+    frappeCoffee.style.display = 'none';
+    refresherDrinks.style.display = 'none';
+    silogPage.style.display = 'none';
+    eggdropPage.style.display = 'none';
+    pastriesPage.style.display = 'none';
 }
 function changeaddOnsPageToMainMenu(){
     mainMenu.style.display = 'block';
@@ -132,6 +190,14 @@ function changeMainMenuToeggdropPage(){
     eggdropPage.style.display = 'block';
     mainMenu.style.display = 'none';
     mainMenu.replaceWith(eggdropPage, mainMenu);
+    espressoPage.style.display = 'none';
+    nonCoffeePage.style.display = 'none';
+    frappeNonCoffee.style.display = 'none';
+    frappeCoffee.style.display = 'none';
+    refresherDrinks.style.display = 'none';
+    silogPage.style.display = 'none';
+    addOnsPage.style.display = 'none';
+    pastriesPage.style.display = 'none';
 }
 function changeeggdropPageToMainMenu(){
     mainMenu.style.display = 'block';
@@ -144,6 +210,14 @@ function changeMainMenuTopastriesPage(){
     pastriesPage.style.display = 'block';
     mainMenu.style.display = 'none';
     mainMenu.replaceWith(pastriesPage, mainMenu);
+    espressoPage.style.display = 'none';
+    nonCoffeePage.style.display = 'none';
+    frappeNonCoffee.style.display = 'none';
+    frappeCoffee.style.display = 'none';
+    refresherDrinks.style.display = 'none';
+    silogPage.style.display = 'none';
+    addOnsPage.style.display = 'none';
+    eggdropPage.style.display = 'none';
 }
 function changepastriesPageToMainMenu(){
     mainMenu.style.display = 'block';

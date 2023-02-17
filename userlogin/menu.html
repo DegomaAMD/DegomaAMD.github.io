@@ -192,7 +192,7 @@
       <!-- Menu start -->
       <div class="container-fluid container-lg">
         <div class="row">
-          <div class="col-3 d-none d-md-block">
+          <div class="col-3 d-none d-lg-block">
             <nav
               id="menu-items"
               class="h-100 flex-column align-items-stretch pe-4 mt-3"
@@ -283,8 +283,8 @@
               >
                 DRINKS
               </div>
-              <div class="d-block d-sm-flex justify-content-between">
-                <div class="d-flex" id="espresso">
+              <div class="d-block d-sm-flex flex-column">
+                  <div div class="d-flex" id="espresso">
                   <div class="text-start">
                     <img
                       class="menuImg mt-4"
@@ -303,8 +303,8 @@
                       Espresso
                     </a>
                   </div>
-                </div>
-                <div class="d-flex" id="coffeeFrappe">
+                  </div>
+                  <div class="d-flex" id="coffeeFrappe">
                   <div class="text-start">
                     <img
                       class="menuImg mt-4"
@@ -322,10 +322,8 @@
                       <div class="fs-6 text-start text-brown">Coffee based</div>
                     </a>
                   </div>
-                </div>
-              </div>
-              <div class="d-block d-sm-flex justify-content-between">
-                <div class="d-flex" id="non-coffee">
+                  </div>
+                  <div class="d-flex" id="non-coffee">
                   <div class="text-start">
                     <img
                       class="menuImg mt-4"
@@ -343,8 +341,8 @@
                       >Non-Coffee</a
                     >
                   </div>
-                </div>
-                <div class="d-flex" id="refresher">
+                  </div>
+                  <div class="d-flex" id="refresher">
                   <div class="text-start">
                     <img
                       class="menuImg mt-4"
@@ -362,10 +360,8 @@
                       >Refresher</a
                     >
                   </div>
-                </div>
-              </div>
-
-              <div class="d-flex" id="non-coffeeFrappe">
+                  </div>
+                  <div class="d-flex" id="non-coffeeFrappe">
                 <div class="text-start">
                   <img
                     class="menuImg mt-4"
@@ -385,14 +381,15 @@
                     </div>
                   </a>
                 </div>
-              </div>
+                  </div>
+                </div>
               <div
                 class="mt-5 mb-4 text-start fs-4 fw-bold fnt-outfit"
                 id="foods"
               >
                 FOODS
               </div>
-              <div class="d-block d-sm-flex justify-content-between">
+              <div class="d-block d-sm-flex flex-column">
                 <div class="d-flex" id="silog">
                   <div class="text-start">
                     <img
@@ -431,9 +428,7 @@
                     >
                   </div>
                 </div>
-              </div>
-
-              <div class="d-flex" id="eggdrop">
+                <div class="d-flex" id="eggdrop">
                 <div class="text-start">
                   <img
                     class="menuImg mt-4"
@@ -449,8 +444,8 @@
                     >Eggdrop</a
                   >
                 </div>
-              </div>
-              <div class="d-flex mb-5" id="pastries">
+                </div>
+                <div class="d-flex mb-5" id="pastries">
                 <div class="text-start">
                   <img
                     class="menuImg mt-4"
@@ -466,8 +461,8 @@
                     >Pastries</a
                   >
                 </div>
+                </div>
               </div>
-            </div>
           </div>
 
           <!-- Espresso Menu start -->
@@ -476,7 +471,7 @@
               data-bs-spy="scroll"
               data-bs-target="#menu-items"
               data-bs-smooth-scroll="true"
-              class="menu-item"
+              class="menu-item flex-column"
               tabindex="0"
             >
               <div class="d-flex">
@@ -496,7 +491,7 @@
               >
                 ESPRESSO
               </div>
-              <div class="d-block d-sm-flex justify-content-between">
+              <div class="d-block d-sm-flex flex-column">
                 <div class="d-flex">
                   <div class="text-start">
                     <img
@@ -531,7 +526,7 @@
                     class="text-start align-self-center fs-4 fnt-outfit ms-4"
                   >
                     <a
-                      class="nav-link text-brown me-2"
+                      class="nav-link text-brown"
                       href="#back-to-mainMenu"
                       type="button"
                       data-bs-toggle="modal"
@@ -540,9 +535,7 @@
                       Hazelnut Espresso
                     </a>
                   </div>
-                </div>
-              </div>
-              <div class="d-block d-sm-flex justify-content-between">
+                </div>           
                 <div class="d-flex">
                   <div class="text-start">
                     <img
@@ -564,8 +557,7 @@
                     >
                   </div>
                 </div>
-
-                <div class="d-flex me-3">
+                <div class="d-flex">
                   <div class="text-start">
                     <img
                       class="menuImg mt-4"
@@ -577,7 +569,7 @@
                     class="text-start align-self-center fs-4 fnt-outfit ms-4"
                   >
                     <a
-                      class="nav-link text-brown me-5"
+                      class="nav-link text-brown"
                       href="#back-to-mainMenu"
                       type="button"
                       data-bs-toggle="modal"
@@ -585,10 +577,7 @@
                       >Dirty Matcha</a
                     >
                   </div>
-                </div>
-              </div>
-
-              <div class="d-block d-sm-flex justify-content-between">
+                </div>            
                 <div class="d-flex">
                   <div class="text-start">
                     <img
@@ -611,8 +600,7 @@
                     >
                   </div>
                 </div>
-
-                <div class="d-flex me-3">
+                <div class="d-flex">
                   <div class="text-start">
                     <img
                       class="menuImg mt-4"
@@ -624,18 +612,15 @@
                     class="text-start align-self-center fs-4 fnt-outfit ms-4"
                   >
                     <a
-                      class="nav-link text-brown me-4"
+                      class="nav-link text-brown"
                       href="#back-to-mainMenu"
-                      ="#"
                       type="button"
                       data-bs-toggle="modal"
                       data-bs-target="#saltedCaramel-modal"
                       >Salted Caramel</a
                     >
                   </div>
-                </div>
-              </div>
-              <div class="d-block d-sm-flex justify-content-between mb-5">
+                </div>         
                 <div class="d-flex">
                   <div class="text-start">
                     <img
@@ -658,7 +643,6 @@
                     >
                   </div>
                 </div>
-
                 <div class="d-flex">
                   <div class="text-start">
                     <img
