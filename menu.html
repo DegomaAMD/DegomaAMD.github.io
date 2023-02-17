@@ -127,7 +127,11 @@
     <main class="bg-brown">
       <!-- Menu Image start -->
       <div>
-        <img class="menu-bg img-fluid" src="./assets/img/boncafe3.jpg" alt="" />
+        <img
+          class="menu-bg img-fluid"
+          src="../assets/img/boncafe3.jpg"
+          alt=""
+        />
       </div>
       <!-- Menu Image end -->
 
@@ -141,8 +145,8 @@
 
       <!-- Menu start -->
       <div class="container-fluid container-lg">
-        <div class="row">
-          <div class="col-3 d-none d-md-block">
+        <div class="row w-100">
+          <div class="col-3 w-25 d-none d-md-block">
             <nav
               id="menu-items"
               class="h-100 flex-column align-items-stretch pe-4 mt-3"
@@ -154,7 +158,8 @@
                   >DRINKS</a
                 >
                 <nav class="nav nav-pills flex-column">
-                  <a id="item-1"
+                  <a
+                    id="item-1"
                     class="nav-link my-1 text-start fnt-outfit ms-lg-5 text-dark fw-light"
                     href="#back-to-mainMenu"
                     onclick="changeMainMenuToEspressoPage()"
@@ -219,7 +224,7 @@
               </nav>
             </nav>
           </div>
-          <div class="col-12 col-sm-9" id="mainMenu">
+          <div class="col-12 col-sm-9 w-75" id="mainMenu">
             <div
               data-bs-spy="scroll"
               data-bs-target="#menu-items"
@@ -233,107 +238,110 @@
               >
                 DRINKS
               </div>
-              <div class="d-block d-sm-flex justify-content-between">
-                <div class="d-flex" id="espresso">
-                  <div class="text-start">
-                    <img
-                      class="menuImg mt-4"
-                      src="./assets/img/espresso.png"
-                      alt="espresso logo"
-                    />
-                  </div>
-                  <div
-                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
-                  >
-                    <a
-                      class="nav-link text-brown"
-                      href="#back-to-mainMenu"
-                      onclick="changeMainMenuToEspressoPage()"
-                    >
-                      Espresso
-                    </a>
-                  </div>
-                </div>
-                <div class="d-flex" id="coffeeFrappe">
-                  <div class="text-start">
-                    <img
-                      class="menuImg mt-4"
-                      src="./assets/img/coffeeFrappe.png"
-                      alt="coffeeFrappe logo "
-                    />
-                  </div>
-                  <div class="text-start align-self-center fnt-outfit ms-4">
-                    <a
-                      class="nav-link me-2"
-                      href="#back-to-mainMenu"
-                      onclick="changeMainMenuTofrappeCoffee()"
-                    >
-                      <div class="fs-4 text-start text-brown">Frappe</div>
-                      <div class="fs-6 text-start text-brown">Coffee based</div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="d-block d-sm-flex justify-content-between">
-                <div class="d-flex" id="non-coffee">
-                  <div class="text-start">
-                    <img
-                      class="menuImg mt-4"
-                      src="./assets/img/nonCoffee.png"
-                      alt="non-coffee logo "
-                    />
-                  </div>
-                  <div
-                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
-                  >
-                    <a
-                      class="nav-link text-brown"
-                      href="#back-to-mainMenu"
-                      onclick="changeMainMenuTononCoffeePage()"
-                      >Non-Coffee</a
-                    >
-                  </div>
-                </div>
-                <div class="d-flex" id="refresher">
-                  <div class="text-start">
-                    <img
-                      class="menuImg mt-4"
-                      src="./assets/img/refresher.png"
-                      alt="refresher logo "
-                    />
-                  </div>
-                  <div
-                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
-                  >
-                    <a
-                      class="nav-link text-brown"
-                      href="#back-to-mainMenu"
-                      onclick="changeMainMenuTorefresher()"
-                      >Refresher</a
-                    >
-                  </div>
-                </div>
-              </div>
-
-              <div class="d-flex" id="non-coffeeFrappe">
-                <div class="text-start">
-                  <img
-                    class="menuImg mt-4"
-                    src="./assets/img/nonCoffeeFrappe.png"
-                    alt="non-coffeeFrappe logo "
-                  />
-                </div>
-                <div class="text-start align-self-center fnt-outfit ms-4">
-                  <a
-                    class="nav-link"
-                    href="#back-to-mainMenu"
-                    onclick="changeMainMenuTofrappeNonCoffee()"
-                  >
-                    <div class="fs-4 text-start text-brown">Frappe</div>
-                    <div class="fs-6 text-start text-brown">
-                      Non-Coffee based
+              <div class="row d-block d-sm-flex m-3">
+                <div class="col-6">
+                  <div div class="d-flex" id="espresso">
+                    <div class="text-start">
+                      <img
+                        class="menuImg mt-4"
+                        src="../assets/img/espresso.png"
+                        alt="espresso logo"
+                      />
                     </div>
-                  </a>
+                    <div
+                      class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                    >
+                      <a
+                        class="nav-link text-brown"
+                        href="#back-to-mainMenu"
+                        onclick="changeMainMenuToEspressoPage()"
+                      >
+                        Espresso
+                      </a>
+                    </div>
+                  </div>
+                  <div class="d-flex" id="coffeeFrappe">
+                    <div class="text-start">
+                      <img
+                        class="menuImg mt-4"
+                        src="../assets/img/coffeeFrappe.png"
+                        alt="coffeeFrappe logo "
+                      />
+                    </div>
+                    <div class="text-start align-self-center fnt-outfit ms-4">
+                      <a
+                        class="nav-link me-2"
+                        href="#back-to-mainMenu"
+                        onclick="changeMainMenuTofrappeCoffee()"
+                      >
+                        <div class="fs-4 text-start text-brown">Frappe</div>
+                        <div class="fs-6 text-start text-brown">
+                          Coffee based
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="d-flex" id="non-coffee">
+                    <div class="text-start">
+                      <img
+                        class="menuImg mt-4"
+                        src="../assets/img/nonCoffee.png"
+                        alt="non-coffee logo "
+                      />
+                    </div>
+                    <div
+                      class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                    >
+                      <a
+                        class="nav-link text-brown"
+                        href="#back-to-mainMenu"
+                        onclick="changeMainMenuTononCoffeePage()"
+                        >Non-Coffee</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="d-flex" id="refresher">
+                    <div class="text-start">
+                      <img
+                        class="menuImg mt-4"
+                        src="../assets/img/refresher.png"
+                        alt="refresher logo "
+                      />
+                    </div>
+                    <div
+                      class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                    >
+                      <a
+                        class="nav-link text-brown"
+                        href="#back-to-mainMenu"
+                        onclick="changeMainMenuTorefresher()"
+                        >Refresher</a
+                      >
+                    </div>
+                  </div>
+                  <div class="d-flex" id="non-coffeeFrappe">
+                    <div class="text-start">
+                      <img
+                        class="menuImg mt-4"
+                        src="../assets/img/nonCoffeeFrappe.png"
+                        alt="non-coffeeFrappe logo "
+                      />
+                    </div>
+                    <div class="text-start align-self-center fnt-outfit ms-4">
+                      <a
+                        class="nav-link"
+                        href="#back-to-mainMenu"
+                        onclick="changeMainMenuTofrappeNonCoffee()"
+                      >
+                        <div class="fs-4 text-start text-brown">Frappe</div>
+                        <div class="fs-6 text-start text-brown">
+                          Non-Coffee based
+                        </div>
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div
@@ -342,91 +350,98 @@
               >
                 FOODS
               </div>
-              <div class="d-block d-sm-flex justify-content-between">
-                <div class="d-flex" id="silog">
-                  <div class="text-start">
-                    <img
-                      class="menuImg mt-4"
-                      src="./assets/img/silog.png"
-                      alt="silog logo"
-                    />
-                  </div>
-                  <div
-                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
-                  >
-                    <a
-                      class="nav-link text-brown"
-                      href="#back-to-mainMenu"
-                      onclick="changeMainMenuTosilogPage()"
-                      >Silog</a
+              <div class="row d-block d-sm-flex m-3">
+                <div class="col-6">
+                  <div class="d-flex" id="silog">
+                    <div class="text-start">
+                      <img
+                        class="menuImg mt-4"
+                        src="../assets/img/silog.png"
+                        alt="silog logo"
+                      />
+                    </div>
+                    <div
+                      class="text-start align-self-center fs-4 fnt-outfit ms-4"
                     >
+                      <a
+                        class="nav-link text-brown"
+                        href="#back-to-mainMenu"
+                        onclick="changeMainMenuTosilogPage()"
+                        >Silog</a
+                      >
+                    </div>
                   </div>
-                </div>
-                <div class="d-flex" id="add-ons">
-                  <div class="text-start">
-                    <img
-                      class="menuImg mt-4"
-                      src="./assets/img/addOn.png"
-                      alt="add-ons logo"
-                    />
-                  </div>
-                  <div
-                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
-                  >
-                    <a
-                      class="nav-link text-brown"
-                      href="#back-to-mainMenu"
-                      onclick="changeMainMenuToaddOnsPage()"
-                      >Add-ons</a
+                  <div class="d-flex" id="add-ons">
+                    <div class="text-start">
+                      <img
+                        class="menuImg mt-4"
+                        src="../assets/img/addOn.png"
+                        alt="add-ons logo"
+                      />
+                    </div>
+                    <div
+                      class="text-start align-self-center fs-4 fnt-outfit ms-4"
                     >
+                      <a
+                        class="nav-link text-brown"
+                        href="#back-to-mainMenu"
+                        onclick="changeMainMenuToaddOnsPage()"
+                        >Add-ons</a
+                      >
+                    </div>
                   </div>
                 </div>
-              </div>
-
-              <div class="d-flex" id="eggdrop">
-                <div class="text-start">
-                  <img
-                    class="menuImg mt-4"
-                    src="./assets/img/eggdrop.png"
-                    alt="eggdrop logo"
-                  />
-                </div>
-                <div class="text-start align-self-center fs-4 fnt-outfit ms-4">
-                  <a
-                    class="nav-link text-brown"
-                    href="#back-to-mainMenu"
-                    onclick="changeMainMenuToeggdropPage()"
-                    >Eggdrop</a
-                  >
-                </div>
-              </div>
-              <div class="d-flex mb-5" id="pastries">
-                <div class="text-start">
-                  <img
-                    class="menuImg mt-4"
-                    src="./assets/img/pastries.png"
-                    alt="pastries logo"
-                  />
-                </div>
-                <div class="text-start align-self-center fs-4 fnt-outfit ms-4">
-                  <a
-                    class="nav-link text-brown"
-                    href="#back-to-mainMenu"
-                    onclick="changeMainMenuTopastriesPage()"
-                    >Pastries</a
-                  >
+                <div class="col-6">
+                  <div class="d-flex" id="eggdrop">
+                    <div class="text-start">
+                      <img
+                        class="menuImg mt-4"
+                        src="../assets/img/eggdrop.png"
+                        alt="eggdrop logo"
+                      />
+                    </div>
+                    <div
+                      class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                    >
+                      <a
+                        class="nav-link text-brown"
+                        href="#back-to-mainMenu"
+                        onclick="changeMainMenuToeggdropPage()"
+                        >Eggdrop</a
+                      >
+                    </div>
+                  </div>
+                  <div class="d-flex mb-5" id="pastries">
+                    <div class="text-start">
+                      <img
+                        class="menuImg mt-4"
+                        src="../assets/img/pastries.png"
+                        alt="pastries logo"
+                      />
+                    </div>
+                    <div
+                      class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                    >
+                      <a
+                        class="nav-link text-brown"
+                        href="#back-to-mainMenu"
+                        onclick="changeMainMenuTopastriesPage()"
+                        >Pastries</a
+                      >
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
           <!-- Espresso Menu start -->
-          <div class="col-8 ms-3 d-none" id="espressopage">
+          <div class="col-9 ms-3 d-none w-75" id="espressopage">
             <div
               data-bs-spy="scroll"
               data-bs-target="#menu-items"
               data-bs-smooth-scroll="true"
-              class="menu-item"
+              class="menu-item flex-column"
               tabindex="0"
             >
               <div class="d-flex">
@@ -446,189 +461,182 @@
               >
                 ESPRESSO
               </div>
-              <div class="d-block d-sm-flex justify-content-between">
-                <div class="d-flex">
-                  <div class="text-start">
-                    <img
-                      class="menuImg mt-4"
-                      src="./assets/img/espresso.png"
-                      alt="Spanish Latte logo"
-                    />
-                  </div>
-                  <div
-                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
-                  >
-                    <a
-                      class="nav-link text-brown"
-                      href="#back-to-mainMenu"
-                      type="button"
-                      data-bs-toggle="modal"
-                      data-bs-target="#spanishLatte-modal"
+              <div class="row d-block d-sm-flex ms-3">
+                <div class="col-6">
+                  <div class="d-flex">
+                    <div class="text-start">
+                      <img
+                        class="menuImg mt-4"
+                        src="../assets/img/espresso.png"
+                        alt="Spanish Latte logo"
+                      />
+                    </div>
+                    <div
+                      class="text-start align-self-center fs-4 fnt-outfit ms-4"
                     >
-                      Spanish Latte
-                    </a>
+                      <a
+                        class="nav-link text-brown"
+                        href="#back-to-mainMenu"
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#spanishLatte-modal"
+                      >
+                        Spanish Latte
+                      </a>
+                    </div>
+                  </div>
+                  <div class="d-flex">
+                    <div class="text-start">
+                      <img
+                        class="menuImg mt-4"
+                        src="../assets/img/hazelnutEspresso-modified.png"
+                        alt="hazelnutEspresso logo "
+                      />
+                    </div>
+                    <div
+                      class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                    >
+                      <a
+                        class="nav-link text-brown"
+                        href="#back-to-mainMenu"
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#hazelnutEspresso-modal"
+                      >
+                        Hazelnut Espresso
+                      </a>
+                    </div>
+                  </div>
+                  <div class="d-flex">
+                    <div class="text-start">
+                      <img
+                        class="menuImg mt-4"
+                        src="../assets/img/frenchVanilla-modified.png"
+                        alt="frenchVanilla logo "
+                      />
+                    </div>
+                    <div
+                      class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                    >
+                      <a
+                        class="nav-link text-brown"
+                        href="#back-to-mainMenu"
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#frenchVanilla-modal"
+                        >French Vanilla</a
+                      >
+                    </div>
+                  </div>
+                  <div class="d-flex">
+                    <div class="text-start">
+                      <img
+                        class="menuImg mt-4"
+                        src="../assets/img/dirtyMatcha-modified.png"
+                        alt="dirtyMatcha logo "
+                      />
+                    </div>
+                    <div
+                      class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                    >
+                      <a
+                        class="nav-link text-brown"
+                        href="#back-to-mainMenu"
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#dirtyMatcha-modal"
+                        >Dirty Matcha</a
+                      >
+                    </div>
                   </div>
                 </div>
-                <div class="d-flex">
-                  <div class="text-start">
-                    <img
-                      class="menuImg mt-4"
-                      src="./assets/img/hazelnutEspresso-modified.png"
-                      alt="hazelnutEspresso logo "
-                    />
-                  </div>
-                  <div
-                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
-                  >
-                    <a
-                      class="nav-link text-brown me-2"
-                      href="#back-to-mainMenu"
-                      type="button"
-                      data-bs-toggle="modal"
-                      data-bs-target="#hazelnutEspresso-modal"
+                <div class="col-6 mb-5">
+                  <div class="d-flex">
+                    <div class="text-start">
+                      <img
+                        class="menuImg mt-4"
+                        src="../assets/img/caramelMacchiato-modified.png"
+                        alt="caramelMacchiato logo "
+                      />
+                    </div>
+                    <div
+                      class="text-start align-self-center fs-4 fnt-outfit ms-4"
                     >
-                      Hazelnut Espresso
-                    </a>
+                      <a
+                        class="nav-link text-brown"
+                        href="#back-to-mainMenu"
+                        ="#"
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#caramelMacchiato-modal"
+                        >Caramel Macchiato</a
+                      >
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div class="d-block d-sm-flex justify-content-between">
-                <div class="d-flex">
-                  <div class="text-start">
-                    <img
-                      class="menuImg mt-4"
-                      src="./assets/img/frenchVanilla-modified.png"
-                      alt="frenchVanilla logo "
-                    />
-                  </div>
-                  <div
-                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
-                  >
-                    <a
-                      class="nav-link text-brown"
-                      href="#back-to-mainMenu"
-                      type="button"
-                      data-bs-toggle="modal"
-                      data-bs-target="#frenchVanilla-modal"
-                      >French Vanilla</a
+                  <div class="d-flex">
+                    <div class="text-start">
+                      <img
+                        class="menuImg mt-4"
+                        src="../assets/img/saltedCaramel-modified.png"
+                        alt="saltedCaramel logo "
+                      />
+                    </div>
+                    <div
+                      class="text-start align-self-center fs-4 fnt-outfit ms-4"
                     >
+                      <a
+                        class="nav-link text-brown"
+                        href="#back-to-mainMenu"
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#saltedCaramel-modal"
+                        >Salted Caramel</a
+                      >
+                    </div>
                   </div>
-                </div>
-
-                <div class="d-flex me-3">
-                  <div class="text-start">
-                    <img
-                      class="menuImg mt-4"
-                      src="./assets/img/dirtyMatcha-modified.png"
-                      alt="dirtyMatcha logo "
-                    />
-                  </div>
-                  <div
-                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
-                  >
-                    <a
-                      class="nav-link text-brown me-5"
-                      href="#back-to-mainMenu"
-                      type="button"
-                      data-bs-toggle="modal"
-                      data-bs-target="#dirtyMatcha-modal"
-                      >Dirty Matcha</a
+                  <div class="d-flex">
+                    <div class="text-start">
+                      <img
+                        class="menuImg mt-4"
+                        src="../assets/img/whiteChocolate-modified.png"
+                        alt="whiteChocolate logo "
+                      />
+                    </div>
+                    <div
+                      class="text-start align-self-center fs-4 fnt-outfit ms-4"
                     >
+                      <a
+                        class="nav-link text-brown"
+                        href="#back-to-mainMenu"
+                        ="#"
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#whiteChocolate-modal"
+                        >White Chocolate</a
+                      >
+                    </div>
                   </div>
-                </div>
-              </div>
-
-              <div class="d-block d-sm-flex justify-content-between">
-                <div class="d-flex">
-                  <div class="text-start">
-                    <img
-                      class="menuImg mt-4"
-                      src="./assets/img/caramelMacchiato-modified.png"
-                      alt="caramelMacchiato logo "
-                    />
-                  </div>
-                  <div
-                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
-                  >
-                    <a
-                      class="nav-link text-brown"
-                      href="#back-to-mainMenu"
-                      ="#"
-                      type="button"
-                      data-bs-toggle="modal"
-                      data-bs-target="#caramelMacchiato-modal"
-                      >Caramel Macchiato</a
+                  <div class="d-flex">
+                    <div class="text-start">
+                      <img
+                        class="menuImg mt-4"
+                        src="../assets/img/bonCafeSignature-modified.png"
+                        alt="bonCafeSignature logo "
+                      />
+                    </div>
+                    <div
+                      class="text-start align-self-center fs-4 fnt-outfit ms-4"
                     >
-                  </div>
-                </div>
-
-                <div class="d-flex me-3">
-                  <div class="text-start">
-                    <img
-                      class="menuImg mt-4"
-                      src="./assets/img/saltedCaramel-modified.png"
-                      alt="saltedCaramel logo "
-                    />
-                  </div>
-                  <div
-                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
-                  >
-                    <a
-                      class="nav-link text-brown me-4"
-                      href="#back-to-mainMenu"
-                      ="#"
-                      type="button"
-                      data-bs-toggle="modal"
-                      data-bs-target="#saltedCaramel-modal"
-                      >Salted Caramel</a
-                    >
-                  </div>
-                </div>
-              </div>
-              <div class="d-block d-sm-flex justify-content-between mb-5">
-                <div class="d-flex">
-                  <div class="text-start">
-                    <img
-                      class="menuImg mt-4"
-                      src="./assets/img/whiteChocolate-modified.png"
-                      alt="whiteChocolate logo "
-                    />
-                  </div>
-                  <div
-                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
-                  >
-                    <a
-                      class="nav-link text-brown"
-                      href="#back-to-mainMenu"
-                      ="#"
-                      type="button"
-                      data-bs-toggle="modal"
-                      data-bs-target="#whiteChocolate-modal"
-                      >White Chocolate</a
-                    >
-                  </div>
-                </div>
-
-                <div class="d-flex">
-                  <div class="text-start">
-                    <img
-                      class="menuImg mt-4"
-                      src="./assets/img/bonCafeSignature-modified.png"
-                      alt="bonCafeSignature logo "
-                    />
-                  </div>
-                  <div
-                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
-                  >
-                    <a
-                      class="nav-link text-brown"
-                      href="#back-to-mainMenu"
-                      ="#"
-                      type="button"
-                      data-bs-toggle="modal"
-                      data-bs-target="#bonCafeSignature-modal"
-                      >Bon Cafe Signature</a
-                    >
+                      <a
+                        class="nav-link text-brown"
+                        href="#back-to-mainMenu"
+                        ="#"
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#bonCafeSignature-modal"
+                        >Bon Cafe Signature</a
+                      >
+                    </div>
                   </div>
                 </div>
               </div>
@@ -660,7 +668,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/espresso.jpg"
+                        src="../assets/img/espresso.jpg"
                         alt=""
                       />
                     </div>
@@ -717,7 +725,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/hazelnutEspresso.jpg"
+                        src="../assets/img/hazelnutEspresso.jpg"
                         alt=""
                       />
                     </div>
@@ -772,7 +780,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/frenchVanilla.jpg"
+                        src="../assets/img/frenchVanilla.jpg"
                         alt=""
                       />
                     </div>
@@ -833,7 +841,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/dirtyMatcha.jpg"
+                        src="../assets/img/dirtyMatcha.jpg"
                         alt=""
                       />
                     </div>
@@ -892,7 +900,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/caramelMacchiato.jpg"
+                        src="../assets/img/caramelMacchiato.jpg"
                         alt=""
                       />
                     </div>
@@ -949,7 +957,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/saltedCaramel.jpg"
+                        src="../assets/img/saltedCaramel.jpg"
                         alt=""
                       />
                     </div>
@@ -1002,7 +1010,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/whiteChocolate.jpg"
+                        src="../assets/img/whiteChocolate.jpg"
                         alt=""
                       />
                     </div>
@@ -1054,7 +1062,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/bonCafeSignature.jpg"
+                        src="../assets/img/bonCafeSignature.jpg"
                         alt=""
                       />
                     </div>
@@ -1110,118 +1118,112 @@
               >
                 NON-COFFEE
               </div>
-              <div class="d-block d-sm-flex justify-content-between">
-                <div class="d-flex">
-                  <div class="text-start">
-                    <img
-                      class="menuImg mt-4"
-                      src="./assets/img/espresso.png"
-                      alt="Vanilla logo"
-                    />
-                  </div>
-                  <div
-                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
-                  >
-                    <a
-                      class="nav-link text-brown"
-                      href="#back-to-mainMenu"
-                      type="button"
-                      data-bs-toggle="modal"
-                      data-bs-target="#vanilla-modal"
+              <div class="row d-block d-sm-flex ms-3">
+                <div class="col-6 mb-sm-5">
+                  <div class="d-flex">
+                    <div class="text-start">
+                      <img
+                        class="menuImg mt-4"
+                        src="../assets/img/espresso.png"
+                        alt="Vanilla logo"
+                      />
+                    </div>
+                    <div
+                      class="text-start align-self-center fs-4 fnt-outfit ms-4"
                     >
-                      Vanilla
-                    </a>
+                      <a
+                        class="nav-link text-brown"
+                        href="#back-to-mainMenu"
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#vanilla-modal"
+                      >
+                        Vanilla
+                      </a>
+                    </div>
+                  </div>
+                  <div class="d-flex">
+                    <div class="text-start">
+                      <img
+                        class="menuImg mt-4"
+                        src="../assets/img/nonCoffee.png"
+                        alt="MatchaLatte logo "
+                      />
+                    </div>
+                    <div
+                      class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                    >
+                      <a
+                        class="nav-link text-brown me-2"
+                        href="#back-to-mainMenu"
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#matchaLatte-modal"
+                      >
+                        Matcha Latte
+                      </a>
+                    </div>
+                  </div>
+                  <div class="d-flex">
+                    <div class="text-start">
+                      <img
+                        class="menuImg mt-4 rounded-circle"
+                        src="../assets/img/strawberryLatte.jpg"
+                        alt="strawberryLatte logo "
+                      />
+                    </div>
+                    <div
+                      class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                    >
+                      <a
+                        class="nav-link text-brown"
+                        href="#back-to-mainMenu"
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#straberryLatte-modal"
+                        >Strawberry Latte</a
+                      >
+                    </div>
                   </div>
                 </div>
-                <div class="d-flex">
-                  <div class="text-start">
-                    <img
-                      class="menuImg mt-4"
-                      src="./assets/img/nonCoffee.png"
-                      alt="MatchaLatte logo "
-                    />
+                <div class="col-6 mb-5">
+                  <div class="d-flex">
+                    <div class="text-start">
+                      <img
+                        class="menuImg mt-4"
+                        src="../assets/img/nutella Latte-modified.png"
+                        alt="nutellaLatte logo "
+                      />
+                    </div>
+                    <div class="text-start align-self-center fs-4 fnt-outfit">
+                      <a
+                        class="nav-link text-brown"
+                        href="#back-to-mainMenu"
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#nuttelaLatte-modal"
+                        >Nutella Latte</a
+                      >
+                    </div>
                   </div>
-                  <div
-                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
-                  >
-                    <a
-                      class="nav-link text-brown me-2"
-                      href="#back-to-mainMenu"
-                      type="button"
-                      data-bs-toggle="modal"
-                      data-bs-target="#matchaLatte-modal"
-                    >
-                      Matcha Latte
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="d-block d-sm-flex justify-content-between">
-                <div class="d-flex">
-                  <div class="text-start">
-                    <img
-                      class="menuImg mt-4 rounded-circle"
-                      src="./assets/img/strawberryLatte.jpg"
-                      alt="strawberryLatte logo "
-                    />
-                  </div>
-                  <div
-                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
-                  >
-                    <a
-                      class="nav-link text-brown"
-                      href="#back-to-mainMenu"
-                      type="button"
-                      data-bs-toggle="modal"
-                      data-bs-target="#straberryLatte-modal"
-                      >Strawberry Latte</a
-                    >
-                  </div>
-                </div>
-
-                <div class="d-flex me-2">
-                  <div class="text-start">
-                    <img
-                      class="menuImg mt-4"
-                      src="./assets/img/nutella Latte-modified.png"
-                      alt="nutellaLatte logo "
-                    />
-                  </div>
-                  <div
-                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
-                  >
-                    <a
-                      class="nav-link text-brown"
-                      href="#back-to-mainMenu"
-                      type="button"
-                      data-bs-toggle="modal"
-                      data-bs-target="#nuttelaLatte-modal"
-                      >Nutella Latte</a
-                    >
-                  </div>
-                </div>
-              </div>
-
-              <div class="d-block d-sm-flex justify-content-between">
-                <div class="d-flex mb-5">
-                  <div class="text-start">
-                    <img
-                      class="menuImg mt-4"
-                      src="./assets/img/matchaOreo-modified.png"
-                      alt="matchaOreo logo "
-                    />
-                  </div>
-                  <div
-                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
-                  >
-                    <a
-                      class="nav-link text-brown"
-                      href="#back-to-mainMenu"
-                      type="button"
-                      data-bs-toggle="modal"
-                      data-bs-target="#matchaOreo-modal"
-                      >Matcha Oreo</a
-                    >
+                  <div class="d-flex">
+                    <div class="text-start">
+                      <img
+                        class="menuImg mt-4"
+                        src="../assets/img/matchaOreo-modified.png"
+                        alt="matchaOreo logo "
+                      />
+                    </div>
+                    <div class="text-start align-self-center fs-4 fnt-outfit">
+                      <a
+                        class="nav-link text-brown"
+                        href="#back-to-mainMenu"
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#matchaOreo-modal"
+                        >Matcha Oreo</a
+                      >
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1253,7 +1255,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/espresso.jpg"
+                        src="../assets/img/espresso.jpg"
                         alt=""
                       />
                     </div>
@@ -1304,7 +1306,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/nonCoffee.jpg"
+                        src="../assets/img/nonCoffee.jpg"
                         alt=""
                       />
                     </div>
@@ -1358,7 +1360,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/strawberryLatte.jpg"
+                        src="../assets/img/strawberryLatte.jpg"
                         alt=""
                       />
                     </div>
@@ -1381,6 +1383,7 @@
                     <div class="pe-5 fnt-outfit fw-semibold">
                       <i class="fa-solid fa-beer-mug-empty"></i> L - 145
                     </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1409,7 +1412,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/bonCafeSignature.jpg"
+                        src="../assets/img/bonCafeSignature.jpg"
                         alt=""
                       />
                     </div>
@@ -1431,6 +1434,7 @@
                     <div class="pe-5 fnt-outfit fw-semibold">
                       <i class="fa-solid fa-beer-mug-empty"></i> L - 145
                     </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1459,7 +1463,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/matchaOreo.jpg"
+                        src="../assets/img/matchaOreo.jpg"
                         alt=""
                       />
                     </div>
@@ -1483,6 +1487,7 @@
                     <div class="pe-5 fnt-outfit fw-semibold">
                       <i class="fa-solid fa-beer-mug-empty"></i> L - 145
                     </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1518,119 +1523,117 @@
                   Non-Coffee based
                 </div>
               </div>
-              <div class="d-block d-sm-flex justify-content-between">
-                <div class="d-flex">
-                  <div class="text-start">
-                    <img
-                      class="menuImg mt-4 rounded-circle"
-                      src="./assets/img/matchaFrappe.jpg"
-                      alt="matchaFrappe logo"
-                    />
-                  </div>
-                  <div
-                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
-                  >
-                    <a
-                      class="nav-link text-brown"
-                      href="#back-to-mainMenu"
-                      type="button"
-                      data-bs-toggle="modal"
-                      data-bs-target="#matchaFrappe-modal"
+              <div class="row d-block d-sm-flex ms-3 justify-content-between">
+                <div class="col-6 mb-sm-5">
+                  <div class="d-flex">
+                    <div class="text-start">
+                      <img
+                        class="menuImg mt-4 rounded-circle"
+                        src="../assets/img/matchaFrappe.jpg"
+                        alt="matchaFrappe logo"
+                      />
+                    </div>
+                    <div
+                      class="text-start align-self-center fs-4 fnt-outfit ms-4"
                     >
-                      Matcha Frappe
-                    </a>
+                      <a
+                        class="nav-link text-brown"
+                        href="#back-to-mainMenu"
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#matchaFrappe-modal"
+                      >
+                        Matcha Frappe
+                      </a>
+                    </div>
+                  </div>
+                  <div class="d-flex">
+                    <div class="text-start">
+                      <img
+                        class="menuImg mt-4 rounded-circle"
+                        src="../assets/img/darkchocoFrappe.jpg"
+                        alt="darkchocoFrappe logo "
+                      />
+                    </div>
+                    <div
+                      class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                    >
+                      <a
+                        class="nav-link text-brown me-2"
+                        href="#back-to-mainMenu"
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#darkchocoFrappe-modal"
+                      >
+                        <div>Darkchoco w/</div>
+                        <div>Oreo Frappe</div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="d-flex">
+                    <div class="text-start">
+                      <img
+                        class="menuImg mt-4 rounded-circle"
+                        src="../assets/img/strawberryFrappe.jpg"
+                        alt="strawberryFrappe logo "
+                      />
+                    </div>
+                    <div
+                      class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                    >
+                      <a
+                        class="nav-link text-brown"
+                        href="#back-to-mainMenu"
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#strawberryFrappe-modal"
+                        >Strawberry w/ Oreo</a
+                      >
+                    </div>
                   </div>
                 </div>
-                <div class="d-flex">
-                  <div class="text-start">
-                    <img
-                      class="menuImg mt-4 rounded-circle"
-                      src="./assets/img/darkchocoFrappe.jpg"
-                      alt="darkchocoFrappe logo "
-                    />
-                  </div>
-                  <div
-                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
-                  >
-                    <a
-                      class="nav-link text-brown me-2"
-                      href="#back-to-mainMenu"
-                      type="button"
-                      data-bs-toggle="modal"
-                      data-bs-target="#darkchocoFrappe-modal"
+                <div class="col-6 mb-5">
+                  <div class="d-flex">
+                    <div class="text-start">
+                      <img
+                        class="menuImg mt-4"
+                        src="../assets/img/nutella Latte-modified.png"
+                        alt="oreoNutella logo "
+                      />
+                    </div>
+                    <div
+                      class="text-start align-self-center fs-4 fnt-outfit ms-4"
                     >
-                      <div>Darkchoco w/</div>
-                      <div>Oreo Frappe</div>
-                    </a>
+                      <a
+                        class="nav-link text-brown"
+                        href="#back-to-mainMenu"
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#oreoNutella-modal"
+                        >Oreo Nutella</a
+                      >
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div class="d-block d-sm-flex justify-content-between">
-                <div class="d-flex">
-                  <div class="text-start">
-                    <img
-                      class="menuImg mt-4 rounded-circle"
-                      src="./assets/img/strawberryFrappe.jpg"
-                      alt="strawberryFrappe logo "
-                    />
-                  </div>
-                  <div
-                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
-                  >
-                    <a
-                      class="nav-link text-brown"
-                      href="#back-to-mainMenu"
-                      type="button"
-                      data-bs-toggle="modal"
-                      data-bs-target="#strawberryFrappe-modal"
-                      >Strawberry w/ Oreo</a
+                  <div class="d-flex">
+                    <div class="text-start">
+                      <img
+                        class="menuImg mt-4 rounded-circle"
+                        src="../assets/img/bonCafeSignature-modified.png"
+                        alt="oreoCheesecake logo "
+                      />
+                    </div>
+                    <div
+                      class="text-start align-self-center fs-4 fnt-outfit ms-4"
                     >
-                  </div>
-                </div>
-
-                <div class="d-flex me-4">
-                  <div class="text-start">
-                    <img
-                      class="menuImg mt-4"
-                      src="./assets/img/nutella Latte-modified.png"
-                      alt="oreoNutella logo "
-                    />
-                  </div>
-                  <div
-                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
-                  >
-                    <a
-                      class="nav-link text-brown"
-                      href="#back-to-mainMenu"
-                      type="button"
-                      data-bs-toggle="modal"
-                      data-bs-target="#oreoNutella-modal"
-                      >Oreo Nutella</a
-                    >
-                  </div>
-                </div>
-              </div>
-
-              <div class="d-block d-sm-flex justify-content-between">
-                <div class="d-flex mb-5">
-                  <div class="text-start">
-                    <img
-                      class="menuImg mt-4 rounded-circle"
-                      src="./assets/img/bonCafeSignature-modified.png"
-                      alt="oreoCheesecake logo "
-                    />
-                  </div>
-                  <div
-                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
-                  >
-                    <a
-                      class="nav-link text-brown"
-                      href="#back-to-mainMenu"
-                      type="button"
-                      data-bs-toggle="modal"
-                      data-bs-target="#oreoCheesecake-modal"
-                      >Oreo Cheesecake</a
-                    >
+                      <a
+                        class="nav-link text-brown"
+                        href="#back-to-mainMenu"
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#oreoCheesecake-modal"
+                        >Oreo Cheesecake</a
+                      >
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1662,7 +1665,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/matchaFrappe.jpg"
+                        src="../assets/img/matchaFrappe.jpg"
                         alt=""
                       />
                     </div>
@@ -1684,6 +1687,7 @@
                     <div class="pe-5 fnt-outfit fw-semibold">
                       <i class="fa-solid fa-beer-mug-empty"></i> L - 145
                     </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1712,7 +1716,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/darkchocoFrappe.jpg"
+                        src="../assets/img/darkchocoFrappe.jpg"
                         alt=""
                       />
                     </div>
@@ -1734,7 +1738,7 @@
                     <div class="pe-5 fnt-outfit fw-semibold">
                       <i class="fa-solid fa-beer-mug-empty"></i> L - 145
                     </div>
-                </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1763,7 +1767,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/strawberryFrappe.jpg"
+                        src="../assets/img/strawberryFrappe.jpg"
                         alt=""
                       />
                     </div>
@@ -1785,7 +1789,7 @@
                     <div class="pe-5 fnt-outfit fw-semibold">
                       <i class="fa-solid fa-beer-mug-empty"></i> L - 145
                     </div>
-                </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1814,7 +1818,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/nutella Latte.jpg"
+                        src="../assets/img/nutella Latte.jpg"
                         alt=""
                       />
                     </div>
@@ -1838,7 +1842,7 @@
                     <div class="pe-5 fnt-outfit fw-semibold">
                       <i class="fa-solid fa-beer-mug-empty"></i> L - 145
                     </div>
-                </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1867,7 +1871,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/bonCafeSignature.jpg"
+                        src="../assets/img/bonCafeSignature.jpg"
                         alt=""
                       />
                     </div>
@@ -1891,13 +1895,13 @@
                     <div class="pe-5 fnt-outfit fw-semibold">
                       <i class="fa-solid fa-beer-mug-empty"></i> L - 145
                     </div>
-                </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           <!-- Oreo Cheesecake Modal end -->
-          <!-- FRAPPE NON-COFFEE ITEM MODAL START -->
+          <!-- FRAPPE NON-COFFEE ITEM MODAL END -->
 
           <!-- Frappe Coffee Menu start -->
           <div class="col-8 ms-3 d-none" id="frappeCoffee">
@@ -1927,118 +1931,116 @@
                   Coffee based
                 </div>
               </div>
-              <div class="d-block d-sm-flex justify-content-between">
-                <div class="d-flex">
-                  <div class="text-start">
-                    <img
-                      class="menuImg mt-4"
-                      src="./assets/img/nutella Latte-modified.png"
-                      alt="darkChoco logo"
-                    />
-                  </div>
-                  <div
-                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
-                  >
-                    <a
-                      class="nav-link text-brown"
-                      href="#back-to-mainMenu"
-                      type="button"
-                      data-bs-toggle="modal"
-                      data-bs-target="#darkChoco-modal"
+              <div class="row d-block d-sm-flex ms-3">
+                <div class="col-6 mb-sm-5">
+                  <div class="d-flex">
+                    <div class="text-start">
+                      <img
+                        class="menuImg mt-4"
+                        src="../assets/img/nutella Latte-modified.png"
+                        alt="darkChoco logo"
+                      />
+                    </div>
+                    <div
+                      class="text-start align-self-center fs-4 fnt-outfit ms-4"
                     >
-                      Dark Choco
-                    </a>
+                      <a
+                        class="nav-link text-brown"
+                        href="#back-to-mainMenu"
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#darkChoco-modal"
+                      >
+                        Dark Choco
+                      </a>
+                    </div>
+                  </div>
+                  <div class="d-flex">
+                    <div class="text-start">
+                      <img
+                        class="menuImg mt-4"
+                        src="../assets/img/saltedCaramel-modified.png"
+                        alt="saltedCaramel logo "
+                      />
+                    </div>
+                    <div
+                      class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                    >
+                      <a
+                        class="nav-link text-brown me-2"
+                        href="#back-to-mainMenu"
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#saltedCaramel-modal"
+                      >
+                        Salted Caramel
+                      </a>
+                    </div>
+                  </div>
+                  <div class="d-flex">
+                    <div class="text-start">
+                      <img
+                        class="menuImg mt-4 rounded-circle"
+                        src="../assets/img/caramelMacchiato-modified.png"
+                        alt="caramelMacchiato logo "
+                      />
+                    </div>
+                    <div
+                      class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                    >
+                      <a
+                        class="nav-link text-brown"
+                        href="#back-to-mainMenu"
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#caramelMacchiato-modal"
+                        >Caramel Macchiato</a
+                      >
+                    </div>
                   </div>
                 </div>
-                <div class="d-flex">
-                  <div class="text-start">
-                    <img
-                      class="menuImg mt-4"
-                      src="./assets/img/saltedCaramel-modified.png"
-                      alt="saltedCaramel logo "
-                    />
-                  </div>
-                  <div
-                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
-                  >
-                    <a
-                      class="nav-link text-brown me-2"
-                      href="#back-to-mainMenu"
-                      type="button"
-                      data-bs-toggle="modal"
-                      data-bs-target="#saltedCaramel-modal"
+                <div class="col-6 mb-5">
+                  <div class="d-flex">
+                    <div class="text-start">
+                      <img
+                        class="menuImg mt-4 rounded-circle"
+                        src="../assets/img/darkchocoFrappe.jpg"
+                        alt="chocoHazelnut logo "
+                      />
+                    </div>
+                    <div
+                      class="text-start align-self-center fs-4 fnt-outfit ms-4"
                     >
-                      Salted Caramel
-                    </a>
+                      <a
+                        class="nav-link text-brown"
+                        href="#back-to-mainMenu"
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#chocoHazelnut-modal"
+                        >Choco Hazelnut</a
+                      >
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div class="d-block d-sm-flex justify-content-between">
-                <div class="d-flex">
-                  <div class="text-start">
-                    <img
-                      class="menuImg mt-4 rounded-circle"
-                      src="./assets/img/caramelMacchiato-modified.png"
-                      alt="caramelMacchiato logo "
-                    />
-                  </div>
-                  <div
-                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
-                  >
-                    <a
-                      class="nav-link text-brown"
-                      href="#back-to-mainMenu"
-                      type="button"
-                      data-bs-toggle="modal"
-                      data-bs-target="#caramelMacchiato-modal"
-                      >Caramel Macchiato</a
+                  <div class="d-flex">
+                    <div class="text-start">
+                      <img
+                        class="menuImg mt-4 rounded-circle"
+                        src="../assets/img/dirtyMatcha-modified.png"
+                        alt="dirtyMatcha logo "
+                      />
+                    </div>
+                    <div
+                      class="text-start align-self-center fs-4 fnt-outfit ms-4"
                     >
-                  </div>
-                </div>
-
-                <div class="d-flex me-2">
-                  <div class="text-start">
-                    <img
-                      class="menuImg mt-4 rounded-circle"
-                      src="./assets/img/darkchocoFrappe.jpg"
-                      alt="chocoHazelnut logo "
-                    />
-                  </div>
-                  <div
-                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
-                  >
-                    <a
-                      class="nav-link text-brown"
-                      href="#back-to-mainMenu"
-                      type="button"
-                      data-bs-toggle="modal"
-                      data-bs-target="#chocoHazelnut-modal"
-                      >Choco Hazelnut</a
-                    >
-                  </div>
-                </div>
-              </div>
-
-              <div class="d-block d-sm-flex justify-content-between">
-                <div class="d-flex mb-5">
-                  <div class="text-start">
-                    <img
-                      class="menuImg mt-4 rounded-circle"
-                      src="./assets/img/dirtyMatcha-modified.png"
-                      alt="dirtyMatcha logo "
-                    />
-                  </div>
-                  <div
-                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
-                  >
-                    <a
-                      class="nav-link text-brown"
-                      href="#back-to-mainMenu"
-                      type="button"
-                      data-bs-toggle="modal"
-                      data-bs-target="#dirtyMatcha-modal"
-                      >Dirty Matcha</a
-                    >
+                      <a
+                        class="nav-link text-brown"
+                        href="#back-to-mainMenu"
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#dirtyMatcha-modal"
+                        >Dirty Matcha</a
+                      >
+                    </div>
                   </div>
                 </div>
               </div>
@@ -2070,7 +2072,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/darkchocoFrappe.jpg"
+                        src="../assets/img/darkchocoFrappe.jpg"
                         alt=""
                       />
                     </div>
@@ -2092,7 +2094,7 @@
                     <div class="pe-5 fnt-outfit fw-semibold">
                       <i class="fa-solid fa-beer-mug-empty"></i> L - 150
                     </div>
-                </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -2121,7 +2123,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/nutella Latte.jpg"
+                        src="../assets/img/nutella Latte.jpg"
                         alt=""
                       />
                     </div>
@@ -2136,14 +2138,14 @@
                       </p>
                     </div>
                   </div>
-                                   <div class="modal-footer">
+                  <div class="modal-footer">
                     <div class="pe-5 fnt-outfit fw-semibold">
                       <i class="fa-solid fa-mug-saucer"></i> M - 130
                     </div>
                     <div class="pe-5 fnt-outfit fw-semibold">
                       <i class="fa-solid fa-beer-mug-empty"></i> L - 150
                     </div>
-                </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -2177,49 +2179,53 @@
               >
                 REFRESHER
               </div>
-              <div class="d-block d-sm-flex justify-content-between">
-                <div class="d-flex">
-                  <div class="text-start">
-                    <img
-                      class="menuImg mt-4"
-                      src="./assets/img/sparklingLemon-modified.png"
-                      alt="sparklingLemon logo"
-                    />
-                  </div>
-                  <div
-                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
-                  >
-                    <a
-                      class="nav-link text-brown"
-                      href="#back-to-mainMenu"
-                      type="button"
-                      data-bs-toggle="modal"
-                      data-bs-target="#sparklingLemon-modal"
+              <div class="row d-block d-sm-flex ms-3">
+                <div class="col-6">
+                  <div class="d-flex">
+                    <div class="text-start">
+                      <img
+                        class="menuImg mt-4"
+                        src="../assets/img/sparklingLemon-modified.png"
+                        alt="sparklingLemon logo"
+                      />
+                    </div>
+                    <div
+                      class="text-start align-self-center fs-4 fnt-outfit ms-4"
                     >
-                      Sparkling Lemon
-                    </a>
+                      <a
+                        class="nav-link text-brown"
+                        href="#back-to-mainMenu"
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#sparklingLemon-modal"
+                      >
+                        Sparkling Lemon
+                      </a>
+                    </div>
                   </div>
                 </div>
-                <div class="d-flex mb-5">
-                  <div class="text-start">
-                    <img
-                      class="menuImg mt-4"
-                      src="./assets/img/sparklingStrawberry-modified.png"
-                      alt="sparklingStrawberry logo "
-                    />
-                  </div>
-                  <div
-                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
-                  >
-                    <a
-                      class="nav-link text-brown me-2"
-                      href="#back-to-mainMenu"
-                      type="button"
-                      data-bs-toggle="modal"
-                      data-bs-target="#sparklingStrawberry-modal"
+                <div class="col-6">
+                  <div class="d-flex mb-5">
+                    <div class="text-start">
+                      <img
+                        class="menuImg mt-4"
+                        src="../assets/img/sparklingStrawberry-modified.png"
+                        alt="sparklingStrawberry logo "
+                      />
+                    </div>
+                    <div
+                      class="text-start align-self-center fs-4 fnt-outfit ms-4"
                     >
-                      Sparkling Strawberry
-                    </a>
+                      <a
+                        class="nav-link text-brown me-2"
+                        href="#back-to-mainMenu"
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#sparklingStrawberry-modal"
+                      >
+                        Sparkling Strawberry
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -2251,7 +2257,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/sparklingLemon.jpg"
+                        src="../assets/img/sparklingLemon.jpg"
                         alt=""
                       />
                     </div>
@@ -2270,14 +2276,14 @@
                       </p>
                     </div>
                   </div>
-                                   <div class="modal-footer">
+                  <div class="modal-footer">
                     <div class="pe-5 fnt-outfit fw-semibold">
                       <i class="fa-solid fa-mug-saucer"></i> M - 99
                     </div>
                     <div class="pe-5 fnt-outfit fw-semibold">
                       <i class="fa-solid fa-beer-mug-empty"></i> L - 120
                     </div>
-                </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -2306,7 +2312,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/sparklingStrawberry.jpg"
+                        src="../assets/img/sparklingStrawberry.jpg"
                         alt=""
                       />
                     </div>
@@ -2324,14 +2330,14 @@
                       </p>
                     </div>
                   </div>
-                    <div class="modal-footer">
+                  <div class="modal-footer">
                     <div class="pe-5 fnt-outfit fw-semibold">
                       <i class="fa-solid fa-mug-saucer"></i> M - 99
                     </div>
                     <div class="pe-5 fnt-outfit fw-semibold">
                       <i class="fa-solid fa-beer-mug-empty"></i> L - 120
                     </div>
-                </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -2365,94 +2371,95 @@
               >
                 SILOG
               </div>
-              <div class="d-block d-sm-flex justify-content-between">
-                <div class="d-flex">
-                  <div class="text-start">
-                    <img
-                      class="menuImg mt-4"
-                      src="./assets/img/hamSilog-modified.png"
-                      alt="Ham Silog logo"
-                    />
-                  </div>
-                  <div
-                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
-                  >
-                    <a
-                      class="nav-link text-brown"
-                      href="#back-to-mainMenu"
-                      type="button"
-                      data-bs-toggle="modal"
-                      data-bs-target="#hamSilog-modal"
+              <div class="row d-block d-sm-flex ms-3">
+                <div class="col-6">
+                  <div class="d-flex">
+                    <div class="text-start">
+                      <img
+                        class="menuImg mt-4"
+                        src="../assets/img/hamSilog-modified.png"
+                        alt="Ham Silog logo"
+                      />
+                    </div>
+                    <div
+                      class="text-start align-self-center fs-4 fnt-outfit ms-4"
                     >
-                      Ham Silog
-                    </a>
+                      <a
+                        class="nav-link text-brown"
+                        href="#back-to-mainMenu"
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#hamSilog-modal"
+                      >
+                        Ham Silog
+                      </a>
+                    </div>
+                  </div>
+                  <div class="d-flex">
+                    <div class="text-start">
+                      <img
+                        class="menuImg mt-4"
+                        src="../assets/img/bacSilog-modified.png"
+                        alt="Bacon Silog logo "
+                      />
+                    </div>
+                    <div
+                      class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                    >
+                      <a
+                        class="nav-link text-brown me-3"
+                        href="#back-to-mainMenu"
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#bacSilog-modal"
+                      >
+                        Bacon Silog
+                      </a>
+                    </div>
                   </div>
                 </div>
-                <div class="d-flex">
-                  <div class="text-start">
-                    <img
-                      class="menuImg mt-4"
-                      src="./assets/img/bacSilog-modified.png"
-                      alt="Bacon Silog logo "
-                    />
-                  </div>
-                  <div
-                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
-                  >
-                    <a
-                      class="nav-link text-brown me-3"
-                      href="#back-to-mainMenu"
-                      type="button"
-                      data-bs-toggle="modal"
-                      data-bs-target="#bacSilog-modal"
+                <div class="col-6 mb-5">
+                  <div class="d-flex">
+                    <div class="text-start">
+                      <img
+                        class="menuImg mt-4"
+                        src="../assets/img/beefSilog-modified.png"
+                        alt="Beef Silog logo "
+                      />
+                    </div>
+                    <div
+                      class="text-start align-self-center fs-4 fnt-outfit ms-4"
                     >
-                      Bacon Silog
-                    </a>
+                      <a
+                        class="nav-link text-brown"
+                        href="#back-to-mainMenu"
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#beefSilog-modal"
+                        >Beef Silog</a
+                      >
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div class="d-block d-sm-flex justify-content-between mb-5">
-                <div class="d-flex">
-                  <div class="text-start">
-                    <img
-                      class="menuImg mt-4"
-                      src="./assets/img/beefSilog-modified.png"
-                      alt="Beef Silog logo "
-                    />
-                  </div>
-                  <div
-                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
-                  >
-                    <a
-                      class="nav-link text-brown"
-                      href="#back-to-mainMenu"
-                      type="button"
-                      data-bs-toggle="modal"
-                      data-bs-target="#beefSilog-modal"
-                      >Beef Silog</a
+                  <div class="d-flex">
+                    <div class="text-start">
+                      <img
+                        class="menuImg mt-4"
+                        src="../assets/img/hotdogSilog-modified.png"
+                        alt="hotdogSilog logo "
+                      />
+                    </div>
+                    <div
+                      class="text-start align-self-center fs-4 fnt-outfit ms-4"
                     >
-                  </div>
-                </div>
-
-                <div class="d-flex">
-                  <div class="text-start">
-                    <img
-                      class="menuImg mt-4"
-                      src="./assets/img/hotdogSilog-modified.png"
-                      alt="hotdogSilog logo "
-                    />
-                  </div>
-                  <div
-                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
-                  >
-                    <a
-                      class="nav-link text-brown"
-                      href="#back-to-mainMenu"
-                      type="button"
-                      data-bs-toggle="modal"
-                      data-bs-target="#hotdogSilog-modal"
-                      >Hotdog Silog
-                    </a>
+                      <a
+                        class="nav-link text-brown"
+                        href="#back-to-mainMenu"
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#hotdogSilog-modal"
+                        >Hotdog Silog
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -2484,7 +2491,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/hamSilog.jpg"
+                        src="../assets/img/hamSilog.jpg"
                         alt=""
                       />
                     </div>
@@ -2540,7 +2547,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/bacSilog.jpg"
+                        src="../assets/img/bacSilog.jpg"
                         alt=""
                       />
                     </div>
@@ -2594,7 +2601,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/beefSilog.jpg"
+                        src="../assets/img/beefSilog.jpg"
                         alt=""
                       />
                     </div>
@@ -2649,7 +2656,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/hotdogSilog.jpg"
+                        src="../assets/img/hotdogSilog.jpg"
                         alt=""
                       />
                     </div>
@@ -2707,164 +2714,159 @@
               >
                 ADD-ONS
               </div>
-              <div class="d-block d-sm-flex justify-content-between">
-                <div class="d-flex">
-                  <div class="text-start">
-                    <img
-                      class="menuImg mt-4"
-                      src="./assets/img/veggies-modified.png"
-                      alt="veggies logo"
-                    />
-                  </div>
-                  <div
-                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
-                  >
-                    <a
-                      class="nav-link text-brown"
-                      href="#back-to-mainMenu"
-                      type="button"
-                      data-bs-toggle="modal"
-                      data-bs-target="#veggies-modal"
+              <div class="row d-block d-sm-flex ms-3">
+                <div class="col-6 mb-sm-5">
+                  <div class="d-flex">
+                    <div class="text-start">
+                      <img
+                        class="menuImg mt-4"
+                        src="../assets/img/veggies-modified.png"
+                        alt="veggies logo"
+                      />
+                    </div>
+                    <div
+                      class="text-start align-self-center fs-4 fnt-outfit ms-4"
                     >
-                      Veggies
-                    </a>
+                      <a
+                        class="nav-link text-brown"
+                        href="#back-to-mainMenu"
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#veggies-modal"
+                      >
+                        Veggies
+                      </a>
+                    </div>
+                  </div>
+                  <div class="d-flex">
+                    <div class="text-start">
+                      <img
+                        class="menuImg mt-4"
+                        src="../assets/img/cheese-modified.png"
+                        alt="cheese logo "
+                      />
+                    </div>
+                    <div
+                      class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                    >
+                      <a
+                        class="nav-link text-brown me-3"
+                        href="#back-to-mainMenu"
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#cheese-modal"
+                      >
+                        Cheese
+                      </a>
+                    </div>
+                  </div>
+                  <div class="d-flex">
+                    <div class="text-start">
+                      <img
+                        class="menuImg mt-4"
+                        src="../assets/img/egg-modified.png"
+                        alt="egg logo "
+                      />
+                    </div>
+                    <div
+                      class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                    >
+                      <a
+                        class="nav-link text-brown"
+                        href="#back-to-mainMenu"
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#egg-modal"
+                        >Egg</a
+                      >
+                    </div>
+                  </div>
+                  <div class="d-flex">
+                    <div class="text-start">
+                      <img
+                        class="menuImg mt-4"
+                        src="../assets/img/fries-modified.png"
+                        alt="fries logo "
+                      />
+                    </div>
+                    <div
+                      class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                    >
+                      <a
+                        class="nav-link text-brown me-3"
+                        href="#back-to-mainMenu"
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#fries-modal"
+                        >Fries</a
+                      >
+                    </div>
                   </div>
                 </div>
-                <div class="d-flex">
-                  <div class="text-start">
-                    <img
-                      class="menuImg mt-4"
-                      src="./assets/img/cheese-modified.png"
-                      alt="cheese logo "
-                    />
-                  </div>
-                  <div
-                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
-                  >
-                    <a
-                      class="nav-link text-brown me-3"
-                      href="#back-to-mainMenu"
-                      type="button"
-                      data-bs-toggle="modal"
-                      data-bs-target="#cheese-modal"
+                <div class="col-6 mb-5">
+                  <div class="d-flex">
+                    <div class="text-start">
+                      <img
+                        class="menuImg mt-4"
+                        src="../assets/img/espressoShot-modified.png"
+                        alt="espressoShot logo "
+                      />
+                    </div>
+                    <div
+                      class="text-start align-self-center fs-4 fnt-outfit ms-4"
                     >
-                      Cheese
-                    </a>
+                      <a
+                        class="nav-link text-brown"
+                        href="#back-to-mainMenu"
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#espressoShot-modal"
+                        >Espresso Shot</a
+                      >
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div class="d-block d-sm-flex justify-content-between">
-                <div class="d-flex">
-                  <div class="text-start">
-                    <img
-                      class="menuImg mt-4"
-                      src="./assets/img/egg-modified.png"
-                      alt="egg logo "
-                    />
-                  </div>
-                  <div
-                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
-                  >
-                    <a
-                      class="nav-link text-brown"
-                      href="#back-to-mainMenu"
-                      type="button"
-                      data-bs-toggle="modal"
-                      data-bs-target="#egg-modal"
-                      >Egg</a
+                  <div class="d-flex">
+                    <div class="text-start">
+                      <img
+                        class="menuImg mt-4"
+                        src="../assets/img/espressoPump-modified.png"
+                        alt="espressoPump logo "
+                      />
+                    </div>
+                    <div
+                      class="text-start align-self-center fs-4 fnt-outfit ms-4"
                     >
+                      <a
+                        class="nav-link text-brown"
+                        href="#back-to-mainMenu"
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#espressoPump-modal"
+                        ><div class="text-start">Espresso</div>
+                        <div class="text-start">Pump</div>
+                      </a>
+                    </div>
                   </div>
-                </div>
-
-                <div class="d-flex me-4">
-                  <div class="text-start">
-                    <img
-                      class="menuImg mt-4"
-                      src="./assets/img/fries-modified.png"
-                      alt="fries logo "
-                    />
-                  </div>
-                  <div
-                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
-                  >
-                    <a
-                      class="nav-link text-brown me-3"
-                      href="#back-to-mainMenu"
-                      type="button"
-                      data-bs-toggle="modal"
-                      data-bs-target="#fries-modal"
-                      >Fries</a
+                  <div class="d-flex">
+                    <div class="text-start">
+                      <img
+                        class="menuImg mt-4"
+                        src="../assets/img/milk-modified.png"
+                        alt="milk logo "
+                      />
+                    </div>
+                    <div
+                      class="text-start align-self-center fs-4 fnt-outfit ms-4"
                     >
-                  </div>
-                </div>
-              </div>
-
-              <div class="d-block d-sm-flex justify-content-between">
-                <div class="d-flex">
-                  <div class="text-start">
-                    <img
-                      class="menuImg mt-4"
-                      src="./assets/img/espressoShot-modified.png"
-                      alt="espressoShot logo "
-                    />
-                  </div>
-                  <div
-                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
-                  >
-                    <a
-                      class="nav-link text-brown"
-                      href="#back-to-mainMenu"
-                      type="button"
-                      data-bs-toggle="modal"
-                      data-bs-target="#espressoShot-modal"
-                      >Espresso Shot</a
-                    >
-                  </div>
-                </div>
-
-                <div class="d-flex">
-                  <div class="text-start">
-                    <img
-                      class="menuImg mt-4"
-                      src="./assets/img/espressoPump-modified.png"
-                      alt="espressoPump logo "
-                    />
-                  </div>
-                  <div
-                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
-                  >
-                    <a
-                      class="nav-link text-brown"
-                      href="#back-to-mainMenu"
-                      type="button"
-                      data-bs-toggle="modal"
-                      data-bs-target="#espressoPump-modal"
-                      ><div class="text-start">Espresso</div>
-                      <div class="text-start">Pump</div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="d-block d-sm-flex justify-content-between mb-5">
-                <div class="d-flex">
-                  <div class="text-start">
-                    <img
-                      class="menuImg mt-4"
-                      src="./assets/img/milk-modified.png"
-                      alt="milk logo "
-                    />
-                  </div>
-                  <div
-                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
-                  >
-                    <a
-                      class="nav-link text-brown"
-                      href="#back-to-mainMenu"
-                      type="button"
-                      data-bs-toggle="modal"
-                      data-bs-target="#milk-modal"
-                      >Milk</a
-                    >
+                      <a
+                        class="nav-link text-brown"
+                        href="#back-to-mainMenu"
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#milk-modal"
+                        >Milk</a
+                      >
+                    </div>
                   </div>
                 </div>
               </div>
@@ -2896,7 +2898,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/veggies.jpg"
+                        src="../assets/img/veggies.jpg"
                         alt=""
                       />
                     </div>
@@ -2940,7 +2942,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/cheese.jpg"
+                        src="../assets/img/cheese.jpg"
                         alt=""
                       />
                     </div>
@@ -2984,7 +2986,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/egg.jpg"
+                        src="../assets/img/egg.jpg"
                         alt=""
                       />
                     </div>
@@ -3026,7 +3028,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/fries.jpg"
+                        src="../assets/img/fries.jpg"
                         alt=""
                       />
                     </div>
@@ -3068,7 +3070,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/espressoShot.jpg"
+                        src="../assets/img/espressoShot.jpg"
                         alt=""
                       />
                     </div>
@@ -3112,7 +3114,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/espressoPump.jpg"
+                        src="../assets/img/espressoPump.jpg"
                         alt=""
                       />
                     </div>
@@ -3156,7 +3158,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/milk.jpg"
+                        src="../assets/img/milk.jpg"
                         alt=""
                       />
                     </div>
@@ -3207,7 +3209,7 @@
                   <div class="text-start">
                     <img
                       class="menuImg mt-4"
-                      src="./assets/img/eggdropflavors-modified.png"
+                      src="../assets/img/eggdropflavors-modified.png"
                       alt="eggdropflavors logo"
                     />
                   </div>
@@ -3256,7 +3258,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/eggdrop.jpg"
+                        src="../assets/img/eggdrop.jpg"
                         alt=""
                       />
                     </div>
@@ -3330,147 +3332,145 @@
                 PASTRIES
               </div>
               <div class="d-block d-sm-flex justify-content-between">
-                <div class="d-flex">
-                  <div class="text-start">
-                    <img
-                      class="menuImg mt-4"
-                      src="./assets/img/blueberryCheesecake-modified.png"
-                      alt="blueberryCheesecake logo"
-                    />
-                  </div>
-                  <div
-                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
-                  >
-                    <a
-                      class="nav-link text-brown"
-                      href="#back-to-mainMenu"
-                      type="button"
-                      data-bs-toggle="modal"
-                      data-bs-target="#blueberryCheesecake-modal"
+                <div class="col-6 mb-sm-5">
+                  <div class="d-flex">
+                    <div class="text-start">
+                      <img
+                        class="menuImg mt-4"
+                        src="../assets/img/blueberryCheesecake-modified.png"
+                        alt="blueberryCheesecake logo"
+                      />
+                    </div>
+                    <div
+                      class="text-start align-self-center fs-4 fnt-outfit ms-4"
                     >
-                      <div class="text-start">Blueberry</div>
-                      <div class="text-start">Cheesecake</div>
-                    </a>
+                      <a
+                        class="nav-link text-brown"
+                        href="#back-to-mainMenu"
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#blueberryCheesecake-modal"
+                      >
+                        <div class="text-start">Blueberry</div>
+                        <div class="text-start">Cheesecake</div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="d-flex">
+                    <div class="text-start">
+                      <img
+                        class="menuImg mt-4"
+                        src="../assets/img/oreoCheesecake-modified.png"
+                        alt="oreoCheesecake logo "
+                      />
+                    </div>
+                    <div
+                      class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                    >
+                      <a
+                        class="nav-link text-brown me-2"
+                        href="#back-to-mainMenu"
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#oreoCheesecake1-modal"
+                      >
+                        <div class="text-start">Oreo</div>
+                        <div class="text-start">Cheesecake</div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="d-flex">
+                    <div class="text-start">
+                      <img
+                        class="menuImg mt-4"
+                        src="../assets/img/strawberryCheesecake-modified.png"
+                        alt="strawberryCheesecake logo "
+                      />
+                    </div>
+                    <div
+                      class="text-start align-self-center fs-4 fnt-outfit ms-4"
+                    >
+                      <a
+                        class="nav-link text-brown"
+                        href="#back-to-mainMenu"
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#strawberryCheesecake-modal"
+                        ><div class="text-start">Strawberry</div>
+                        <div class="text-start">Cheesecake</div></a
+                      >
+                    </div>
                   </div>
                 </div>
-                <div class="d-flex">
-                  <div class="text-start">
-                    <img
-                      class="menuImg mt-4"
-                      src="./assets/img/oreoCheesecake-modified.png"
-                      alt="oreoCheesecake logo "
-                    />
-                  </div>
-                  <div
-                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
-                  >
-                    <a
-                      class="nav-link text-brown me-2"
-                      href="#back-to-mainMenu"
-                      type="button"
-                      data-bs-toggle="modal"
-                      data-bs-target="#oreoCheesecake1-modal"
+                <div class="col-6 mb-5">
+                  <div class="d-flex">
+                    <div class="text-start">
+                      <img
+                        class="menuImg mt-4"
+                        src="../assets/img/bananaLoaf-modified.png"
+                        alt="bananaLoaf logo "
+                      />
+                    </div>
+                    <div
+                      class="text-start align-self-center fs-4 fnt-outfit ms-4"
                     >
-                      <div class="text-start">Oreo</div>
-                      <div class="text-start">Cheesecake</div>
-                    </a>
+                      <a
+                        class="nav-link text-brown"
+                        href="#back-to-mainMenu"
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#bananaLoaf-modal"
+                        >Banana Loaf</a
+                      >
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div class="d-block d-sm-flex justify-content-between">
-                <div class="d-flex">
-                  <div class="text-start">
-                    <img
-                      class="menuImg mt-4"
-                      src="./assets/img/strawberryCheesecake-modified.png"
-                      alt="strawberryCheesecake logo "
-                    />
-                  </div>
-                  <div
-                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
-                  >
-                    <a
-                      class="nav-link text-brown"
-                      href="#back-to-mainMenu"
-                      type="button"
-                      data-bs-toggle="modal"
-                      data-bs-target="#strawberryCheesecake-modal"
-                      ><div class="text-start">Strawberry</div>
-                      <div class="text-start">Cheesecake</div></a
+                  <div class="d-flex">
+                    <div class="text-start">
+                      <img
+                        class="menuImg mt-4"
+                        src="../assets/img/brownies-modified.png"
+                        alt="brownies logo "
+                      />
+                    </div>
+                    <div
+                      class="text-start align-self-center fs-4 fnt-outfit ms-4"
                     >
+                      <a
+                        class="nav-link text-brown"
+                        href="#back-to-mainMenu"
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#brownies-modal"
+                        >Brownies</a
+                      >
+                    </div>
                   </div>
-                </div>
-
-                <div class="d-flex">
-                  <div class="text-start">
-                    <img
-                      class="menuImg mt-4"
-                      src="./assets/img/bananaLoaf-modified.png"
-                      alt="bananaLoaf logo "
-                    />
-                  </div>
-                  <div
-                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
-                  >
-                    <a
-                      class="nav-link text-brown"
-                      href="#back-to-mainMenu"
-                      type="button"
-                      data-bs-toggle="modal"
-                      data-bs-target="#bananaLoaf-modal"
-                      >Banana Loaf</a
+                  <div class="d-flex">
+                    <div class="text-start">
+                      <img
+                        class="menuImg mt-4"
+                        src="../assets/img/cookies-modified.png"
+                        alt="cookies logo "
+                      />
+                    </div>
+                    <div
+                      class="text-start align-self-center fs-4 fnt-outfit ms-4"
                     >
-                  </div>
-                </div>
-              </div>
-
-              <div class="d-block d-sm-flex justify-content-between mb-5">
-                <div class="d-flex">
-                  <div class="text-start">
-                    <img
-                      class="menuImg mt-4"
-                      src="./assets/img/brownies-modified.png"
-                      alt="brownies logo "
-                    />
-                  </div>
-                  <div
-                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
-                  >
-                    <a
-                      class="nav-link text-brown"
-                      href="#back-to-mainMenu"
-                      type="button"
-                      data-bs-toggle="modal"
-                      data-bs-target="#brownies-modal"
-                      >Brownies</a
-                    >
-                  </div>
-                </div>
-
-                <div class="d-flex me-5">
-                  <div class="text-start">
-                    <img
-                      class="menuImg mt-4"
-                      src="./assets/img/cookies-modified.png"
-                      alt="cookies logo "
-                    />
-                  </div>
-                  <div
-                    class="text-start align-self-center fs-4 fnt-outfit ms-4"
-                  >
-                    <a
-                      class="nav-link text-brown me-1"
-                      href="#back-to-mainMenu"
-                      type="button"
-                      data-bs-toggle="modal"
-                      data-bs-target="#cookies-modal"
-                      >Cookies</a
-                    >
+                      <a
+                        class="nav-link text-brown me-1"
+                        href="#back-to-mainMenu"
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#cookies-modal"
+                        >Cookies</a
+                      >
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+
           <!-- Pastries Menu end -->
 
           <!-- PASTRIES ITEM MODAL START -->
@@ -3497,7 +3497,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/blueberryCheesecake.jpg"
+                        src="../assets/img/blueberryCheesecake.jpg"
                         alt=""
                       />
                     </div>
@@ -3550,7 +3550,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/oreoCheesecake.jpg"
+                        src="../assets/img/oreoCheesecake.jpg"
                         alt=""
                       />
                     </div>
@@ -3603,7 +3603,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/strawberryCheesecake.jpg"
+                        src="../assets/img/strawberryCheesecake.jpg"
                         alt=""
                       />
                     </div>
@@ -3661,7 +3661,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/bananaLoaf.jpg"
+                        src="../assets/img/bananaLoaf.jpg"
                         alt=""
                       />
                     </div>
@@ -3713,7 +3713,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/brownies.jpg"
+                        src="../assets/img/brownies.jpg"
                         alt=""
                       />
                     </div>
@@ -3772,7 +3772,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/cookies.jpg"
+                        src="../assets/img/cookies.jpg"
                         alt=""
                       />
                     </div>
@@ -3804,6 +3804,7 @@
           <!-- PASTRIES ITEM MODAL END -->
         </div>
       </div>
+      <!-- NON-COFFEE ITEM MODAL END -->
 
       <!-- Menu end -->
     </main>
