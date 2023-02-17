@@ -31,7 +31,7 @@ TABLE OF CONTENTS
     margin-right: 189px;
 }
 .mt-6 {
-    margin-top: 169px;
+    margin-top: 109px;
 }
 .text-brown {
     color: #281D05;
@@ -93,6 +93,7 @@ html{
 .btn:hover{
     transform: translateY(-5px);
     /* background-color: #B29F91; */
+    color: #8E8948 ;
 }
 p{
     font-family: 'Roboto', sans-serif;
@@ -102,12 +103,11 @@ footer{
     background-color: #F2C9B1;
 }
 
-footer i{
+footer i, i{
     width: 22px;
     height: 22px;
     color: #8E8948;
 }
-
 
 /* 5. Header Modification */
 #brand-logo {
@@ -137,7 +137,7 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
 opacity: 0.49;
-height: 709px;
+height: 759px;
 }
 /* Home page big-paragraph */
 .p-big{
@@ -149,7 +149,7 @@ height: 709px;
     border-radius: 50%;
     width: 100px;
     height: 100px;
-    vertical-align: middle;
+    margin: auto;
 }
 /* Grid menu images sizing */
 .rows{
@@ -176,6 +176,7 @@ height: 709px;
 .feedback-rows{
     background: rgba(214, 160, 130, 0.75);
         border-radius: 15px;
+
 }
 .fb-img{
     width: 100px;
@@ -190,6 +191,9 @@ figure p {
     text-align: left;
 }
 
+.signup-box{
+background: linear-gradient(266.38deg, #B9C154 34.44%, #8E8948 60.22%);
+}
 /* Footer */
 
 .footer-data{
@@ -200,7 +204,7 @@ figure p {
 @media (min-width:1400px) {
         .feedback-rows {
                 width: 322px;
-                height: 421px;
+                height: 45vh;
             }
         .feedback-header {
             font-size: 48px;
@@ -219,7 +223,7 @@ figure p {
         }
         .feedback-rows {
             width: 277px;
-            height: 486px;
+            height: 50vh;
         }
     .feedback-header{
         font-size: 36px;
@@ -266,32 +270,33 @@ figure p {
 }
 @media (max-width:992px) {
     .rows {
-            width: 48vw;
+            width: 48.9vw;
+      
         }
     
         .menu-img {
-            width: 48vw;
+            width: 48.9vw;
             height: 227.15px;
         }
     /* Feebcack row */
     .feedback-rows{
         width: 342px ;
-        height: 411px ;
+        height: 45vh ;
     }
 }
 @media (max-width:768px) {
     .rows {
-            width: 266px;
-            height: 452px;
+            width: 100vw;
+            height: 48vh;
         }
     
         .menu-img {
-            width: 266px;
-            height: 217.15px;
+            width: 100vw;
+            height: 30vh;
         }
     .feedback-rows {
         width: 502px;
-        height: 332px;
+        height: 35vh;
     }
 }
 
@@ -306,33 +311,31 @@ figure p {
     }
 
     /* Grid menu images sizing */
-    .row{
-        width: 100%;
-    }
-    .row1{
-        width: 100vw;
-    }
 
+.row1{
+    width: 100vw;
+    height: 30vh;
+}
     .rows {
-        margin: auto ;
-        width: 60vw;
-        height: 45vh;
+
+        width: 100vw;
+        height: 40vh;
     }
     .menu-img {
-        width: 343.91px;
+        width: 100vw;
         height: 229px;
     }
-        
+
     .menu-img1 {
-        width: 304.65px;
-        height: 208px;
+        width: 100vw;
+        height: 30vh;
     }
     .feedback-rows {
         width: 432px;
         height: 400px;
     }
     .feedback-files{
-        margin: 0px 2vw;
+        margin: 0px 6vw;
     }
 }
 
@@ -492,4 +495,13 @@ tr:hover{
 .about-img{
     width: 50vw;
     height: 100%;
+}
+
+/* Find store */
+.contact-details{
+    margin-top: 200px;
+}
+.carousel-item img{
+    height: 70vh;
+    width: 100vw;
 }

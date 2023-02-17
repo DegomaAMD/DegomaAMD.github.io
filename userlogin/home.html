@@ -8,7 +8,7 @@
     <link
       rel="shortcut icon"
       type="image/jpg"
-      href="./assets/img/boncage-logo.ico"
+      href="../assets/img/boncage-logo.ico"
       class="rounded-circle"
     />
     <!-- Google Fonts -->
@@ -31,7 +31,7 @@
       crossorigin="anonymous"
     ></script>
     <!-- CSS Stylesheet -->
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body class="bg-gold">
     <header class="border-bottom bg-light">
@@ -40,10 +40,10 @@
           class="d-flex justify-content-between mx-5 pt-3 align-items-center bg-light"
         >
           <div class="mb-3">
-            <a href="index.html"
+            <a href="../userlogin/home.html"
               ><img
                 id="brand-logo"
-                src="./assets/img/boncage-logo.ico"
+                src="../assets/img/boncage-logo.ico"
                 alt="bon cafe logo"
             /></a>
           </div>
@@ -52,12 +52,12 @@
             tabindex="-1"
             id="offcanvasRight"
           >
-            <div class="offcanvas-header">
-              <div class="fnt-outfit text-brown fw-bold">BON CAFE</div>
+            <div class="offcanvas-header bg-darkgreen">
+              <div class="fnt-outfit text-white fw-bold">BON CAFE</div>
               <div>
                 <button
                   type="button"
-                  class="btn-close"
+                  class="btn-close text-white"
                   data-bs-dismiss="offcanvas"
                   data-bs-target="#offcanvasRight"
                   aria-label="Close"
@@ -66,40 +66,46 @@
             </div>
 
             <div class="offcanvas-body">
-              <ul class="nav d-block d-md-flex">
+              <ul class="nav d-block d-md-flex text-center">
+                <div
+                  class="prof-img border d-flex d-md-none fs-2 align-items-center justify-content-around"
+                >
+                  AM
+                </div>
+
                 <li class="nav-item">
                   <a
-                    class="btn nav-link px-3 mx-3 text-brown fw-semibold"
-                    href="index.html"
+                    class="btn nav-link px-3 mx-3 text-brown fw-semibold text-start"
+                    href="./home.html"
                     >Home</a
                   >
                 </li>
                 <li>
                   <a
-                    class="btn nav-link px-3 mx-3 text-brown fw-semibold"
-                    href="menu.html"
+                    class="btn nav-link px-3 mx-3 text-brown fw-semibold text-start"
+                    href="./menu.html"
                     >Menu</a
                   >
                 </li>
                 <li>
                   <a
-                    class="btn nav-link px-3 mx-3 text-brown fw-semibold"
-                    href="about.html"
+                    class="btn nav-link px-3 mx-3 text-brown fw-semibold text-start"
+                    href="./about.html"
                     >About</a
                   >
                 </li>
                 <li>
                   <a
-                    class="btn nav-link px-3 mx-4 text-brown fw-semibold"
-                    href="pagenotfound.html"
+                    class="btn nav-link px-3 mx-4 text-brown fw-semibold text-start"
+                    href="./pagenotfound.html"
                     ><i class="fa-solid fa-cart-shopping" aria-hidden="true"></i
                   ></a>
                 </li>
                 <li>
-                  <div class="dropdown">
+                  <div class="dropdown d-none d-md-block">
                     <button
                       type="button"
-                      class="dropdown-toggle border-0 ms-2 d-flex align-items-center bg-white"
+                      class="dropdown-toggle border-0 ms-2 d-flex align-items-center bg-light"
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
                     >
@@ -110,24 +116,46 @@
                       <li>
                         <a
                           class="dropdown-item text-start"
-                          href="pagenotfound.html"
+                          href="./pagenotfound.html"
                           >Your Profile</a
                         >
                       </li>
                       <li>
                         <a
                           class="dropdown-item text-start"
-                          href="pagenotfound.html"
+                          href="./pagenotfound.html"
                           >Your Order Details</a
                         >
                       </li>
                       <li>
-                        <a class="dropdown-item text-start" href="./index.html"
+                        <a class="dropdown-item text-start" href="../index.html"
                           >Logout</a
                         >
                       </li>
                     </ul>
                   </div>
+                </li>
+                <hr />
+                <li>
+                  <a
+                    class="nav-link px-3 mx-3 text-brown fw-semibold text-start d-block d-md-none"
+                    href="pagenotfound.html"
+                    >Your Profile</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="nav-link px-3 mx-3 text-brown fw-semibold text-start d-block d-md-none"
+                    href="pagenotfound.html"
+                    >Your Order Details</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="nav-link px-3 mx-3 text-brown fw-semibold text-start d-block d-md-none"
+                    href="../index.html"
+                    >Logout</a
+                  >
                 </li>
               </ul>
             </div>
@@ -151,7 +179,7 @@
       <div class="img-big position-relative">
         <!-- <img
           class="img-big opacity-25"
-          src="./assets/img/boncafe1.jpg"
+          src="../assets/img/boncafe1.jpg"
           alt=""
         /> -->
       </div>
@@ -165,7 +193,7 @@
       <!-- Homepage big image end -->
 
       <!-- Grid menu start -->
-      <div class="container-fluid container-lg text-center">
+      <div class="container-fluid container-lg text-center p-0">
         <div class="row m-0">
           <div
             class="rows col-12 bg-lightgreen p-0 pb-3 mt-5 me-sm-1 ms-0 ms-md-1 ms-lg-0"
@@ -173,7 +201,7 @@
             <div>
               <img
                 class="menu-img img-fluid mb-3"
-                src="./assets/img/frappe-non-coffee.jpg"
+                src="../assets/img/frappe-non-coffee.jpg"
                 alt=""
               />
             </div>
@@ -197,12 +225,12 @@
             </div>
           </div>
           <div
-            class="rows col-12 bg-lightgreen p-0 pb-3 mt-3 mt-3 mt-sm-5 ms-sm-1"
+            class="rows col-12 bg-lightgreen p-0 pb-3 mt-3 mt-3 mt-md-5 ms-md-1"
           >
             <div>
               <img
                 class="menu-img img-fluid mb-3"
-                src="./assets/img/pastries.jpg"
+                src="../assets/img/pastries.jpg"
                 alt=""
               />
             </div>
@@ -223,30 +251,31 @@
           </div>
         </div>
       </div>
-      <div class="container-lg">
-        <div class="row">
+      <div class="p-0 container-lg">
+        <div class="row m-0">
           <div
             class="row1 col bg-darkgreen d-flex justify-content-between align-items-center mt-3 p-0"
           >
             <div>
               <img
                 class="menu-img1 img-fluid"
-                src="./assets/img/about-boncafe.jpg"
+                src="../assets/img/about-boncafe.jpg"
                 alt=""
               />
             </div>
-            <div class="px-5">
+            <div class="px-3">
               <div class="feedback-header fw-bold mb-3 fnt-outfit">
-                Soothing Comfort Treats
+                Bon Cafe Stories
               </div>
               <p class="mb-3 fnt-roboto">
-                All-day goodness with new and returning snacks.
+                Continuing to inspire and nurture the human spirit–one person,
+                one cup and one neighborhood at a time.
               </p>
               <a
-                href="menu.html"
+                href="./about.html"
                 type="button"
                 class="btn btn-outline-dark fw-boldfnt-roboto rounded-pill"
-                >See More</a
+                >Learn More</a
               >
             </div>
           </div>
@@ -268,7 +297,7 @@
           >
             <img
               class="fb-img rounded-circle position-absolute top-0 left-50 translate-middle animate slideToBottom"
-              src="./assets/img/r1.jpg"
+              src="../assets/img/r1.jpg"
               alt=""
             />
             <figure class="mx-2">
@@ -295,7 +324,7 @@
           >
             <img
               class="fb-img rounded-circle position-absolute top-0 left-50 translate-middle"
-              src="./assets/img/r2.jpg"
+              src="../assets/img/r2.jpg"
               alt=""
             />
             <figure class="mx-2">
@@ -319,7 +348,7 @@
           >
             <img
               class="fb-img rounded-circle position-absolute top-0 left-50 translate-middle"
-              src="./assets/img/r3.jpg"
+              src="../assets/img/r3.jpg"
               alt=""
             />
             <figure class="mx-2">
@@ -342,7 +371,7 @@
           >
             <img
               class="fb-img rounded-circle position-absolute top-0 left-50 translate-middle"
-              src="./assets/img/r4.jpg"
+              src="../assets/img/r4.jpg"
               alt=""
             />
             <figure class="mx-2">
@@ -377,48 +406,60 @@
           <div
             class="fw-bold fnt-outfit text-start text-md-center me-3 pe-5 mx-sm-3 px-sm-5 mb-2"
           >
-            <a class="text-decoration-none text-dark" href="#">About</a>
+            <a
+              class="text-decoration-none text-dark"
+              href="../userlogin/about.html"
+              >About</a
+            >
           </div>
           <div
             class="fw-bold fnt-outfit text-start text-md-center me-3 pe-5 mx-sm-3 px-sm-5 mb-2"
           >
-            <a class="text-decoration-none text-dark" href="pagenotfound.html"
+            <a
+              class="text-decoration-none text-dark"
+              href="../userlogin/findourstore.html"
               ><i class="fa-solid fa-location-dot"></i> Find our store</a
             >
           </div>
           <div
             class="fw-bold fnt-outfit text-start text-md-center me-3 pe-5 mx-sm-3 px-sm-5 mb-2"
           >
-            <a class="text-decoration-none text-dark" href="pagenotfound.html"
+            <a
+              class="text-decoration-none text-dark"
+              href="../userlogin/pagenotfound.html"
               >Promotion</a
             >
           </div>
-        </div>
-        <div class="fw-bold fnt-outfit">
-          Our Socials
-          <div class="fnt-roboto fw-light text-start mt-2">
-            <a
-              class="text-decoration-none text-dark"
-              href="https://www.facebook.com/boncafe22"
-              target="_blank"
-              ><i class="fa-brands fa-facebook"></i> Facebook</a
-            >
-          </div>
-          <div class="fnt-roboto fw-light text-start mt-2">
-            <a
-              class="text-decoration-none text-dark"
-              href="https://www.instagram.com/boncafe_byjels/"
-              target="_blank"
-              ><i class="fa-brands fa-instagram"></i> Instagram
-            </a>
-          </div>
-          <div class="fnt-roboto fw-light text-start mt-2">
-            <a
-              class="text-decoration-none text-dark"
-              href="https://www.tiktok.com/@boncafeph"
-              target="_blank"
-              ><i class="fa-brands fa-tiktok"></i> Tiktok</a
-            >
+          <div
+            class="align-items-center fw-bold fnt-outfit text-start me-3 pe-5 mx-sm-3 px-sm-5 mb-2 mt-5 mt-md-0"
+          >
+            <div class="text-start mb-3">Our Socials</div>
+            <div class="d-flex d-md-block justify-content-evenly w-100">
+              <div class="fnt-roboto fw-light text-start ms-2 mt-2">
+                <a
+                  class="text-decoration-none text-dark"
+                  href="https://www.facebook.com/boncafe22"
+                  target="_blank"
+                  ><i class="fa-brands fa-facebook"></i> Facebook</a
+                >
+              </div>
+              <div class="fnt-roboto fw-light text-start ms-2 mt-2">
+                <a
+                  class="text-decoration-none text-dark"
+                  href="https://www.instagram.com/boncafe_byjels/"
+                  target="_blank"
+                  ><i class="fa-brands fa-instagram"></i> Instagram
+                </a>
+              </div>
+              <div class="fnt-roboto fw-light text-start ms-2 mt-2">
+                <a
+                  class="text-decoration-none text-dark"
+                  href="https://www.tiktok.com/@boncafeph"
+                  target="_blank"
+                  ><i class="fa-brands fa-tiktok"></i> Tiktok</a
+                >
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -430,6 +471,6 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
-    <script src="./js/script.js"></script>
+    <script src="../js/script.js"></script>
   </body>
 </html>

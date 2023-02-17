@@ -3,6 +3,7 @@ const resetEmail = document.querySelector("#resetEmail")
 const resendEmail = document.querySelector('#resendEmail');
 const username = document.querySelector('#username');
 const loginBtn = document.querySelector('.login-btn');
+const homeLogin = document.querySelector('#homeLogin');
 const mainMenu = document.querySelector('#mainMenu');
 const espressoPage = document.querySelector('#espressopage');
 const nonCoffeePage = document.querySelector('#nonCoffee');
@@ -16,11 +17,11 @@ const pastriesPage = document.querySelector('#pastriesPage');
 
 function userLogin(){
     if (username.value == `andriamae1019`){
-        loginBtn.style.display = 'none';
-        loginBtn.setAttribute('href','./home.html');
+        homeLogin.setAttribute = ('href','./userlogin/home.html');
     } else {
-        alert(`incorrect username or password`);
-        loginBtn.setAttribute('href','./login.html');
+        alert('Wrong username or password. Please check and try again.')
+        homeLogin.setAttribute = ('href','./login.html');
+        
     }
 }
 
@@ -149,5 +150,3 @@ function changepastriesPageToMainMenu(){
     pastriesPage.style.display = 'none';
     pastriesPage.replaceWith(mainMenu, pastriesPage);   
 }
-
-

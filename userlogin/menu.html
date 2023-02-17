@@ -8,7 +8,7 @@
     <link
       rel="shortcut icon"
       type="image/jpg"
-      href="./assets/img/boncage-logo.ico"
+      href="../assets/img/boncage-logo.ico"
       class="rounded-circle"
     />
     <!-- Google Fonts -->
@@ -31,103 +31,153 @@
       crossorigin="anonymous"
     ></script>
     <!-- CSS Stylesheet -->
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
     <header class="border-bottom bg-light">
-      <div class="d-flex justify-content-between mx-5 pt-3 align-items-center">
-        <div class="mb-3">
-          <a href="index.html"
-            ><img
-              id="brand-logo"
-              src="./assets/img/boncage-logo.ico"
-              alt="bon cafe logo"
-          /></a>
-        </div>
+      <nav>
         <div
-          class="offcanvas-md offcanvas-end d-flex justify-content-between"
-          tabindex="-1"
-          id="offcanvasRight"
+          class="d-flex justify-content-between mx-5 pt-3 align-items-center bg-light"
         >
-          <div class="offcanvas-header">
-            <div class="fnt-outfit text-brown fw-bold">BON CAFE</div>
-            <div>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="offcanvas"
-                data-bs-target="#offcanvasRight"
-                aria-label="Close"
-              ></button>
+          <div class="mb-3">
+            <a href="../userlogin/home.html"
+              ><img
+                id="brand-logo"
+                src="../assets/img/boncage-logo.ico"
+                alt="bon cafe logo"
+            /></a>
+          </div>
+          <div
+            class="offcanvas-md offcanvas-end d-flex justify-content-between"
+            tabindex="-1"
+            id="offcanvasRight"
+          >
+            <div class="offcanvas-header bg-darkgreen">
+              <div class="fnt-outfit text-white fw-bold">BON CAFE</div>
+              <div>
+                <button
+                  type="button"
+                  class="btn-close text-white"
+                  data-bs-dismiss="offcanvas"
+                  data-bs-target="#offcanvasRight"
+                  aria-label="Close"
+                ></button>
+              </div>
+            </div>
+
+            <div class="offcanvas-body">
+              <ul class="nav d-block d-md-flex text-center">
+                <div
+                  class="prof-img border d-flex d-md-none fs-2 align-items-center justify-content-around"
+                >
+                  AM
+                </div>
+
+                <li class="nav-item">
+                  <a
+                    class="btn nav-link px-3 mx-3 text-brown fw-semibold text-start"
+                    href="./home.html"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="btn nav-link px-3 mx-3 text-brown fw-semibold text-start"
+                    href="./menu.html"
+                    >Menu</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="btn nav-link px-3 mx-3 text-brown fw-semibold text-start"
+                    href="./about.html"
+                    >About</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="btn nav-link px-3 mx-4 text-brown fw-semibold text-start"
+                    href="./pagenotfound.html"
+                    ><i class="fa-solid fa-cart-shopping" aria-hidden="true"></i
+                  ></a>
+                </li>
+                <li>
+                  <div class="dropdown d-none d-md-block">
+                    <button
+                      type="button"
+                      class="dropdown-toggle border-0 ms-2 d-flex align-items-center bg-light"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <div class="border p-2 rounded-circle text-dark">AM</div>
+                    </button>
+
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a
+                          class="dropdown-item text-start"
+                          href="./pagenotfound.html"
+                          >Your Profile</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item text-start"
+                          href="./pagenotfound.html"
+                          >Your Order Details</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item text-start" href="../index.html"
+                          >Logout</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <hr />
+                <li>
+                  <a
+                    class="nav-link px-3 mx-3 text-brown fw-semibold text-start d-block d-md-none"
+                    href="pagenotfound.html"
+                    >Your Profile</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="nav-link px-3 mx-3 text-brown fw-semibold text-start d-block d-md-none"
+                    href="pagenotfound.html"
+                    >Your Order Details</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="nav-link px-3 mx-3 text-brown fw-semibold text-start d-block d-md-none"
+                    href="../index.html"
+                    >Logout</a
+                  >
+                </li>
+              </ul>
             </div>
           </div>
-
-          <div class="offcanvas-body">
-            <ul class="nav d-block d-md-flex">
-              <li class="nav-item">
-                <a
-                  class="btn nav-link px-3 mx-3 text-brown fw-semibold"
-                  href="index.html"
-                  >Home</a
-                >
-              </li>
-              <li>
-                <a
-                  class="btn nav-link px-3 mx-3 text-brown fw-semibold"
-                  href="menu.html"
-                  >Menu</a
-                >
-              </li>
-              <li>
-                <a
-                  class="btn nav-link px-3 mx-3 text-brown fw-semibold"
-                  href="about.html"
-                  >About</a
-                >
-              </li>
-              <li>
-                <a
-                  class="btn nav-link px-3 mx-4 text-brown fw-semibold"
-                  href="pagenotfound.html"
-                  ><i class="fa-solid fa-cart-shopping" aria-hidden="true"></i
-                ></a>
-              </li>
-              <li class="d-block d-md-none">
-                <a
-                  href="./login.html"
-                  type="button"
-                  class="btn btn-outline-darkgreen rounded-pill"
-                  >Login</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="d-none d-md-block">
-            <a
-              href="./login.html"
+          <div class="d-flex d-md-none justify-content-between">
+            <button
               type="button"
-              class="btn btn-outline-darkgreen rounded-pill"
-              >Login</a
+              class="btn text-brown mb-1"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasRight"
+              aria-controls="offcanvasRight"
             >
+              <i class="fa-solid fa-bars" aria-hidden="true"></i>
+            </button>
           </div>
         </div>
-        <div class="d-flex d-md-none justify-content-between">
-          <button
-            type="button"
-            class="btn text-brown mb-1"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasRight"
-            aria-controls="offcanvasRight"
-          >
-            <i class="fa-solid fa-bars" aria-hidden="true"></i>
-          </button>
-        </div>
-      </div>
+      </nav>
     </header>
     <main class="bg-brown">
       <!-- Menu Image start -->
       <div>
-        <img class="menu-bg img-fluid" src="./assets/img/boncafe3.jpg" alt="" />
+        <img class="menu-bg img-fluid" src="../assets/img/boncafe3.jpg" alt="" />
       </div>
       <!-- Menu Image end -->
 
@@ -154,7 +204,7 @@
                   >DRINKS</a
                 >
                 <nav class="nav nav-pills flex-column">
-                  <a
+                  <a id="item-1"
                     class="nav-link my-1 text-start fnt-outfit ms-lg-5 text-dark fw-light"
                     href="#back-to-mainMenu"
                     onclick="changeMainMenuToEspressoPage()"
@@ -238,7 +288,7 @@
                   <div class="text-start">
                     <img
                       class="menuImg mt-4"
-                      src="./assets/img/espresso.png"
+                      src="../assets/img/espresso.png"
                       alt="espresso logo"
                     />
                   </div>
@@ -258,7 +308,7 @@
                   <div class="text-start">
                     <img
                       class="menuImg mt-4"
-                      src="./assets/img/coffeeFrappe.png"
+                      src="../assets/img/coffeeFrappe.png"
                       alt="coffeeFrappe logo "
                     />
                   </div>
@@ -279,7 +329,7 @@
                   <div class="text-start">
                     <img
                       class="menuImg mt-4"
-                      src="./assets/img/nonCoffee.png"
+                      src="../assets/img/nonCoffee.png"
                       alt="non-coffee logo "
                     />
                   </div>
@@ -298,7 +348,7 @@
                   <div class="text-start">
                     <img
                       class="menuImg mt-4"
-                      src="./assets/img/refresher.png"
+                      src="../assets/img/refresher.png"
                       alt="refresher logo "
                     />
                   </div>
@@ -319,7 +369,7 @@
                 <div class="text-start">
                   <img
                     class="menuImg mt-4"
-                    src="./assets/img/nonCoffeeFrappe.png"
+                    src="../assets/img/nonCoffeeFrappe.png"
                     alt="non-coffeeFrappe logo "
                   />
                 </div>
@@ -347,7 +397,7 @@
                   <div class="text-start">
                     <img
                       class="menuImg mt-4"
-                      src="./assets/img/silog.png"
+                      src="../assets/img/silog.png"
                       alt="silog logo"
                     />
                   </div>
@@ -366,7 +416,7 @@
                   <div class="text-start">
                     <img
                       class="menuImg mt-4"
-                      src="./assets/img/addOn.png"
+                      src="../assets/img/addOn.png"
                       alt="add-ons logo"
                     />
                   </div>
@@ -387,7 +437,7 @@
                 <div class="text-start">
                   <img
                     class="menuImg mt-4"
-                    src="./assets/img/eggdrop.png"
+                    src="../assets/img/eggdrop.png"
                     alt="eggdrop logo"
                   />
                 </div>
@@ -404,7 +454,7 @@
                 <div class="text-start">
                   <img
                     class="menuImg mt-4"
-                    src="./assets/img/pastries.png"
+                    src="../assets/img/pastries.png"
                     alt="pastries logo"
                   />
                 </div>
@@ -451,7 +501,7 @@
                   <div class="text-start">
                     <img
                       class="menuImg mt-4"
-                      src="./assets/img/espresso.png"
+                      src="../assets/img/espresso.png"
                       alt="Spanish Latte logo"
                     />
                   </div>
@@ -473,7 +523,7 @@
                   <div class="text-start">
                     <img
                       class="menuImg mt-4"
-                      src="./assets/img/hazelnutEspresso-modified.png"
+                      src="../assets/img/hazelnutEspresso-modified.png"
                       alt="hazelnutEspresso logo "
                     />
                   </div>
@@ -497,7 +547,7 @@
                   <div class="text-start">
                     <img
                       class="menuImg mt-4"
-                      src="./assets/img/frenchVanilla-modified.png"
+                      src="../assets/img/frenchVanilla-modified.png"
                       alt="frenchVanilla logo "
                     />
                   </div>
@@ -519,7 +569,7 @@
                   <div class="text-start">
                     <img
                       class="menuImg mt-4"
-                      src="./assets/img/dirtyMatcha-modified.png"
+                      src="../assets/img/dirtyMatcha-modified.png"
                       alt="dirtyMatcha logo "
                     />
                   </div>
@@ -543,7 +593,7 @@
                   <div class="text-start">
                     <img
                       class="menuImg mt-4"
-                      src="./assets/img/caramelMacchiato-modified.png"
+                      src="../assets/img/caramelMacchiato-modified.png"
                       alt="caramelMacchiato logo "
                     />
                   </div>
@@ -566,7 +616,7 @@
                   <div class="text-start">
                     <img
                       class="menuImg mt-4"
-                      src="./assets/img/saltedCaramel-modified.png"
+                      src="../assets/img/saltedCaramel-modified.png"
                       alt="saltedCaramel logo "
                     />
                   </div>
@@ -590,7 +640,7 @@
                   <div class="text-start">
                     <img
                       class="menuImg mt-4"
-                      src="./assets/img/whiteChocolate-modified.png"
+                      src="../assets/img/whiteChocolate-modified.png"
                       alt="whiteChocolate logo "
                     />
                   </div>
@@ -613,7 +663,7 @@
                   <div class="text-start">
                     <img
                       class="menuImg mt-4"
-                      src="./assets/img/bonCafeSignature-modified.png"
+                      src="../assets/img/bonCafeSignature-modified.png"
                       alt="bonCafeSignature logo "
                     />
                   </div>
@@ -660,7 +710,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/espresso.jpg"
+                        src="../assets/img/espresso.jpg"
                         alt=""
                       />
                     </div>
@@ -717,7 +767,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/hazelnutEspresso.jpg"
+                        src="../assets/img/hazelnutEspresso.jpg"
                         alt=""
                       />
                     </div>
@@ -772,7 +822,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/frenchVanilla.jpg"
+                        src="../assets/img/frenchVanilla.jpg"
                         alt=""
                       />
                     </div>
@@ -833,7 +883,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/dirtyMatcha.jpg"
+                        src="../assets/img/dirtyMatcha.jpg"
                         alt=""
                       />
                     </div>
@@ -892,7 +942,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/caramelMacchiato.jpg"
+                        src="../assets/img/caramelMacchiato.jpg"
                         alt=""
                       />
                     </div>
@@ -949,7 +999,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/saltedCaramel.jpg"
+                        src="../assets/img/saltedCaramel.jpg"
                         alt=""
                       />
                     </div>
@@ -1002,7 +1052,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/whiteChocolate.jpg"
+                        src="../assets/img/whiteChocolate.jpg"
                         alt=""
                       />
                     </div>
@@ -1054,7 +1104,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/bonCafeSignature.jpg"
+                        src="../assets/img/bonCafeSignature.jpg"
                         alt=""
                       />
                     </div>
@@ -1115,7 +1165,7 @@
                   <div class="text-start">
                     <img
                       class="menuImg mt-4"
-                      src="./assets/img/espresso.png"
+                      src="../assets/img/espresso.png"
                       alt="Vanilla logo"
                     />
                   </div>
@@ -1137,7 +1187,7 @@
                   <div class="text-start">
                     <img
                       class="menuImg mt-4"
-                      src="./assets/img/nonCoffee.png"
+                      src="../assets/img/nonCoffee.png"
                       alt="MatchaLatte logo "
                     />
                   </div>
@@ -1161,7 +1211,7 @@
                   <div class="text-start">
                     <img
                       class="menuImg mt-4 rounded-circle"
-                      src="./assets/img/strawberryLatte.jpg"
+                      src="../assets/img/strawberryLatte.jpg"
                       alt="strawberryLatte logo "
                     />
                   </div>
@@ -1183,7 +1233,7 @@
                   <div class="text-start">
                     <img
                       class="menuImg mt-4"
-                      src="./assets/img/nutella Latte-modified.png"
+                      src="../assets/img/nutella Latte-modified.png"
                       alt="nutellaLatte logo "
                     />
                   </div>
@@ -1207,7 +1257,7 @@
                   <div class="text-start">
                     <img
                       class="menuImg mt-4"
-                      src="./assets/img/matchaOreo-modified.png"
+                      src="../assets/img/matchaOreo-modified.png"
                       alt="matchaOreo logo "
                     />
                   </div>
@@ -1253,7 +1303,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/espresso.jpg"
+                        src="../assets/img/espresso.jpg"
                         alt=""
                       />
                     </div>
@@ -1304,7 +1354,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/nonCoffee.jpg"
+                        src="../assets/img/nonCoffee.jpg"
                         alt=""
                       />
                     </div>
@@ -1358,7 +1408,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/strawberryLatte.jpg"
+                        src="../assets/img/strawberryLatte.jpg"
                         alt=""
                       />
                     </div>
@@ -1409,7 +1459,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/bonCafeSignature.jpg"
+                        src="../assets/img/bonCafeSignature.jpg"
                         alt=""
                       />
                     </div>
@@ -1459,7 +1509,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/matchaOreo.jpg"
+                        src="../assets/img/matchaOreo.jpg"
                         alt=""
                       />
                     </div>
@@ -1523,7 +1573,7 @@
                   <div class="text-start">
                     <img
                       class="menuImg mt-4 rounded-circle"
-                      src="./assets/img/matchaFrappe.jpg"
+                      src="../assets/img/matchaFrappe.jpg"
                       alt="matchaFrappe logo"
                     />
                   </div>
@@ -1545,7 +1595,7 @@
                   <div class="text-start">
                     <img
                       class="menuImg mt-4 rounded-circle"
-                      src="./assets/img/darkchocoFrappe.jpg"
+                      src="../assets/img/darkchocoFrappe.jpg"
                       alt="darkchocoFrappe logo "
                     />
                   </div>
@@ -1570,7 +1620,7 @@
                   <div class="text-start">
                     <img
                       class="menuImg mt-4 rounded-circle"
-                      src="./assets/img/strawberryFrappe.jpg"
+                      src="../assets/img/strawberryFrappe.jpg"
                       alt="strawberryFrappe logo "
                     />
                   </div>
@@ -1592,7 +1642,7 @@
                   <div class="text-start">
                     <img
                       class="menuImg mt-4"
-                      src="./assets/img/nutella Latte-modified.png"
+                      src="../assets/img/nutella Latte-modified.png"
                       alt="oreoNutella logo "
                     />
                   </div>
@@ -1616,7 +1666,7 @@
                   <div class="text-start">
                     <img
                       class="menuImg mt-4 rounded-circle"
-                      src="./assets/img/bonCafeSignature-modified.png"
+                      src="../assets/img/bonCafeSignature-modified.png"
                       alt="oreoCheesecake logo "
                     />
                   </div>
@@ -1662,7 +1712,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/matchaFrappe.jpg"
+                        src="../assets/img/matchaFrappe.jpg"
                         alt=""
                       />
                     </div>
@@ -1712,7 +1762,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/darkchocoFrappe.jpg"
+                        src="../assets/img/darkchocoFrappe.jpg"
                         alt=""
                       />
                     </div>
@@ -1763,7 +1813,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/strawberryFrappe.jpg"
+                        src="../assets/img/strawberryFrappe.jpg"
                         alt=""
                       />
                     </div>
@@ -1814,7 +1864,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/nutella Latte.jpg"
+                        src="../assets/img/nutella Latte.jpg"
                         alt=""
                       />
                     </div>
@@ -1867,7 +1917,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/bonCafeSignature.jpg"
+                        src="../assets/img/bonCafeSignature.jpg"
                         alt=""
                       />
                     </div>
@@ -1932,7 +1982,7 @@
                   <div class="text-start">
                     <img
                       class="menuImg mt-4"
-                      src="./assets/img/nutella Latte-modified.png"
+                      src="../assets/img/nutella Latte-modified.png"
                       alt="darkChoco logo"
                     />
                   </div>
@@ -1954,7 +2004,7 @@
                   <div class="text-start">
                     <img
                       class="menuImg mt-4"
-                      src="./assets/img/saltedCaramel-modified.png"
+                      src="../assets/img/saltedCaramel-modified.png"
                       alt="saltedCaramel logo "
                     />
                   </div>
@@ -1978,7 +2028,7 @@
                   <div class="text-start">
                     <img
                       class="menuImg mt-4 rounded-circle"
-                      src="./assets/img/caramelMacchiato-modified.png"
+                      src="../assets/img/caramelMacchiato-modified.png"
                       alt="caramelMacchiato logo "
                     />
                   </div>
@@ -2000,7 +2050,7 @@
                   <div class="text-start">
                     <img
                       class="menuImg mt-4 rounded-circle"
-                      src="./assets/img/darkchocoFrappe.jpg"
+                      src="../assets/img/darkchocoFrappe.jpg"
                       alt="chocoHazelnut logo "
                     />
                   </div>
@@ -2024,7 +2074,7 @@
                   <div class="text-start">
                     <img
                       class="menuImg mt-4 rounded-circle"
-                      src="./assets/img/dirtyMatcha-modified.png"
+                      src="../assets/img/dirtyMatcha-modified.png"
                       alt="dirtyMatcha logo "
                     />
                   </div>
@@ -2070,7 +2120,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/darkchocoFrappe.jpg"
+                        src="../assets/img/darkchocoFrappe.jpg"
                         alt=""
                       />
                     </div>
@@ -2121,7 +2171,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/nutella Latte.jpg"
+                        src="../assets/img/nutella Latte.jpg"
                         alt=""
                       />
                     </div>
@@ -2182,7 +2232,7 @@
                   <div class="text-start">
                     <img
                       class="menuImg mt-4"
-                      src="./assets/img/sparklingLemon-modified.png"
+                      src="../assets/img/sparklingLemon-modified.png"
                       alt="sparklingLemon logo"
                     />
                   </div>
@@ -2204,7 +2254,7 @@
                   <div class="text-start">
                     <img
                       class="menuImg mt-4"
-                      src="./assets/img/sparklingStrawberry-modified.png"
+                      src="../assets/img/sparklingStrawberry-modified.png"
                       alt="sparklingStrawberry logo "
                     />
                   </div>
@@ -2251,7 +2301,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/sparklingLemon.jpg"
+                        src="../assets/img/sparklingLemon.jpg"
                         alt=""
                       />
                     </div>
@@ -2306,7 +2356,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/sparklingStrawberry.jpg"
+                        src="../assets/img/sparklingStrawberry.jpg"
                         alt=""
                       />
                     </div>
@@ -2370,7 +2420,7 @@
                   <div class="text-start">
                     <img
                       class="menuImg mt-4"
-                      src="./assets/img/hamSilog-modified.png"
+                      src="../assets/img/hamSilog-modified.png"
                       alt="Ham Silog logo"
                     />
                   </div>
@@ -2392,7 +2442,7 @@
                   <div class="text-start">
                     <img
                       class="menuImg mt-4"
-                      src="./assets/img/bacSilog-modified.png"
+                      src="../assets/img/bacSilog-modified.png"
                       alt="Bacon Silog logo "
                     />
                   </div>
@@ -2416,7 +2466,7 @@
                   <div class="text-start">
                     <img
                       class="menuImg mt-4"
-                      src="./assets/img/beefSilog-modified.png"
+                      src="../assets/img/beefSilog-modified.png"
                       alt="Beef Silog logo "
                     />
                   </div>
@@ -2438,7 +2488,7 @@
                   <div class="text-start">
                     <img
                       class="menuImg mt-4"
-                      src="./assets/img/hotdogSilog-modified.png"
+                      src="../assets/img/hotdogSilog-modified.png"
                       alt="hotdogSilog logo "
                     />
                   </div>
@@ -2484,7 +2534,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/hamSilog.jpg"
+                        src="../assets/img/hamSilog.jpg"
                         alt=""
                       />
                     </div>
@@ -2540,7 +2590,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/bacSilog.jpg"
+                        src="../assets/img/bacSilog.jpg"
                         alt=""
                       />
                     </div>
@@ -2594,7 +2644,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/beefSilog.jpg"
+                        src="../assets/img/beefSilog.jpg"
                         alt=""
                       />
                     </div>
@@ -2649,7 +2699,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/hotdogSilog.jpg"
+                        src="../assets/img/hotdogSilog.jpg"
                         alt=""
                       />
                     </div>
@@ -2712,7 +2762,7 @@
                   <div class="text-start">
                     <img
                       class="menuImg mt-4"
-                      src="./assets/img/veggies-modified.png"
+                      src="../assets/img/veggies-modified.png"
                       alt="veggies logo"
                     />
                   </div>
@@ -2734,7 +2784,7 @@
                   <div class="text-start">
                     <img
                       class="menuImg mt-4"
-                      src="./assets/img/cheese-modified.png"
+                      src="../assets/img/cheese-modified.png"
                       alt="cheese logo "
                     />
                   </div>
@@ -2758,7 +2808,7 @@
                   <div class="text-start">
                     <img
                       class="menuImg mt-4"
-                      src="./assets/img/egg-modified.png"
+                      src="../assets/img/egg-modified.png"
                       alt="egg logo "
                     />
                   </div>
@@ -2780,7 +2830,7 @@
                   <div class="text-start">
                     <img
                       class="menuImg mt-4"
-                      src="./assets/img/fries-modified.png"
+                      src="../assets/img/fries-modified.png"
                       alt="fries logo "
                     />
                   </div>
@@ -2804,7 +2854,7 @@
                   <div class="text-start">
                     <img
                       class="menuImg mt-4"
-                      src="./assets/img/espressoShot-modified.png"
+                      src="../assets/img/espressoShot-modified.png"
                       alt="espressoShot logo "
                     />
                   </div>
@@ -2826,7 +2876,7 @@
                   <div class="text-start">
                     <img
                       class="menuImg mt-4"
-                      src="./assets/img/espressoPump-modified.png"
+                      src="../assets/img/espressoPump-modified.png"
                       alt="espressoPump logo "
                     />
                   </div>
@@ -2850,7 +2900,7 @@
                   <div class="text-start">
                     <img
                       class="menuImg mt-4"
-                      src="./assets/img/milk-modified.png"
+                      src="../assets/img/milk-modified.png"
                       alt="milk logo "
                     />
                   </div>
@@ -2896,7 +2946,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/veggies.jpg"
+                        src="../assets/img/veggies.jpg"
                         alt=""
                       />
                     </div>
@@ -2940,7 +2990,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/cheese.jpg"
+                        src="../assets/img/cheese.jpg"
                         alt=""
                       />
                     </div>
@@ -2984,7 +3034,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/egg.jpg"
+                        src="../assets/img/egg.jpg"
                         alt=""
                       />
                     </div>
@@ -3026,7 +3076,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/fries.jpg"
+                        src="../assets/img/fries.jpg"
                         alt=""
                       />
                     </div>
@@ -3068,7 +3118,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/espressoShot.jpg"
+                        src="../assets/img/espressoShot.jpg"
                         alt=""
                       />
                     </div>
@@ -3112,7 +3162,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/espressoPump.jpg"
+                        src="../assets/img/espressoPump.jpg"
                         alt=""
                       />
                     </div>
@@ -3156,7 +3206,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/milk.jpg"
+                        src="../assets/img/milk.jpg"
                         alt=""
                       />
                     </div>
@@ -3207,7 +3257,7 @@
                   <div class="text-start">
                     <img
                       class="menuImg mt-4"
-                      src="./assets/img/eggdropflavors-modified.png"
+                      src="../assets/img/eggdropflavors-modified.png"
                       alt="eggdropflavors logo"
                     />
                   </div>
@@ -3256,7 +3306,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/eggdrop.jpg"
+                        src="../assets/img/eggdrop.jpg"
                         alt=""
                       />
                     </div>
@@ -3334,7 +3384,7 @@
                   <div class="text-start">
                     <img
                       class="menuImg mt-4"
-                      src="./assets/img/blueberryCheesecake-modified.png"
+                      src="../assets/img/blueberryCheesecake-modified.png"
                       alt="blueberryCheesecake logo"
                     />
                   </div>
@@ -3357,7 +3407,7 @@
                   <div class="text-start">
                     <img
                       class="menuImg mt-4"
-                      src="./assets/img/oreoCheesecake-modified.png"
+                      src="../assets/img/oreoCheesecake-modified.png"
                       alt="oreoCheesecake logo "
                     />
                   </div>
@@ -3382,7 +3432,7 @@
                   <div class="text-start">
                     <img
                       class="menuImg mt-4"
-                      src="./assets/img/strawberryCheesecake-modified.png"
+                      src="../assets/img/strawberryCheesecake-modified.png"
                       alt="strawberryCheesecake logo "
                     />
                   </div>
@@ -3405,7 +3455,7 @@
                   <div class="text-start">
                     <img
                       class="menuImg mt-4"
-                      src="./assets/img/bananaLoaf-modified.png"
+                      src="../assets/img/bananaLoaf-modified.png"
                       alt="bananaLoaf logo "
                     />
                   </div>
@@ -3429,7 +3479,7 @@
                   <div class="text-start">
                     <img
                       class="menuImg mt-4"
-                      src="./assets/img/brownies-modified.png"
+                      src="../assets/img/brownies-modified.png"
                       alt="brownies logo "
                     />
                   </div>
@@ -3451,7 +3501,7 @@
                   <div class="text-start">
                     <img
                       class="menuImg mt-4"
-                      src="./assets/img/cookies-modified.png"
+                      src="../assets/img/cookies-modified.png"
                       alt="cookies logo "
                     />
                   </div>
@@ -3471,6 +3521,7 @@
               </div>
             </div>
           </div>
+     
           <!-- Pastries Menu end -->
 
           <!-- PASTRIES ITEM MODAL START -->
@@ -3497,7 +3548,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/blueberryCheesecake.jpg"
+                        src="../assets/img/blueberryCheesecake.jpg"
                         alt=""
                       />
                     </div>
@@ -3550,7 +3601,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/oreoCheesecake.jpg"
+                        src="../assets/img/oreoCheesecake.jpg"
                         alt=""
                       />
                     </div>
@@ -3603,7 +3654,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/strawberryCheesecake.jpg"
+                        src="../assets/img/strawberryCheesecake.jpg"
                         alt=""
                       />
                     </div>
@@ -3661,7 +3712,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/bananaLoaf.jpg"
+                        src="../assets/img/bananaLoaf.jpg"
                         alt=""
                       />
                     </div>
@@ -3713,7 +3764,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/brownies.jpg"
+                        src="../assets/img/brownies.jpg"
                         alt=""
                       />
                     </div>
@@ -3772,7 +3823,7 @@
                     <div class="ms-3 mb-4">
                       <img
                         class="item-image rounded-2"
-                        src="./assets/img/cookies.jpg"
+                        src="../assets/img/cookies.jpg"
                         alt=""
                       />
                     </div>
@@ -3813,48 +3864,60 @@
           <div
             class="fw-bold fnt-outfit text-start text-md-center me-3 pe-5 mx-sm-3 px-sm-5 mb-2"
           >
-            <a class="text-decoration-none text-dark" href="#">About</a>
+            <a
+              class="text-decoration-none text-dark"
+              href="../userlogin/about.html"
+              >About</a
+            >
           </div>
           <div
             class="fw-bold fnt-outfit text-start text-md-center me-3 pe-5 mx-sm-3 px-sm-5 mb-2"
           >
-            <a class="text-decoration-none text-dark" href="pagenotfound.html"
+            <a
+              class="text-decoration-none text-dark"
+              href="../userlogin/findourstore.html"
               ><i class="fa-solid fa-location-dot"></i> Find our store</a
             >
           </div>
           <div
             class="fw-bold fnt-outfit text-start text-md-center me-3 pe-5 mx-sm-3 px-sm-5 mb-2"
           >
-            <a class="text-decoration-none text-dark" href="pagenotfound.html"
+            <a
+              class="text-decoration-none text-dark"
+              href="../userlogin/pagenotfound.html"
               >Promotion</a
             >
           </div>
-        </div>
-        <div class="fw-bold fnt-outfit">
-          Our Socials
-          <div class="fnt-roboto fw-light text-start mt-2">
-            <a
-              class="text-decoration-none text-dark"
-              href="https://www.facebook.com/boncafe22"
-              target="_blank"
-              ><i class="fa-brands fa-facebook"></i> Facebook</a
-            >
-          </div>
-          <div class="fnt-roboto fw-light text-start mt-2">
-            <a
-              class="text-decoration-none text-dark"
-              href="https://www.instagram.com/boncafe_byjels/"
-              target="_blank"
-              ><i class="fa-brands fa-instagram"></i> Instagram
-            </a>
-          </div>
-          <div class="fnt-roboto fw-light text-start mt-2">
-            <a
-              class="text-decoration-none text-dark"
-              href="https://www.tiktok.com/@boncafeph"
-              target="_blank"
-              ><i class="fa-brands fa-tiktok"></i> Tiktok</a
-            >
+          <div
+            class="align-items-center fw-bold fnt-outfit text-start me-3 pe-5 mx-sm-3 px-sm-5 mb-2 mt-5 mt-md-0"
+          >
+            <div class="text-start mb-3">Our Socials</div>
+            <div class="d-flex d-md-block justify-content-evenly w-100">
+              <div class="fnt-roboto fw-light text-start ms-2 mt-2">
+                <a
+                  class="text-decoration-none text-dark"
+                  href="https://www.facebook.com/boncafe22"
+                  target="_blank"
+                  ><i class="fa-brands fa-facebook"></i> Facebook</a
+                >
+              </div>
+              <div class="fnt-roboto fw-light text-start ms-2 mt-2">
+                <a
+                  class="text-decoration-none text-dark"
+                  href="https://www.instagram.com/boncafe_byjels/"
+                  target="_blank"
+                  ><i class="fa-brands fa-instagram"></i> Instagram
+                </a>
+              </div>
+              <div class="fnt-roboto fw-light text-start ms-2 mt-2">
+                <a
+                  class="text-decoration-none text-dark"
+                  href="https://www.tiktok.com/@boncafeph"
+                  target="_blank"
+                  ><i class="fa-brands fa-tiktok"></i> Tiktok</a
+                >
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -3866,7 +3929,7 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
-    <script src="./js/script.js"></script>
-    <script src="./script.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../script.js"></script>
   </body>
 </html>
