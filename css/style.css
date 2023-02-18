@@ -222,7 +222,7 @@ background: linear-gradient(266.38deg, #B9C154 34.44%, #8E8948 60.22%);
 @media (min-width:1400px) {
         .feedback-rows {
                 width: 322px;
-                height: 45vh;
+                height: 50vh;
             }
         .feedback-header {
             font-size: 48px;
