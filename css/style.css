@@ -305,7 +305,7 @@ background: linear-gradient(266.38deg, #B9C154 34.44%, #8E8948 60.22%);
 @media (max-width:768px) {
     .rows {
             width: 100vw;
-            height: 48vh;
+            height: 53vh;
         }
     
         .menu-img {
@@ -337,7 +337,7 @@ background: linear-gradient(266.38deg, #B9C154 34.44%, #8E8948 60.22%);
     .rows {
 
         width: 100vw;
-        height: 40vh;
+        height: 50vh;
     }
     .menu-img {
         width: 100vw;
@@ -379,6 +379,7 @@ background: linear-gradient(266.38deg, #B9C154 34.44%, #8E8948 60.22%);
     width: 448px;
     
 }
+
 .form-control{
         width: 50vh;
         margin: auto;
