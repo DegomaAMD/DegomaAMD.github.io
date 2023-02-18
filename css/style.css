@@ -305,7 +305,7 @@ background: linear-gradient(266.38deg, #B9C154 34.44%, #8E8948 60.22%);
 @media (max-width:768px) {
     .rows {
             width: 100vw;
-            height: 50vh;
+            height: 48vh;
         }
     
         .menu-img {
