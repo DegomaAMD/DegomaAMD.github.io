@@ -522,8 +522,11 @@ height: 80vh;
     height: 70vh;
     width: 40vw;
 }
-.store-info, .notfound{
-    height: 653px ;
+.store-info {
+    height: 660px ;
+}
+.notfound{
+    height: 570px;
 }
 
 
