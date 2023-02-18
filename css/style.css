@@ -241,7 +241,7 @@ background: linear-gradient(266.38deg, #B9C154 34.44%, #8E8948 60.22%);
         }
         .feedback-rows {
             width: 277px;
-            height: 50vh;
+            height: 60vh;
         }
     .feedback-header{
         font-size: 36px;
@@ -299,7 +299,7 @@ background: linear-gradient(266.38deg, #B9C154 34.44%, #8E8948 60.22%);
     /* Feebcack row */
     .feedback-rows{
         width: 342px ;
-        height: 45vh ;
+        height: 50vh ;
     }
 }
 @media (max-width:768px) {
@@ -314,7 +314,7 @@ background: linear-gradient(266.38deg, #B9C154 34.44%, #8E8948 60.22%);
         }
     .feedback-rows {
         width: 502px;
-        height: 35vh;
+        height: 40vh;
     }
 }
 
