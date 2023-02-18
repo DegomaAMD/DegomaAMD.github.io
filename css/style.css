@@ -2,14 +2,19 @@
 TABLE OF CONTENTS
 1. Utility Classes
 2. Universal Modification
-3. Animations
-4. Body Modification
-5. Header Modification
-6. 
-7. 
-8. 
-9. 
-10. 
+3. Header Modification
+4. HOMEPAGE 
+    4.1 Home page big-image
+    4.2 Home page big-paragraph 
+    4.3 Grid menu images sizing 
+    4.4 Feedback modification 
+5. Footer 
+6 .Media Query for Landing Page 
+7. Login Page 
+8. Menu Page 
+9. 404 Page 
+10. About Page 
+11. Find Store
 */
 
 
@@ -92,8 +97,17 @@ html{
 }
 .btn:hover{
     transform: translateY(-5px);
-    /* background-color: #B29F91; */
     color: #8E8948 ;
+}
+.btn:active{
+    color: #281D05;
+}
+.btn:first-child:active{
+    border-color: transparent;
+}
+.btn:visited{
+    border: none;
+
 }
 p{
     font-family: 'Roboto', sans-serif;
@@ -109,7 +123,8 @@ footer i, i{
     color: #8E8948;
 }
 
-/* 5. Header Modification */
+
+/* 3. Header Modification */
 #brand-logo {
     width: 72.7px;
     height: 66.73px;
@@ -130,7 +145,9 @@ nav {
     height: 356px;
 }
 
-/* Home page big-image */
+/* 4. HOMEPAGE */
+
+/* 4.1 Home page big-image */
 .img-big{
 background-image: url(../assets/img/boncafe1.jpg);
 background-position: center;
@@ -139,7 +156,7 @@ background-size: cover;
 opacity: 0.49;
 height: 759px;
 }
-/* Home page big-paragraph */
+/* 4.2 Home page big-paragraph */
 .p-big{
     font-family: 'Outfit', sans-serif;
     color: #F2C9B1;
@@ -151,7 +168,7 @@ height: 759px;
     height: 100px;
     margin: auto;
 }
-/* Grid menu images sizing */
+/* 4.3 Grid menu images sizing */
 .rows{
     width: 656px;
     height: 637px;
@@ -166,7 +183,7 @@ height: 759px;
     height: 360px;
     padding: 0;
 }
-/* Feedback modification */
+/* 4.4 Feedback modification */
 .feedback-body{
     margin: auto;
 }
@@ -194,13 +211,14 @@ figure p {
 .signup-box{
 background: linear-gradient(266.38deg, #B9C154 34.44%, #8E8948 60.22%);
 }
-/* Footer */
+
+/* 5. Footer */
 
 .footer-data{
     padding: 5vw 5vh;
 
 }
-/* Media Query for Landing Page */
+/* 6 .Media Query for Landing Page */
 @media (min-width:1400px) {
         .feedback-rows {
                 width: 322px;
@@ -339,12 +357,10 @@ background: linear-gradient(266.38deg, #B9C154 34.44%, #8E8948 60.22%);
     }
 }
 
-/* Login Page */
+/* 7. Login Page */
 .img-bg{
     background-image: url(../assets/img/boncafe2.jpg);
-    background-size: cover;
-    /* background-attachment: fixed; */
-    
+    background-size: cover;   
 }
 .welcome-greet, .accnt-description{
     color: white;
@@ -430,7 +446,7 @@ border-radius: 17px;
     }
 }
 
-/* Menu Page */
+/* 8. Menu Page */
 .menu-bg{
     width: 100vw;
     height: 50vh;
@@ -485,24 +501,25 @@ tr:hover{
     }
 }
 
-/* 404 Page */
+/* 9. 404 Page */
 .img404{
-    height: 62vh;
+height: 80vh;
     width: 40vw;
 }
 
-/* About Page */
+/* 10. About Page */
 .about-img{
     width: 50vw;
     height: 100%;
 }
 
-/* Find store */
+/* 11. Find store */
 .contact-details{
-    margin-top: 200px;
+    margin: 200px 50px 200px 0px;
+}
+.findourstore-img{
+    height: 70vh;
+    width: 40vw;
 }
 
-.carousel-img{
-    height: 70vh;
-    width: 100%;
-}
+

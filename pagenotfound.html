@@ -34,103 +34,109 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header class="border-bottom">
-      <div class="d-flex justify-content-between mx-5 pt-3 align-items-center">
-        <div class="mb-3">
-          <a href="index.html"
-            ><img
-              id="brand-logo"
-              src="./assets/img/boncage-logo.ico"
-              alt="bon cafe logo"
-          /></a>
-        </div>
+    <header class="border-bottom bg-light">
+      <nav>
         <div
-          class="offcanvas-md offcanvas-end d-flex justify-content-between"
-          tabindex="-1"
-          id="offcanvasRight"
+          class="d-flex justify-content-between mx-5 pt-3 align-items-center bg-light"
         >
-          <div class="offcanvas-header">
-            <div class="fnt-outfit text-brown fw-bold">BON CAFE</div>
-            <div>
-              <button
+          <div class="mb-3">
+            <a href="index.html"
+              ><img
+                id="brand-logo"
+                src="./assets/img/boncage-logo.ico"
+                alt="bon cafe logo"
+            /></a>
+          </div>
+          <div
+            class="offcanvas-md offcanvas-end d-flex justify-content-between"
+            tabindex="-1"
+            id="offcanvasRight"
+          >
+            <div class="offcanvas-header bg-darkgreen">
+              <div class="fnt-outfit text-brown fw-bold text-white">
+                BON CAFE
+              </div>
+              <div>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  data-bs-target="#offcanvasRight"
+                  aria-label="Close"
+                ></button>
+              </div>
+            </div>
+
+            <div class="offcanvas-body">
+              <ul class="nav d-block d-md-flex">
+                <li class="nav-item">
+                  <a
+                    class="btn nav-link px-3 mx-3 text-brown fw-semibold"
+                    href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="btn nav-link px-3 mx-3 text-brown fw-semibold"
+                    href="menu.html"
+                    >Menu</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="btn nav-link px-3 mx-3 text-brown fw-semibold"
+                    href="about.html"
+                    >About</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="btn nav-link px-3 mx-4 text-brown fw-semibold"
+                    href="pagenotfound.html"
+                    ><i class="fa-solid fa-cart-shopping" aria-hidden="true"></i
+                  ></a>
+                </li>
+                <li class="d-block d-md-none">
+                  <a
+                    href="./login.html"
+                    type="button"
+                    class="login-btn btn btn-outline-darkgreen rounded-pill"
+                    >Login</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="d-none d-md-block">
+              <a
+                href="./login.html"
                 type="button"
-                class="btn-close"
-                data-bs-dismiss="offcanvas"
-                data-bs-target="#offcanvasRight"
-                aria-label="Close"
-              ></button>
+                class="login-btn btn btn-outline-darkgreen rounded-pill"
+                >Login</a
+              >
             </div>
           </div>
-
-          <div class="offcanvas-body">
-            <ul class="nav d-block d-md-flex">
-              <li class="nav-item">
-                <a
-                  class="btn nav-link px-3 mx-3 text-brown fw-semibold"
-                  href="index.html"
-                  >Home</a
-                >
-              </li>
-              <li>
-                <a
-                  class="btn nav-link px-3 mx-3 text-brown fw-semibold"
-                  href="menu.html"
-                  >Menu</a
-                >
-              </li>
-              <li>
-                <a
-                  class="btn nav-link px-3 mx-3 text-brown fw-semibold"
-                  href="about.html"
-                  >About</a
-                >
-              </li>
-              <li>
-                <a
-                  class="btn nav-link px-3 mx-4 text-brown fw-semibold"
-                  href="pagenotfound.html"
-                  ><i class="fa-solid fa-cart-shopping" aria-hidden="true"></i
-                ></a>
-              </li>
-              <li class="d-block d-md-none">
-                <a
-                  href="./login.html"
-                  type="button"
-                  class="btn btn-outline-darkgreen rounded-pill"
-                  >Login</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="d-none d-md-block">
-            <a
-              href="./login.html"
+          <div class="d-flex d-md-none justify-content-between">
+            <button
               type="button"
-              class="btn btn-outline-darkgreen rounded-pill"
-              >Login</a
+              class="btn text-brown mb-1"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasRight"
+              aria-controls="offcanvasRight"
             >
+              <i class="fa-solid fa-bars" aria-hidden="true"></i>
+            </button>
           </div>
         </div>
-        <div class="d-flex d-md-none justify-content-between">
-          <button
-            type="button"
-            class="btn text-brown mb-1"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasRight"
-            aria-controls="offcanvasRight"
-          >
-            <i class="fa-solid fa-bars" aria-hidden="true"></i>
-          </button>
-        </div>
-      </div>
+      </nav>
     </header>
     <main>
-      <div class="d-flex">
-        <div class="mx-5 mt-5 align-middle">
-          <div class="display-1 fnt-outfit fw-semibold mt-5">
+      <div class="d-flex justify-content-between">
+        <div class="mx-3 my-5 pb-5 align-middle">
+          <div class="display-2 fnt-outfit fw-semibold my-5 pt-5">
             Whoops, that Page is under construction.
           </div>
-          <div class="fnt-roboto mt-5">
+          <div class="fnt-roboto my-5">
             The link you clicked may be broken or the page may have been under
             construction. You can try again or get to the
             <a
@@ -142,7 +148,7 @@
         </div>
         <div>
           <img
-            class="img404"
+            class="img404 d-none d-sm-block"
             src="./assets/img/boncafe4.jpg"
             alt="boncafe image"
           />

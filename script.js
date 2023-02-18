@@ -19,9 +19,8 @@ function userLogin(){
     if (username.value == `andriamae1019`){
         homeLogin.setAttribute = ('href','./userlogin/home.html');
     } else {
-        alert('Wrong username or password. Please check and try again.')
+        alert('Wrong username or password. Please check and try again.');
         homeLogin.setAttribute = ('href','./login.html');
-        
     }
 }
 
