@@ -15,14 +15,14 @@ const addOnsPage = document.querySelector('#addOnsPage');
 const eggdropPage = document.querySelector('#eggdropPage');
 const pastriesPage = document.querySelector('#pastriesPage');
 
-function userLogin(){
-    if (username.value == `andriamae1019`){
-        homeLogin.setAttribute = ('href','./userlogin/home.html');
-    } else {
-        alert('Wrong username or password. Please check and try again.');
-        homeLogin.setAttribute = ('href','./login.html');
-    }
-}
+// function userLogin(){
+//     if (username.value == `andriamae1019`){
+//         homeLogin.setAttribute = ('href','./userlogin/home.html');
+//     } else {
+//         alert('Wrong username or password. Please check and try again.');
+//         homeLogin.setAttribute = ('href','./login.html');
+//     }
+// }
 
 function passResetValue(){
     valueEmailPass = emailInput.value;
